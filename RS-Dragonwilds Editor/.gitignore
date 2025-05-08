@@ -1,0 +1,24 @@
+build/
+dist/
+*.spec
+__pycache__/
+
+RS-Dragonwilds Editor.zip
+
+RS-Dragonwilds Editor/save_editor.exe
+
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+venv/
+.env/
+
+RS-Dragonwilds Editor/data/*.json
+RS-Dragonwilds Editor/*.bak
+
+# Don't ignore the source script (allow collab)
+!RS-Dragonwilds Editor/save_editor.py
