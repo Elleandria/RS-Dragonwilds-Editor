@@ -14,6 +14,7 @@ def resource_path(relative_path):
         base_path = sys._MEIPASS
     except AttributeError:
         base_path = os.path.abspath(".")
+
     return os.path.join(base_path, relative_path)
 
 ASSETS_DIR = resource_path("assets")
@@ -79,42 +80,60 @@ def load_item_list():
     items = []
     display_map = {}
     item_map = {}
+    vitalshield_items = set()
+    fullshield_items = set()
+    fullshield_names = set()
+
     item_file_path = os.path.join(DATA_DIR, "ItemID.txt")
     try:
         with open(item_file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            for item in data:
-                name = item.get("SourceString", "").strip()
-                if name:
-                    items.append(name)
-                    display_map[name] = name
-                    item_map[name] = item
+            for line in f:
+                original_line = line.strip()
+                has_full_shield = original_line.endswith("**")
+                has_vital_shield = original_line.endswith("*") and not has_full_shield
+
+                clean_line = original_line.rstrip("*").strip()
+                display_name = clean_line.split(" (")[0]
+
+                if "(" in clean_line and ")" in clean_line:
+                    item_id = clean_line[clean_line.find("(")+1:clean_line.find(")")]
+                    items.append(display_name)
+                    display_map[display_name] = original_line
+                    item_map[original_line] = item_id
+                    if has_full_shield:
+                        fullshield_items.add(item_id)
+                        fullshield_names.add(original_line)
+                    elif has_vital_shield:
+                        vitalshield_items.add(original_line)
     except FileNotFoundError:
         messagebox.showerror("Missing File", f"ItemID.txt not found in {DATA_DIR}.")
-    return items, display_map, item_map
+    return items, display_map, item_map, vitalshield_items, fullshield_items, fullshield_names
 
 def inject_items():
     file_path = entry_file.get()
     selected = selected_item.get().strip()
-    item_data = item_lookup.get(selected)
-
-    if not item_data:
-        messagebox.showerror("Error", "Invalid item selection or missing entry.")
+    full_line = display_lookup.get(selected)
+    if not full_line:
+        for key in display_lookup:
+            if key.strip() == selected:
+                full_line = display_lookup[key]
+                break
+    if not full_line or full_line not in item_lookup:
+        messagebox.showerror("Error", "Invalid item selection or missing ID in ItemID.txt.")
         return
 
+    item_data = item_lookup[full_line]
+
     try:
-        count = int(entry_count.get()) if entry_count.winfo_ismapped() else 1
-        durability = int(entry_durability.get()) if entry_durability.winfo_ismapped() else item_data.get("BaseDurability", 1)
+        count = int(entry_count.get())
         start_slot = int(entry_start.get())
         end_slot = int(entry_end.get())
     except ValueError:
-        messagebox.showerror("Error", "Durability/Count/Slot inputs must be valid numbers!")
+        messagebox.showerror("Error", "Count, Start, and End must be numbers!")
         return
-
     if not os.path.isfile(file_path):
         messagebox.showerror("Error", "File not found!")
         return
-
     with open(file_path, 'r', encoding='utf-8') as f:
         save_data = json.load(f)
 
@@ -123,10 +142,15 @@ def inject_items():
         with open(backup_path, 'w', encoding='utf-8') as backup:
             json.dump(save_data, backup, indent=4)
 
-    inventory = save_data.get("Inventory", {})
+    if "Inventory" not in save_data:
+        messagebox.showerror("Error", "No 'Inventory' section found in save file!")
+        return
+
+    inventory = save_data["Inventory"]
+
     conflicted_slots = [str(slot) for slot in range(start_slot, end_slot + 1) if str(slot) in inventory]
     if conflicted_slots:
-        proceed = messagebox.askyesno("Confirm Overwrite", f"Slots occupied: {', '.join(conflicted_slots)}. Overwrite?")
+        proceed = messagebox.askyesno("Confirm Overwrite", f"The following slots already have items: {', '.join(conflicted_slots)}\nDo you want to delete them before injecting?")
         if not proceed:
             return
         for slot in conflicted_slots:
@@ -137,54 +161,49 @@ def inject_items():
         guid = generate_guid()
         item_entry = {
             "GUID": guid,
-            "ItemData": item_data["PersistenceID"]
+            "ItemData": item_data
         }
-        if "MaxStackSize" in item_data:
+        if full_line not in fullshield_names:
             item_entry["Count"] = count
-        if "BaseDurability" in item_data:
-            item_entry["Durability"] = durability
-        if "VitalShield" in item_data:
-            item_entry["VitalShield"] = item_data["VitalShield"]
+        if full_line in fullshield_names:
+            item_entry["Durability"] = 500
+            item_entry["VitalShield"] = 0
+        elif full_line in vitalshield_set:
+            item_entry["VitalShield"] = 0
         new_items[str(slot)] = item_entry
+
+    max_slot_index = inventory.get("MaxSlotIndex", 0)
+    if "MaxSlotIndex" in inventory:
+        del inventory["MaxSlotIndex"]
 
     merged_inventory = OrderedDict()
     for k in sorted(new_items.keys(), key=lambda x: int(x)):
         merged_inventory[k] = new_items[k]
-    for k in sorted(inventory.keys(), key=lambda x: int(x) if x.isdigit() else float('inf')):
-        if k not in new_items and k != "MaxSlotIndex":
-            merged_inventory[k] = inventory[k]
-    merged_inventory["MaxSlotIndex"] = max(inventory.get("MaxSlotIndex", 0), end_slot)
+    for k in sorted(inventory.keys(), key=lambda x: int(x)):
+        merged_inventory[k] = inventory[k]
+
+    merged_inventory["MaxSlotIndex"] = max(max_slot_index, end_slot)
     save_data["Inventory"] = merged_inventory
 
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(save_data, f, indent=4)
 
-    messagebox.showinfo("Success", f"Injected {end_slot - start_slot + 1} items.")
+    messagebox.showinfo("Success", f"Injected {end_slot - start_slot + 1} items into inventory at correct position!")
 
-def update_max_stack_display(*args):
+def toggle_count_field(*args):
     selected = selected_item.get().strip()
-    item = item_lookup.get(selected)
-    if item:
-        if "MaxStackSize" in item:
-            label_count.grid()
-            entry_count.grid()
-            label_durability.grid_remove()
-            entry_durability.grid_remove()
-            label_maxstack.config(text=f"MaxStackSize: {item['MaxStackSize']}", foreground="red")
-        elif "BaseDurability" in item:
-            label_count.grid_remove()
-            entry_count.grid_remove()
-            label_maxstack.config(text="")
-            label_durability.grid()
-            entry_durability.grid()
-            entry_durability.delete(0, tk.END)
-            entry_durability.insert(0, str(item['BaseDurability']))
-        else:
-            label_count.grid_remove()
-            entry_count.grid_remove()
-            label_maxstack.config(text="")
-            label_durability.grid_remove()
-            entry_durability.grid_remove()
+    full_line = display_lookup.get(selected)
+    if not full_line:
+        for key in display_lookup:
+            if key.strip() == selected:
+                full_line = display_lookup[key]
+                break
+    if full_line and full_line.endswith("**"):
+        entry_count.grid_remove()
+        label_count.grid_remove()
+    else:
+        entry_count.grid()
+        label_count.grid()
 
 def set_slot_range(start, end):
     entry_start.delete(0, tk.END)
@@ -204,24 +223,19 @@ style.configure("TEntry", fieldbackground="#302f2c", foreground="white")
 style.configure("TButton", background="#2c2b27", foreground="gold", font=("Georgia", 10, "bold"))
 style.configure("TCombobox", fieldbackground="white", background="white", foreground="black")
 
-item_list, display_lookup, item_lookup = load_item_list()
+item_list, display_lookup, item_lookup, vitalshield_set, fullshield_set, fullshield_names = load_item_list()
 selected_item = tk.StringVar()
-selected_item.set("")
-selected_item.trace_add("write", update_max_stack_display)
+selected_item.set(item_list[0] if item_list else "")
+selected_item.trace_add("write", toggle_count_field)
 
-# UI Setup
 ttk.Label(root, text="Save File:").grid(row=0, column=0, sticky="e")
 entry_file = ttk.Entry(root, width=60)
 entry_file.grid(row=0, column=1, padx=5, pady=5)
 ttk.Button(root, text="Browse", command=load_json).grid(row=0, column=2, padx=5, pady=5)
 
-ttk.Label(root, text="Item:").grid(row=1, column=0, sticky="e")
+label_item = ttk.Label(root, text="Item:")
+label_item.grid(row=1, column=0, sticky="e")
 item_dropdown = AutocompleteCombobox(root, textvariable=selected_item, width=45)
-item_dropdown.insert(0, "Search or use Dropdown to select item")
-item_dropdown.configure(foreground="gray")
-
-# Clear placeholder text when user starts typing
-item_dropdown.bind("<FocusIn>", lambda e: (item_dropdown.delete(0, tk.END), item_dropdown.configure(foreground="black")) if item_dropdown.get() == "Search or use Dropdown to select item" else None)
 item_dropdown.set_completion_list(item_list)
 item_dropdown.grid(row=1, column=1, padx=5, pady=5, sticky="w")
 
@@ -231,25 +245,22 @@ entry_count = ttk.Entry(root, width=10)
 entry_count.insert(0, "1")
 entry_count.grid(row=2, column=1, padx=5, pady=5, sticky="w")
 
-label_durability = ttk.Label(root, text="Durability:")
-label_durability.grid(row=2, column=0, sticky="e")
-label_durability.grid_remove()
-entry_durability = ttk.Entry(root, width=10)
-entry_durability.grid(row=2, column=1, padx=5, pady=5, sticky="w")
-entry_durability.grid_remove()
-
-label_maxstack = ttk.Label(root, text="", font=("Georgia", 10, "bold"))
-label_maxstack.grid(row=2, column=1, sticky="w", padx=(80, 0))
-
-ttk.Label(root, text="Start Slot:").grid(row=3, column=0, sticky="e")
+label_start = ttk.Label(root, text="Start Slot:")
+label_start.grid(row=3, column=0, sticky="e")
 entry_start = ttk.Entry(root, width=10)
 entry_start.insert(0, "8")
 entry_start.grid(row=3, column=1, padx=5, pady=5, sticky="w")
 
-ttk.Label(root, text="End Slot:").grid(row=4, column=0, sticky="e")
+label_end = ttk.Label(root, text="End Slot:")
+label_end.grid(row=4, column=0, sticky="e")
 entry_end = ttk.Entry(root, width=10)
 entry_end.insert(0, "8")
 entry_end.grid(row=4, column=1, padx=5, pady=5, sticky="w")
+
+create_tooltip(label_item, "Choose the item to inject into your save")
+create_tooltip(label_count, "Set how many of this item to add (gear will only add 1)")
+create_tooltip(label_start, "Set the first slot to inject into (0-7 = Action Bar, 8-31 Main Inventory, 32-55 Rune Inventory, 56-79 Quest Inventory)")
+create_tooltip(label_end, "Set the last slot to inject into")
 
 try:
     icon_main = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icons_Journal_Recipes_Resources_VaultCore.png")).resize((20, 20)))
