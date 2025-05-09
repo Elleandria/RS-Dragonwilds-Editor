@@ -9,16 +9,6 @@ import sys
 from collections import OrderedDict
 from PIL import Image, ImageTk
 
-def resource_path(relative_path):
-    try:
-        base_path = sys._MEIPASS
-    except AttributeError:
-        base_path = os.path.abspath(".")
-    return os.path.join(base_path, relative_path)
-
-ASSETS_DIR = resource_path("assets")
-DATA_DIR = resource_path("data")
-
 class AutocompleteCombobox(ttk.Combobox):
     def __init__(self, master=None, **kwargs):
         super().__init__(master, **kwargs)
@@ -39,6 +29,18 @@ class AutocompleteCombobox(ttk.Combobox):
         filtered = [item for item in self._completion_list if typed.lower() in item.lower()]
         self.configure(values=filtered)
 
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+ASSETS_DIR = resource_path("assets")
+DATA_DIR = resource_path("data")
+
+injection_queue = []
+
 def generate_guid():
     chars = string.ascii_letters + string.digits + "-_"
     return ''.join(random.choice(chars) for _ in range(22))
@@ -55,25 +57,6 @@ def load_json():
         return
     entry_file.delete(0, tk.END)
     entry_file.insert(0, file_path)
-
-def create_tooltip(widget, text):
-    tooltip = tk.Toplevel(widget)
-    tooltip.withdraw()
-    tooltip.overrideredirect(True)
-    label = tk.Label(tooltip, text=text, background="lightyellow", relief="solid", borderwidth=1, font=("Arial", 8))
-    label.pack()
-
-    def enter(event):
-        x = widget.winfo_rootx() + 20
-        y = widget.winfo_rooty() + 20
-        tooltip.geometry(f"+{x}+{y}")
-        tooltip.deiconify()
-
-    def leave(event):
-        tooltip.withdraw()
-
-    widget.bind("<Enter>", enter)
-    widget.bind("<Leave>", leave)
 
 def load_item_list():
     items = []
@@ -95,28 +78,17 @@ def load_item_list():
 
 def inject_items():
     file_path = entry_file.get()
-    selected = selected_item.get().strip()
-    item_data = item_lookup.get(selected)
-
-    if not item_data:
-        messagebox.showerror("Error", "Invalid item selection or missing entry.")
-        return
-
-    try:
-        count = int(entry_count.get()) if entry_count.winfo_ismapped() else 1
-        durability = int(entry_durability.get()) if entry_durability.winfo_ismapped() else item_data.get("BaseDurability", 1)
-        start_slot = int(entry_start.get())
-        end_slot = int(entry_end.get())
-    except ValueError:
-        messagebox.showerror("Error", "Durability/Count/Slot inputs must be valid numbers!")
-        return
 
     if not os.path.isfile(file_path):
         messagebox.showerror("Error", "File not found!")
         return
 
-    with open(file_path, 'r', encoding='utf-8') as f:
-        save_data = json.load(f)
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            save_data = json.load(f)
+    except json.JSONDecodeError:
+        messagebox.showerror("Error", "Invalid JSON format in save file.")
+        return
 
     backup_path = file_path.replace(".json", "_backup.json")
     if not os.path.exists(backup_path):
@@ -124,42 +96,97 @@ def inject_items():
             json.dump(save_data, backup, indent=4)
 
     inventory = save_data.get("Inventory", {})
-    conflicted_slots = [str(slot) for slot in range(start_slot, end_slot + 1) if str(slot) in inventory]
-    if conflicted_slots:
-        proceed = messagebox.askyesno("Confirm Overwrite", f"Slots occupied: {', '.join(conflicted_slots)}. Overwrite?")
-        if not proceed:
-            return
-        for slot in conflicted_slots:
-            del inventory[slot]
-
     new_items = {}
-    for slot in range(start_slot, end_slot + 1):
-        guid = generate_guid()
-        item_entry = {
-            "GUID": guid,
-            "ItemData": item_data["PersistenceID"]
-        }
-        if "MaxStackSize" in item_data:
-            item_entry["Count"] = count
-        if "BaseDurability" in item_data:
-            item_entry["Durability"] = durability
-        if "VitalShield" in item_data:
-            item_entry["VitalShield"] = item_data["VitalShield"]
-        new_items[str(slot)] = item_entry
+
+    for entry in sorted(injection_queue, key=lambda e: e["start_slot"]):
+        for slot in range(entry["start_slot"], entry["end_slot"] + 1):
+            guid = generate_guid()
+            item_entry = {
+                "GUID": guid,
+                "ItemData": entry["persistence_id"]
+            }
+            if entry["count"]:
+                item_entry["Count"] = entry["count"]
+            if entry["durability"]:
+                item_entry["Durability"] = entry["durability"]
+            if entry["vitalshield"] is not None:
+                item_entry["VitalShield"] = entry["vitalshield"]
+            new_items[str(slot)] = item_entry
 
     merged_inventory = OrderedDict()
-    for k in sorted(new_items.keys(), key=lambda x: int(x)):
-        merged_inventory[k] = new_items[k]
-    for k in sorted(inventory.keys(), key=lambda x: int(x) if x.isdigit() else float('inf')):
-        if k not in new_items and k != "MaxSlotIndex":
-            merged_inventory[k] = inventory[k]
-    merged_inventory["MaxSlotIndex"] = max(inventory.get("MaxSlotIndex", 0), end_slot)
+    all_keys = list(inventory.keys()) + list(new_items.keys())
+    numeric_keys = sorted({int(k) for k in all_keys if k.isdigit()})
+
+    for k in numeric_keys:
+        k_str = str(k)
+        if k_str in new_items:
+            merged_inventory[k_str] = new_items[k_str]
+        elif k_str in inventory:
+            merged_inventory[k_str] = inventory[k_str]
+
+    max_existing = max([int(k) for k in merged_inventory.keys() if k.isdigit()], default=0)
+    merged_inventory["MaxSlotIndex"] = max(inventory.get("MaxSlotIndex", 0), max_existing)
+
     save_data["Inventory"] = merged_inventory
 
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(save_data, f, indent=4)
 
-    messagebox.showinfo("Success", f"Injected {end_slot - start_slot + 1} items.")
+    messagebox.showinfo("Success", f"Injected {len(new_items)} items.")
+    injection_queue.clear()
+    update_queue_display()
+
+def add_to_queue():
+    selected = selected_item.get().strip()
+    item_data = item_lookup.get(selected)
+    if not item_data:
+        messagebox.showerror("Error", "Invalid item selection or missing entry.")
+        return
+
+    try:
+        start_slot = int(entry_start.get())
+        end_slot = int(entry_end.get())
+        count = int(entry_count.get()) if entry_count.winfo_ismapped() else 1
+        durability = int(entry_durability.get()) if entry_durability.winfo_ismapped() else None
+    except ValueError:
+        messagebox.showerror("Error", "Inputs must be valid numbers!")
+        return
+
+    entry = {
+        "item_name": selected,
+        "persistence_id": item_data["PersistenceID"],
+        "count": count,
+        "start_slot": start_slot,
+        "end_slot": end_slot,
+        "durability": durability,
+        "vitalshield": item_data.get("VitalShield")
+    }
+    injection_queue.append(entry)
+    update_queue_display()
+
+def update_queue_display():
+    queue_display.configure(state='normal')
+    queue_display.delete("1.0", tk.END)
+    lines = []
+    for i, entry in enumerate(injection_queue):
+        label = f"[{entry['start_slot']}]" if entry['start_slot'] == entry['end_slot'] else f"[{entry['start_slot']}-{entry['end_slot']}]"
+        label += f" {entry['item_name']}"
+        if entry['count']:
+            label += f" ({entry['count']})"
+        lines.append(label)
+
+    output = ""
+    for i in range(0, len(lines), 2):
+        left = lines[i].ljust(35)
+        right = lines[i+1] if i+1 < len(lines) else ""
+        output += f"{left}{right}\n"
+
+    queue_display.insert(tk.END, output)
+    queue_display.configure(state='disabled')
+
+def clear_queue():
+    injection_queue.clear()
+    update_queue_display()
 
 def update_max_stack_display(*args):
     selected = selected_item.get().strip()
@@ -194,7 +221,7 @@ def set_slot_range(start, end):
 
 root = tk.Tk()
 root.title("RuneScape Save Editor")
-root.geometry("650x250")
+root.geometry("800x400")
 root.configure(bg="#1c1b18")
 
 style = ttk.Style()
@@ -209,19 +236,18 @@ selected_item = tk.StringVar()
 selected_item.set("")
 selected_item.trace_add("write", update_max_stack_display)
 
-ttk.Label(root, text="Save File:").grid(row=0, column=0, sticky="e")
 entry_file = ttk.Entry(root, width=60)
 entry_file.grid(row=0, column=1, padx=5, pady=5)
+ttk.Label(root, text="Save File:").grid(row=0, column=0, sticky="e")
 ttk.Button(root, text="Browse", command=load_json).grid(row=0, column=2, padx=5, pady=5)
 
 ttk.Label(root, text="Item:").grid(row=1, column=0, sticky="e")
 item_dropdown = AutocompleteCombobox(root, textvariable=selected_item, width=45)
-item_dropdown.insert(0, "Search or use Dropdown to select item")
-item_dropdown.configure(foreground="gray")
-
-item_dropdown.bind("<FocusIn>", lambda e: (item_dropdown.delete(0, tk.END), item_dropdown.configure(foreground="black")) if item_dropdown.get() == "Search or use Dropdown to select item" else None)
 item_dropdown.set_completion_list(item_list)
 item_dropdown.grid(row=1, column=1, padx=5, pady=5, sticky="w")
+item_dropdown.insert(0, "Search or use Dropdown to select item")
+item_dropdown.configure(foreground="gray")
+item_dropdown.bind("<FocusIn>", lambda e: (item_dropdown.delete(0, tk.END), item_dropdown.configure(foreground="black")) if item_dropdown.get() == "Search or use Dropdown to select item" else None)
 
 label_count = ttk.Label(root, text="Item Count:")
 label_count.grid(row=2, column=0, sticky="e")
@@ -260,6 +286,34 @@ try:
 except Exception as e:
     print("Icon loading failed:", e)
 
-ttk.Button(root, text="Inject Items", command=inject_items).grid(row=11, column=0, columnspan=3, pady=15)
+ttk.Button(root, text="Add to Queue", command=add_to_queue).grid(row=11, column=0, padx=(50, 5), pady=15, sticky="e")
+ttk.Button(root, text="Inject Items", command=inject_items).grid(row=11, column=1, padx=(5, 0), pady=15, sticky="w")
+
+queue_display = tk.Text(root, height=5, width=65, font=("Consolas", 10), background="#1c1b18", foreground="white", relief="flat", bd=0)
+queue_display.grid(row=12, column=0, columnspan=2, padx=10, pady=(0, 10), sticky="w")
+clear_button = tk.Button(root, text="✖", command=clear_queue, font=("Arial", 10), fg="red", bg="#1c1b18", relief="flat", bd=0)
+clear_button.grid(row=12, column=2, sticky="ne", padx=(0, 15), pady=(0, 10))
+
+def bind_scroll_increment(entry_widget):
+    def on_scroll(event):
+        try:
+            val = int(entry_widget.get())
+            if event.delta > 0 or event.num == 4:
+                val += 1
+            elif event.delta < 0 or event.num == 5:
+                val = max(0, val - 1)
+            entry_widget.delete(0, tk.END)
+            entry_widget.insert(0, str(val))
+        except ValueError:
+            pass
+
+    entry_widget.bind("<MouseWheel>", on_scroll)
+    entry_widget.bind("<Button-4>", on_scroll)
+    entry_widget.bind("<Button-5>", on_scroll)
+
+bind_scroll_increment(entry_count)
+bind_scroll_increment(entry_durability)
+bind_scroll_increment(entry_start)
+bind_scroll_increment(entry_end)
 
 root.mainloop()

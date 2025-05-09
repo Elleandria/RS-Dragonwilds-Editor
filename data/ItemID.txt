@@ -231,7 +231,6 @@
     "SourceString": "Dragonbane Cape",
     "PersistenceID": "1ReHrk6Keawr5E-eQ8WTCg",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Alpha_Cape'",
       "PersistenceID": "1ReHrk6Keawr5E-eQ8WTCg",
@@ -242,7 +241,6 @@
     "SourceString": "Artisan Skillcape",
     "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
@@ -253,7 +251,6 @@
     "SourceString": "Attack Skillcape",
     "PersistenceID": "QB-cekR96jMiFVqZ4b-eZQ",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "QB-cekR96jMiFVqZ4b-eZQ",
@@ -264,7 +261,6 @@
     "SourceString": "Bloodblight Cape",
     "PersistenceID": "emA_O0RntNNsrNuNVOTmow",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_Bloodblight'",
       "PersistenceID": "emA_O0RntNNsrNuNVOTmow",
@@ -275,7 +271,6 @@
     "SourceString": "Bramblemead Cape",
     "PersistenceID": "4hYWzULKMjNsgOuwHL7UAA",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_Bramblemead'",
       "PersistenceID": "4hYWzULKMjNsgOuwHL7UAA",
@@ -286,7 +281,6 @@
     "SourceString": "Construction Skillcape",
     "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
@@ -297,7 +291,6 @@
     "SourceString": "Cooking Skillcape",
     "PersistenceID": "CV3gFUxualOL_TK-w4iPtw",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "CV3gFUxualOL_TK-w4iPtw",
@@ -308,7 +301,6 @@
     "SourceString": "Pioneer's Cape",
     "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Pioneer_Mantle'",
       "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
@@ -319,7 +311,6 @@
     "SourceString": "Fractured Cape",
     "PersistenceID": "71LhGUmAvrlALY6KcS8W3Q",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_Fractured'",
       "PersistenceID": "71LhGUmAvrlALY6KcS8W3Q",
@@ -330,7 +321,6 @@
     "SourceString": "Garou Highborn's Cloak",
     "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
@@ -341,7 +331,6 @@
     "SourceString": "Goblin War Banner",
     "PersistenceID": "24_UV0P2zlDAbcy48UOCkA",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_HighWarGodBanner'",
       "PersistenceID": "24_UV0P2zlDAbcy48UOCkA",
@@ -352,7 +341,6 @@
     "SourceString": "Adventurers Cape",
     "PersistenceID": "Nzf1rECKpuLNgX25lvNy5g",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_Adventurer'",
       "PersistenceID": "Nzf1rECKpuLNgX25lvNy5g",
@@ -363,7 +351,6 @@
     "SourceString": "Mining Skillcape",
     "PersistenceID": "vAmVoEtvZ7KlXWqbZuDJsA",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "vAmVoEtvZ7KlXWqbZuDJsA",
@@ -374,7 +361,6 @@
     "SourceString": "Runecrafting Skillcape",
     "PersistenceID": "X4RwpkGAyra6l7Kjfo_GWw",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "X4RwpkGAyra6l7Kjfo_GWw",
@@ -385,7 +371,6 @@
     "SourceString": "Stormtouched Cape",
     "PersistenceID": "KMexB0_3MwL8rEC0g0xd5g",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_Stormtouched'",
       "PersistenceID": "KMexB0_3MwL8rEC0g0xd5g",
@@ -396,7 +381,6 @@
     "SourceString": "Tattered Cape",
     "PersistenceID": "6L-fvUa58zMKWFabeAk0tg",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_TatteredCape'",
       "PersistenceID": "6L-fvUa58zMKWFabeAk0tg",
@@ -407,7 +391,6 @@
     "SourceString": "Whispering Cape",
     "PersistenceID": "qANQGE8VKB_lSNeI-PHxGQ",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_Whispering'",
       "PersistenceID": "qANQGE8VKB_lSNeI-PHxGQ",
@@ -418,7 +401,6 @@
     "SourceString": "Woodcutting Skillcape",
     "PersistenceID": "Gl4nHkekntdefgi0GdbAZw",
     "Weight": 5.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
       "PersistenceID": "Gl4nHkekntdefgi0GdbAZw",
@@ -2646,7 +2628,6 @@
     "SourceString": "Abyssal Spine",
     "PersistenceID": "GHBDsEGyH5DJpTqa7xIC1w",
     "Weight": 0.5,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Resource_Abyssal_Spine'",
       "PersistenceID": "GHBDsEGyH5DJpTqa7xIC1w",
@@ -2668,7 +2649,6 @@
     "SourceString": "Dire Wolf Hide",
     "PersistenceID": "wqBk-EZDxcfPtH6VdUnlNg",
     "Weight": 0.5,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Dire_Wolf_Skin'",
       "PersistenceID": "wqBk-EZDxcfPtH6VdUnlNg",
@@ -2855,7 +2835,6 @@
     "SourceString": "Velgar's Head",
     "PersistenceID": "3zU6qknpEF2Wg6STSQMHtQ",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Velgar_Head'",
       "PersistenceID": "3zU6qknpEF2Wg6STSQMHtQ",
@@ -2866,7 +2845,6 @@
     "SourceString": "Dragon Visage",
     "PersistenceID": "9D2K3U9jvwZc85KkIZjAFQ",
     "Weight": 0.5,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Dragon_Visage'",
       "PersistenceID": "9D2K3U9jvwZc85KkIZjAFQ",
@@ -3031,7 +3009,6 @@
     "SourceString": "Crystal Seed",
     "PersistenceID": "JYGJbEV-DrOkn5SNR5sYKQ",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Crystal_Seed'",
       "PersistenceID": "JYGJbEV-DrOkn5SNR5sYKQ",
@@ -3042,7 +3019,6 @@
     "SourceString": "Tainted King's Token",
     "PersistenceID": "Vnjun0JNiDTYsG21iTb2gg",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Kings_Token'",
       "PersistenceID": "Vnjun0JNiDTYsG21iTb2gg",
@@ -3053,7 +3029,6 @@
     "SourceString": "Purified King's Token",
     "PersistenceID": "GjJEvUEeLJDK4rC8sNKYXA",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Kings_Token'",
       "PersistenceID": "GjJEvUEeLJDK4rC8sNKYXA",
@@ -3064,7 +3039,6 @@
     "SourceString": "Ghostspeak Amulet",
     "PersistenceID": "EZGayEl5U_ZQaZSscJGZQg",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Ghostspeak_Amulet'",
       "PersistenceID": "EZGayEl5U_ZQaZSscJGZQg",
@@ -3075,7 +3049,6 @@
     "SourceString": "Bandosian Amulet",
     "PersistenceID": "1Gu7vU51PMnkRBu2wqlHHQ",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Bandosian_Amulet_1'",
       "PersistenceID": "1Gu7vU51PMnkRBu2wqlHHQ",
@@ -3086,7 +3059,6 @@
     "SourceString": "Druid's Bandosian Amulet",
     "PersistenceID": "EacnEk2SKqmy6zGxnrhpRw",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Bandosian_Amulet_2'",
       "PersistenceID": "EacnEk2SKqmy6zGxnrhpRw",
@@ -3097,7 +3069,6 @@
     "SourceString": "Mysterious Orb [Uncharged]",
     "PersistenceID": "kLFhCEF-uIEs1hW6ioa7pA",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Mysterious_Orb'",
       "PersistenceID": "kLFhCEF-uIEs1hW6ioa7pA",
@@ -3108,7 +3079,6 @@
     "SourceString": "Mysterious Orb [Charged]",
     "PersistenceID": "bjjJ1kCgKXKvMPyJC4YQkQ",
     "Weight": 0.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Charged_Mysterious_Orb'",
       "PersistenceID": "bjjJ1kCgKXKvMPyJC4YQkQ",
@@ -3240,7 +3210,6 @@
     "SourceString": "Challenge Horn",
     "PersistenceID": "45qRbkCgpbXsxAuswso8Aw",
     "Weight": 4.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Challenge_Horn_01'",
       "PersistenceID": "45qRbkCgpbXsxAuswso8Aw",
@@ -3251,7 +3220,6 @@
     "SourceString": "Challenge Horn Mouthpiece",
     "PersistenceID": "ZbaFNUQBjcQFiBmssky-4g",
     "Weight": 4.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Masterworks_Horn_Mouthpiece'",
       "PersistenceID": "ZbaFNUQBjcQFiBmssky-4g",
@@ -3262,7 +3230,6 @@
     "SourceString": "Granite Maul Blueprints",
     "PersistenceID": "FzZcg0K5osblXSuuSNACQA",
     "Weight": 4.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Scroll'",
       "PersistenceID": "FzZcg0K5osblXSuuSNACQA",
@@ -3273,7 +3240,6 @@
     "SourceString": "Imbued Granite Maul Head",
     "PersistenceID": "TRQBZ0gufJDy-HWCsXysNw",
     "Weight": 4.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Imbued_Maul_Head'",
       "PersistenceID": "TRQBZ0gufJDy-HWCsXysNw",
@@ -3284,7 +3250,6 @@
     "SourceString": "Imbued Leather Wrappings",
     "PersistenceID": "1kW1mUsw1eKjlOiBCMXcUg",
     "Weight": 4.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Imbued_Leather_Wrappings'",
       "PersistenceID": "1kW1mUsw1eKjlOiBCMXcUg",
@@ -3295,7 +3260,6 @@
     "SourceString": "Ornate Maul Handle",
     "PersistenceID": "RFgA4kE-5E71wiGpmjWkKA",
     "Weight": 4.0,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Ornate_Maul_Handle'",
       "PersistenceID": "RFgA4kE-5E71wiGpmjWkKA",
@@ -3548,7 +3512,6 @@
     "SourceString": "Dragon Tooth",
     "PersistenceID": "qelCL0cKP9oFmYaJkKg6wA",
     "Weight": 1.5,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Resource_Dragon_Tooth'",
       "PersistenceID": "qelCL0cKP9oFmYaJkKg6wA",
@@ -3658,7 +3621,6 @@
     "SourceString": "Bloodwood Sap",
     "PersistenceID": "OeUUZEKiGnt36CqCIkqJgw",
     "Weight": 0.1,
-    "MaxStackSize": 20,
     "Icon": {
       "ObjectName": "Texture2D'T_Icon_Bloodwood_Sap'",
       "PersistenceID": "OeUUZEKiGnt36CqCIkqJgw",
