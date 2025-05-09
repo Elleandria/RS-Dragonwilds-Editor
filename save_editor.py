@@ -2,8 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 from tkinter import ttk
 import json
-import random
-import string
+import uuid
 import os
 import sys
 from collections import OrderedDict
@@ -30,11 +29,7 @@ class AutocompleteCombobox(ttk.Combobox):
         self.configure(values=filtered)
 
 def resource_path(relative_path):
-    try:
-        base_path = sys._MEIPASS
-    except AttributeError:
-        base_path = os.path.abspath(".")
-    return os.path.join(base_path, relative_path)
+    return os.path.join(getattr(sys, '_MEIPASS', os.getcwd()), relative_path)
 
 ASSETS_DIR = resource_path("assets")
 DATA_DIR = resource_path("data")
@@ -42,8 +37,7 @@ DATA_DIR = resource_path("data")
 injection_queue = []
 
 def generate_guid():
-    chars = string.ascii_letters + string.digits + "-_"
-    return ''.join(random.choice(chars) for _ in range(22))
+    return uuid.uuid4().hex[:22]
 
 def load_json():
     default_path = os.path.expandvars(r"%LOCALAPPDATA%\\RSDragonwilds\\Saved\\SaveCharacters")
