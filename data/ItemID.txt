@@ -5,10 +5,7 @@
     "Weight": 0.1,
     "PowerLevel": 2,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Arrows_Bone'",
-      "PersistenceID": "2vSF4Se4MkWaZG0pHYcb8g",
-      "IconFile": "T_Arrows_Bone.png"
+    "IconFile": "T_Arrows_Bone.png"
     }
   },
   {
@@ -17,10 +14,7 @@
     "Weight": 0.1,
     "PowerLevel": 3,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Arrows_Bronze'",
-      "PersistenceID": "XvhWN00lBZJCFb6r0p-tMg",
-      "IconFile": "T_Icon_Arrows_Bronze.png"
+    "IconFile": "T_Icon_Arrows_Bronze.png"
     }
   },
   {
@@ -29,9 +23,6 @@
     "Weight": 0.1,
     "PowerLevel": 4,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Arrows_Iron_'",
-      "PersistenceID": "1-eS15sb9UW_8kRzIMyV6g",
       "IconFile": "T_Icon_Arrows_Iron_.png"
     }
   },
@@ -41,9 +32,6 @@
     "Weight": 0.1,
     "PowerLevel": 1,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Arrows_Stone'",
-      "PersistenceID": "vmEIW09ztuDtLmGpyzQBbQ",
       "IconFile": "T_Icon_Arrows_Stone.png"
     }
   },
@@ -52,9 +40,6 @@
     "PersistenceID": "v1ZsjAYc-EC084k4NAV-rA",
     "Weight": 0.1,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Arrows_Wood'",
-      "PersistenceID": "v1ZsjAYc-EC084k4NAV-rA",
       "IconFile": "T_Icon_Arrows_Wood.png"
     }
   },
@@ -65,9 +50,6 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Body_LightArmour_01'",
-      "PersistenceID": "FOjGigKnBkev9f-VWFFdYA",
       "IconFile": "T_Icon_M_MED_Body_LightArmour_01.png"
     }
   },
@@ -78,9 +60,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_DeerLeather_01_M_TopHalf_DeerLeather_01'",
-      "PersistenceID": "XT0Zft6J30iLvjVNxnzw6Q",
       "IconFile": "T_Icon_DeerLeather_01_M_TopHalf_DeerLeather_01.png"
     }
   },
@@ -91,9 +70,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Body_LinenRobe_01'",
-      "PersistenceID": "g9vfX7KsMkurrMZa7z1aPg",
       "IconFile": "T_Icon_M_MED_Body_LinenRobe_01.png"
     }
   },
@@ -104,9 +80,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_BODY_ReinforcedArmour_01'",
-      "PersistenceID": "mkaB7UQN1fBbSkGNVTVRZw",
       "IconFile": "T_Icon_M_MED_BODY_ReinforcedArmour_01.png"
     }
   },
@@ -117,9 +90,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_UpperHalf_BronzeArmour_01'",
-      "PersistenceID": "N2kAI3uQgki-eP0rIoHYhQ",
       "IconFile": "T_Icon_M_MED_UpperHalf_BronzeArmour_01.png"
     }
   },
@@ -130,9 +100,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_BODY_HardLeather_01'",
-      "PersistenceID": "h7tqvcgrDk2iGdD7TYwiSA",
       "IconFile": "T_Icon_M_MED_BODY_HardLeather_01.png"
     }
   },
@@ -143,9 +110,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Upperhalf_WizardRobe_01'",
-      "PersistenceID": "2-okKxsy7k-FRgP-vgQEQA",
       "IconFile": "T_Icon_M_MED_Upperhalf_WizardRobe_01.png"
     }
   },
@@ -156,9 +120,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Body_DarkMageRobes_01'",
-      "PersistenceID": "9QZ0eUU7xVxKhq-_nMoCcQ",
       "IconFile": "T_Icon_M_MED_Body_DarkMageRobes_01.png"
     }
   },
@@ -169,9 +130,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dragonkin_Dark_Mage_Robes'",
-      "PersistenceID": "rXtN2EZOq9NpnL-WyVpF8Q",
       "IconFile": "T_Icon_Dragonkin_Dark_Mage_Robes.png"
     }
   },
@@ -182,22 +140,15 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_F_MED_BODY_IronArmour_01'",
-      "PersistenceID": "CAtRgsni70SltXq4uzs6Yg",
       "IconFile": "T_Icon_F_MED_BODY_IronArmour_01.png"
     }
   },
   {
-    "SourceString": "Paladin's Platebody",
     "PersistenceID": "0LL6JE9-pi2e3VSDOwqqYw",
     "Weight": 10.0,
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Paladin_s_Chestplatel'",
-      "PersistenceID": "0LL6JE9-pi2e3VSDOwqqYw",
       "IconFile": "T_Icon_Paladin_s_Chestplatel.png"
     }
   },
@@ -208,9 +159,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_BODY_StuddedLeather_01'",
-      "PersistenceID": "eAqy2E05wXWCK4O5s2Dnwg",
       "IconFile": "T_Icon_M_MED_BODY_StuddedLeather_01.png"
     }
   },
@@ -221,9 +169,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Wild_Archer_s_Chest'",
-      "PersistenceID": "fr5LJkUvJRZ-DbqVbKaB4w",
       "IconFile": "T_Icon_Wild_Archer_s_Chest.png"
     }
   },
@@ -231,9 +176,6 @@
     "SourceString": "Dragonbane Cape",
     "PersistenceID": "1ReHrk6Keawr5E-eQ8WTCg",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Alpha_Cape'",
-      "PersistenceID": "1ReHrk6Keawr5E-eQ8WTCg",
       "IconFile": "T_Icon_Alpha_Cape.png"
     }
   },
@@ -241,9 +183,6 @@
     "SourceString": "Artisan Skillcape",
     "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
@@ -251,9 +190,6 @@
     "SourceString": "Attack Skillcape",
     "PersistenceID": "QB-cekR96jMiFVqZ4b-eZQ",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "QB-cekR96jMiFVqZ4b-eZQ",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
@@ -261,9 +197,6 @@
     "SourceString": "Bloodblight Cape",
     "PersistenceID": "emA_O0RntNNsrNuNVOTmow",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_Bloodblight'",
-      "PersistenceID": "emA_O0RntNNsrNuNVOTmow",
       "IconFile": "T_Icon_Cape_Bloodblight.png"
     }
   },
@@ -271,9 +204,6 @@
     "SourceString": "Bramblemead Cape",
     "PersistenceID": "4hYWzULKMjNsgOuwHL7UAA",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_Bramblemead'",
-      "PersistenceID": "4hYWzULKMjNsgOuwHL7UAA",
       "IconFile": "T_Icon_Cape_Bramblemead.png"
     }
   },
@@ -281,9 +211,6 @@
     "SourceString": "Construction Skillcape",
     "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
@@ -291,19 +218,12 @@
     "SourceString": "Cooking Skillcape",
     "PersistenceID": "CV3gFUxualOL_TK-w4iPtw",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "CV3gFUxualOL_TK-w4iPtw",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
   {
-    "SourceString": "Pioneer's Cape",
     "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Pioneer_Mantle'",
-      "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
       "IconFile": "T_Icon_Pioneer_Mantle.png"
     }
   },
@@ -311,19 +231,12 @@
     "SourceString": "Fractured Cape",
     "PersistenceID": "71LhGUmAvrlALY6KcS8W3Q",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_Fractured'",
-      "PersistenceID": "71LhGUmAvrlALY6KcS8W3Q",
       "IconFile": "T_Icon_Cape_Fractured.png"
     }
   },
   {
-    "SourceString": "Garou Highborn's Cloak",
     "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
@@ -331,9 +244,6 @@
     "SourceString": "Goblin War Banner",
     "PersistenceID": "24_UV0P2zlDAbcy48UOCkA",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_HighWarGodBanner'",
-      "PersistenceID": "24_UV0P2zlDAbcy48UOCkA",
       "IconFile": "T_Icon_Cape_HighWarGodBanner.png"
     }
   },
@@ -341,9 +251,6 @@
     "SourceString": "Adventurers Cape",
     "PersistenceID": "Nzf1rECKpuLNgX25lvNy5g",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_Adventurer'",
-      "PersistenceID": "Nzf1rECKpuLNgX25lvNy5g",
       "IconFile": "T_Icon_Cape_Adventurer.png"
     }
   },
@@ -351,9 +258,6 @@
     "SourceString": "Mining Skillcape",
     "PersistenceID": "vAmVoEtvZ7KlXWqbZuDJsA",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "vAmVoEtvZ7KlXWqbZuDJsA",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
@@ -361,9 +265,6 @@
     "SourceString": "Runecrafting Skillcape",
     "PersistenceID": "X4RwpkGAyra6l7Kjfo_GWw",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "X4RwpkGAyra6l7Kjfo_GWw",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
@@ -371,9 +272,6 @@
     "SourceString": "Stormtouched Cape",
     "PersistenceID": "KMexB0_3MwL8rEC0g0xd5g",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_Stormtouched'",
-      "PersistenceID": "KMexB0_3MwL8rEC0g0xd5g",
       "IconFile": "T_Icon_Cape_Stormtouched.png"
     }
   },
@@ -381,9 +279,6 @@
     "SourceString": "Tattered Cape",
     "PersistenceID": "6L-fvUa58zMKWFabeAk0tg",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_TatteredCape'",
-      "PersistenceID": "6L-fvUa58zMKWFabeAk0tg",
       "IconFile": "T_Icon_Cape_TatteredCape.png"
     }
   },
@@ -391,9 +286,6 @@
     "SourceString": "Whispering Cape",
     "PersistenceID": "qANQGE8VKB_lSNeI-PHxGQ",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_Whispering'",
-      "PersistenceID": "qANQGE8VKB_lSNeI-PHxGQ",
       "IconFile": "T_Icon_Cape_Whispering.png"
     }
   },
@@ -401,47 +293,32 @@
     "SourceString": "Woodcutting Skillcape",
     "PersistenceID": "Gl4nHkekntdefgi0GdbAZw",
     "Weight": 5.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Cape_RoyalThaneCloak'",
-      "PersistenceID": "Gl4nHkekntdefgi0GdbAZw",
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
     }
   },
   {
-    "SourceString": "Bag Of Noggin'",
     "PersistenceID": "U3WG60uJFgZl-BWJIj6_Iw",
     "Weight": 2.0,
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Bag_o__Noggin'",
-      "PersistenceID": "U3WG60uJFgZl-BWJIj6_Iw",
       "IconFile": "T_Icon_Bag_o__Noggin.png"
     }
   },
   {
-    "SourceString": "Chef's Hat",
     "PersistenceID": "SMdFlkruGF9Xveyh1Lz0lw",
     "Weight": 2.0,
     "PowerLevel": 1,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Chef_Hat_01'",
-      "PersistenceID": "SMdFlkruGF9Xveyh1Lz0lw",
       "IconFile": "T_Icon_Chef_Hat_01.png"
     }
   },
   {
-    "SourceString": "Pioneer's Scarf",
     "PersistenceID": "TNwe-UTLT1bxEPKBM9GnAQ",
     "Weight": 1.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Pioneer_Scarf'",
-      "PersistenceID": "TNwe-UTLT1bxEPKBM9GnAQ",
       "IconFile": "T_Icon_Pioneer_Scarf.png"
     }
   },
@@ -452,9 +329,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_HEAD_MED_DeerLather_01'",
-      "PersistenceID": "-mOez0ZysUa2kkuZQY4s0w",
       "IconFile": "T_Icon_M_MED_HEAD_MED_DeerLather_01.png"
     }
   },
@@ -465,9 +339,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_Head_LinenRobe_01'",
-      "PersistenceID": "h3G7NqBW-0i6TrNRlBD6Sg",
       "IconFile": "T_Icon_M_Head_LinenRobe_01.png"
     }
   },
@@ -478,9 +349,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_HEAD_ReinforcedArmour_01'",
-      "PersistenceID": "YvIen0_ZFiR1Kn-5ucQrDA",
       "IconFile": "T_Icon_M_MED_HEAD_ReinforcedArmour_01.png"
     }
   },
@@ -491,9 +359,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_Head_BronzeArmour_01'",
-      "PersistenceID": "lhrErX7MF0q9XlhdPdhCrA",
       "IconFile": "T_Icon_M_Head_BronzeArmour_01.png"
     }
   },
@@ -504,9 +369,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_HEAD_HardLeather_01'",
-      "PersistenceID": "wLzThnOQEUaw90mBnn8QTw",
       "IconFile": "T_Icon_M_MED_HEAD_HardLeather_01.png"
     }
   },
@@ -517,9 +379,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Head_WizardRobe_01'",
-      "PersistenceID": "h0jHf-hTx0KeGyukdCnN4Q",
       "IconFile": "T_Icon_M_MED_Head_WizardRobe_01.png"
     }
   },
@@ -530,9 +389,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Head_DarkMageRobes_01'",
-      "PersistenceID": "M3Y6KEIGYrsnS8-j5ewQxw",
       "IconFile": "T_Icon_M_MED_Head_DarkMageRobes_01.png"
     }
   },
@@ -543,9 +399,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dragonkin_Dark_Mage_Hood'",
-      "PersistenceID": "GutTdkwskIsX75i6-CilJA",
       "IconFile": "T_Icon_Dragonkin_Dark_Mage_Hood.png"
     }
   },
@@ -556,22 +409,15 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_F_MED_HEAD_IronArmour_01'",
-      "PersistenceID": "PxHJuE6PgUKY-zugyUXSUQ",
       "IconFile": "T_Icon_F_MED_HEAD_IronArmour_01.png"
     }
   },
   {
-    "SourceString": "Paladin's Helm",
     "PersistenceID": "5PEcXkJHZY9PDqKb9Skqww",
     "Weight": 5.0,
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Paladin_s_Helmet'",
-      "PersistenceID": "5PEcXkJHZY9PDqKb9Skqww",
       "IconFile": "T_Icon_Paladin_s_Helmet.png"
     }
   },
@@ -582,9 +428,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_HEAD_StuddedLeather_01'",
-      "PersistenceID": "YVvQRk9Uv1a4PceWi3985w",
       "IconFile": "T_Icon_M_MED_HEAD_StuddedLeather_01.png"
     }
   },
@@ -595,9 +438,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Wild_Archer_s_Coif'",
-      "PersistenceID": "gIoZIUIT52OUDkGFuzSBlw",
       "IconFile": "T_Icon_Wild_Archer_s_Coif.png"
     }
   },
@@ -608,9 +448,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Longbor_Hunter_Stag'",
-      "PersistenceID": "s7HI6EmvRXRq7T69epFpxg",
       "IconFile": "T_Icon_Longbor_Hunter_Stag.png"
     }
   },
@@ -621,9 +458,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_HuntersLongbow_OakWood_2H_01'",
-      "PersistenceID": "uKPqYU1A71NI-XK-ZqStTg",
       "IconFile": "T_Icon_HuntersLongbow_OakWood_2H_01.png"
     }
   },
@@ -634,22 +468,15 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_HuntersLongbow_OakWood_2H_01'",
-      "PersistenceID": "UBB8W0_AMoWP5yKf7M9KRw",
       "IconFile": "T_Icon_HuntersLongbow_OakWood_2H_01.png"
     }
   },
   {
-    "SourceString": "Adventurer's Longbow",
     "PersistenceID": "VVq58NyN8EKOk3WUg2130Q",
     "Weight": 4.0,
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Longbow_OakWood_2H_01'",
-      "PersistenceID": "VVq58NyN8EKOk3WUg2130Q",
       "IconFile": "T_Icon_Longbow_OakWood_2H_01.png"
     }
   },
@@ -660,9 +487,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_HuntersShortbow_OakWood_2H_01'",
-      "PersistenceID": "_oShik-jE3kWgsG82AEuNQ",
       "IconFile": "T_Icon_HuntersShortbow_OakWood_2H_01.png"
     }
   },
@@ -673,22 +497,15 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Shortbow_OakWood_2H_01'",
-      "PersistenceID": "g7aQPfflM0q63qyJZyWI8w",
       "IconFile": "T_Icon_Shortbow_OakWood_2H_01.png"
     }
   },
   {
-    "SourceString": "Wild Scout's Shortbow",
     "PersistenceID": "NqTlRkd7Zw4BE9GM_mDbtw",
     "Weight": 5.0,
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Shortbow_Wild_Scout'",
-      "PersistenceID": "NqTlRkd7Zw4BE9GM_mDbtw",
       "IconFile": "T_Icon_Shortbow_Wild_Scout.png"
     }
   },
@@ -699,9 +516,6 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Shortbow_AshWood_2H_01'",
-      "PersistenceID": "ilFiZ9GcsUC5EOSxOrE74w",
       "IconFile": "T_Icon_Shortbow_AshWood_2H_01.png"
     }
   },
@@ -712,9 +526,6 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dagger_Bone_1H_01'",
-      "PersistenceID": "Euv3-bBtDUmx110jaD1g1Q",
       "IconFile": "T_Icon_Dagger_Bone_1H_01.png"
     }
   },
@@ -725,9 +536,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dagger_Bronze_1H_01'",
-      "PersistenceID": "G4zoMkig_jVt9RSGpbYarg",
       "IconFile": "T_Icon_Dagger_Bronze_1H_01.png"
     }
   },
@@ -738,9 +546,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dagger_Dragonbone'",
-      "PersistenceID": "4bMdm0gvxNqxKSaQjGtFmQ",
       "IconFile": "T_Icon_Dagger_Dragonbone.png"
     }
   },
@@ -751,9 +556,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dagger_Iron_1H_01'",
-      "PersistenceID": "NmzyVLMIY0SYZfOAPICeKg",
       "IconFile": "T_Icon_Dagger_Iron_1H_01.png"
     }
   },
@@ -764,9 +566,6 @@
     "PowerLevel": 1,
     "BaseDurability": 700,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dagger_Stone_1H_01'",
-      "PersistenceID": "f5pdM9IkUU2dZp0okjecuA",
       "IconFile": "T_Icon_Dagger_Stone_1H_01.png"
     }
   },
@@ -777,22 +576,15 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Greataxe_Iron_2H_01'",
-      "PersistenceID": "d-s3s5ciWkSi_Q4p-XaMoA",
       "IconFile": "T_Icon_Greataxe_Iron_2H_01.png"
     }
   },
   {
-    "SourceString": "Thane's Authority",
     "PersistenceID": "ARf7DUYPa_AlyLOOsnTIYw",
     "Weight": 8.0,
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Greataxe_Thane_s_Authority'",
-      "PersistenceID": "ARf7DUYPa_AlyLOOsnTIYw",
       "IconFile": "T_Icon_Greataxe_Thane_s_Authority.png"
     }
   },
@@ -803,9 +595,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_GreatSword_Bronze_2H_01'",
-      "PersistenceID": "PSWEV0JzVwxsalWCFqPbOw",
       "IconFile": "T_Icon_GreatSword_Bronze_2H_01.png"
     }
   },
@@ -816,9 +605,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_GreatSword_Iron_2H_01'",
-      "PersistenceID": "kpJmEG1D10ylMOFHGfJQrA",
       "IconFile": "T_Icon_GreatSword_Iron_2H_01.png"
     }
   },
@@ -829,9 +615,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Warhammer_Bronze_2H_01'",
-      "PersistenceID": "jUhzF0avp4bpepKSoz7H2A",
       "IconFile": "T_Icon_Warhammer_Bronze_2H_01.png"
     }
   },
@@ -842,9 +625,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Warhammer_Iron_2H_01'",
-      "PersistenceID": "o9zzhev_YEulDWv5D8vI3A",
       "IconFile": "T_Icon_Warhammer_Iron_2H_01.png"
     }
   },
@@ -855,9 +635,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1800,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_LoggingAxe_Refined_2H_01'",
-      "PersistenceID": "VBJg2XpMOEGTd6Qk9lB4Kw",
       "IconFile": "T_Icon_LoggingAxe_Refined_2H_01.png"
     }
   },
@@ -868,9 +645,6 @@
     "PowerLevel": 4,
     "BaseDurability": 2400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_LoggingAxe_Iron_2H_01'",
-      "PersistenceID": "YvBVZjzx_UKN9z1wIPzlrA",
       "IconFile": "T_Icon_LoggingAxe_Iron_2H_01.png"
     }
   },
@@ -881,9 +655,6 @@
     "PowerLevel": 1,
     "BaseDurability": 1200,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_LoggingAxe_Crude_2H_01'",
-      "PersistenceID": "0NWm0hwPokOAgp0ux3ambA",
       "IconFile": "T_Icon_LoggingAxe_Crude_2H_01.png"
     }
   },
@@ -894,9 +665,6 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Club_Bone_1H'",
-      "PersistenceID": "djtTEkaTg3ARdre_xsNXCg",
       "IconFile": "T_Icon_Club_Bone_1H.png"
     }
   },
@@ -907,9 +675,6 @@
     "PowerLevel": 1,
     "BaseDurability": 700,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Club_Stone_1H_01'",
-      "PersistenceID": "IJILMByu-kCq_0feZkzKBw",
       "IconFile": "T_Icon_Club_Stone_1H_01.png"
     }
   },
@@ -920,9 +685,6 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Swingslash'",
-      "PersistenceID": "OJSTGEEY6uNu4beRiM4Qvw",
       "IconFile": "T_Icon_Swingslash.png"
     }
   },
@@ -933,9 +695,6 @@
     "PowerLevel": 1,
     "BaseDurability": 275,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Club_Wood_1H_01'",
-      "PersistenceID": "vcTl56joPka7MwbZ3Mvxbg",
       "IconFile": "T_Icon_Club_Wood_1H_01.png"
     }
   },
@@ -946,9 +705,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Mace_Bronze_1H'",
-      "PersistenceID": "lJqTrE_r-nkdhwyoPhfsAA",
       "IconFile": "T_Icon_Mace_Bronze_1H.png"
     }
   },
@@ -959,9 +715,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Mace_Iron_1H_01'",
-      "PersistenceID": "hThLR2Lk6kODfRRmAs4YBQ",
       "IconFile": "T_Icon_Mace_Iron_1H_01.png"
     }
   },
@@ -972,9 +725,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Club_Skull_Splitter'",
-      "PersistenceID": "XWOefkcc3bliVpWrsPMokg",
       "IconFile": "T_Icon_Club_Skull_Splitter.png"
     }
   },
@@ -985,9 +735,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1350,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Pickaxe_Bone_2H_01'",
-      "PersistenceID": "Xs6AJ0up43qfLeG1fRqk4g",
       "IconFile": "T_Icon_Pickaxe_Bone_2H_01.png"
     }
   },
@@ -998,9 +745,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1800,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Pickaxe_Bronze_2H_01'",
-      "PersistenceID": "V-CGfkBdlbxvc-6TkU-K_A",
       "IconFile": "T_Icon_Pickaxe_Bronze_2H_01.png"
     }
   },
@@ -1011,9 +755,6 @@
     "PowerLevel": 4,
     "BaseDurability": 2100,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Pickaxe_Iron_2H_01'",
-      "PersistenceID": "VfaynRGcAkammV5YUusfbA",
       "IconFile": "T_Icon_Pickaxe_Iron_2H_01.png"
     }
   },
@@ -1024,9 +765,6 @@
     "PowerLevel": 1,
     "BaseDurability": 1200,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Pickaxe_Stone_2H_01'",
-      "PersistenceID": "BcoOLIbLs0SLeM3EhJJXSw",
       "IconFile": "T_Icon_Pickaxe_Stone_2H_01.png"
     }
   },
@@ -1037,9 +775,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Shield_AntiDragon'",
-      "PersistenceID": "BNb1F0xxIE_NlYq3ypX6LA",
       "IconFile": "T_Icon_Shield_AntiDragon.png"
     }
   },
@@ -1050,9 +785,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Shield_Poison_Dragonfire'",
-      "PersistenceID": "RyuOEkWEWdGcvQqo2dPOgA",
       "IconFile": "T_Icon_Shield_Poison_Dragonfire.png"
     }
   },
@@ -1063,9 +795,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Kite_Bronze_1H_01'",
-      "PersistenceID": "z1aZS0oEXuZ69Xe2iJ1A0A",
       "IconFile": "T_Icon_Kite_Bronze_1H_01.png"
     }
   },
@@ -1076,9 +805,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Kite_Iron_1H_01'",
-      "PersistenceID": "tkzekFdbDkCd-7MwOjfbnQ",
       "IconFile": "T_Icon_Kite_Iron_1H_01.png"
     }
   },
@@ -1089,9 +815,6 @@
     "PowerLevel": 2,
     "BaseDurability": 900,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Kite_Leather_1H_01'",
-      "PersistenceID": "xPzvUUSCo45hlMKe0e53vw",
       "IconFile": "T_Icon_Kite_Leather_1H_01.png"
     }
   },
@@ -1102,9 +825,6 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Kite_Wood_1H_01'",
-      "PersistenceID": "XiatxUToDUaswQb3Xrz6NQ",
       "IconFile": "T_Icon_Kite_Wood_1H_01.png"
     }
   },
@@ -1115,9 +835,6 @@
     "PowerLevel": 2,
     "BaseDurability": 900,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Battlestaff_Ash_2H_01'",
-      "PersistenceID": "924KFU8kvGNESi-zN0doDw",
       "IconFile": "T_Icon_Battlestaff_Ash_2H_01.png"
     }
   },
@@ -1128,9 +845,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_BattleStaff_MindspikeStaff_2H_01'",
-      "PersistenceID": "yvkI8EKmmaD8zT-a7IVqOA",
       "IconFile": "T_Icon_BattleStaff_MindspikeStaff_2H_01.png"
     }
   },
@@ -1141,9 +855,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1100,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Staff_Draconic'",
-      "PersistenceID": "ALn1jUyxkFwgIHmHAGkoxg",
       "IconFile": "T_Icon_Staff_Draconic.png"
     }
   },
@@ -1154,9 +865,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Staff_Grieving_Moon'",
-      "PersistenceID": "hS_GuEyi70Xf932m1rq7PA",
       "IconFile": "T_Icon_Staff_Grieving_Moon.png"
     }
   },
@@ -1167,217 +875,166 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Battlestaff_Oak_2H_01'",
-      "PersistenceID": "8ivfA0axvgaP1smick68pw",
       "IconFile": "T_Icon_Battlestaff_Oak_2H_01.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T1 Bleeding Dagger",
     "PersistenceID": "mXFVTke_27MjRnGxbcyATw",
     "Weight": 3.0,
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Stone'",
-      "PersistenceID": "mXFVTke_27MjRnGxbcyATw",
       "IconFile": "T_Dagger_Stone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T2 Bleeding Dagger",
     "PersistenceID": "AQ-JQEAJEyOWJKuGTq7KCQ",
     "Weight": 2.5,
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bone'",
-      "PersistenceID": "AQ-JQEAJEyOWJKuGTq7KCQ",
       "IconFile": "T_Dagger_Bone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T3 Bleeding Dagger",
     "PersistenceID": "jWfoPkWonpdDzBWYUQ1qPg",
     "Weight": 3.5,
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bronze'",
-      "PersistenceID": "jWfoPkWonpdDzBWYUQ1qPg",
       "IconFile": "T_Dagger_Bronze.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T4 Bleeding Dagger",
     "PersistenceID": "-ahw20RwuJqFDsKcOrryNQ",
     "Weight": 3.5,
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Iron'",
-      "PersistenceID": "-ahw20RwuJqFDsKcOrryNQ",
       "IconFile": "T_Dagger_Iron.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T1 Burning Dagger",
     "PersistenceID": "P4DqJ03JPXW9Uf-z9vf9cA",
     "Weight": 3.0,
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Stone'",
-      "PersistenceID": "P4DqJ03JPXW9Uf-z9vf9cA",
       "IconFile": "T_Dagger_Stone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T2 Burning Dagger",
     "PersistenceID": "GO-fJEIf4N7Y0EeG5D0YSw",
     "Weight": 2.5,
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bone'",
-      "PersistenceID": "GO-fJEIf4N7Y0EeG5D0YSw",
       "IconFile": "T_Dagger_Bone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T3 Burning Dagger",
     "PersistenceID": "Z4zEt0wViBus7gSH4qejYg",
     "Weight": 3.5,
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bronze'",
-      "PersistenceID": "Z4zEt0wViBus7gSH4qejYg",
       "IconFile": "T_Dagger_Bronze.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T4 Burning Dagger",
     "PersistenceID": "CN1GVEgi8t_uRs-yFmH_FQ",
     "Weight": 3.5,
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Iron'",
-      "PersistenceID": "CN1GVEgi8t_uRs-yFmH_FQ",
       "IconFile": "T_Dagger_Iron.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T1 Poison Dagger",
     "PersistenceID": "wKLbQE45kY_FG3CqMpInFw",
     "Weight": 3.0,
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Stone'",
-      "PersistenceID": "wKLbQE45kY_FG3CqMpInFw",
       "IconFile": "T_Dagger_Stone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T2 Poison Dagger",
     "PersistenceID": "UW6yfU2tUde27I2aZB9JHA",
     "Weight": 2.5,
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bone'",
-      "PersistenceID": "UW6yfU2tUde27I2aZB9JHA",
       "IconFile": "T_Dagger_Bone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T3 Poison Dagger",
     "PersistenceID": "NA76rEFl7Di8f5aFj_L3SA",
     "Weight": 3.5,
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bronze'",
-      "PersistenceID": "NA76rEFl7Di8f5aFj_L3SA",
       "IconFile": "T_Dagger_Bronze.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T4 Poison Dagger",
     "PersistenceID": "3LufGUl5SzS2zV2Vj7QCPg",
     "Weight": 3.5,
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Iron'",
-      "PersistenceID": "3LufGUl5SzS2zV2Vj7QCPg",
       "IconFile": "T_Dagger_Iron.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T1 Shock Dagger",
     "PersistenceID": "pmx4j0E3SP9r4gmY38QrYA",
     "Weight": 3.0,
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Stone'",
-      "PersistenceID": "pmx4j0E3SP9r4gmY38QrYA",
       "IconFile": "T_Dagger_Stone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T2 Shock Dagger",
     "PersistenceID": "dKeIN0KKjY2p7NqOFSISdg",
     "Weight": 2.5,
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bone'",
-      "PersistenceID": "dKeIN0KKjY2p7NqOFSISdg",
       "IconFile": "T_Dagger_Bone.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T3 Shock Dagger",
     "PersistenceID": "PPvgBkmqKmyUwki-TAtqig",
     "Weight": 3.5,
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Bronze'",
-      "PersistenceID": "PPvgBkmqKmyUwki-TAtqig",
       "IconFile": "T_Dagger_Bronze.png"
     }
   },
   {
-    "SourceString": "",
+    "SourceString": "T4 Shock Dagger",
     "PersistenceID": "5JCljkf2DRoxnQCI94gFJQ",
     "Weight": 3.5,
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Dagger_Iron'",
-      "PersistenceID": "5JCljkf2DRoxnQCI94gFJQ",
       "IconFile": "T_Dagger_Iron.png"
     }
   },
@@ -1388,22 +1045,15 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Sword_Bronze_1H_01'",
-      "PersistenceID": "eqrPvUI8qhvjnbGRoIxNug",
       "IconFile": "T_Icon_Sword_Bronze_1H_01.png"
     }
   },
   {
-    "SourceString": "Chieftan's Blade",
     "PersistenceID": "lHKVrkMlSsZx5lKVZRH63Q",
     "Weight": 5.5,
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Sword_Chieftain_s_Blade'",
-      "PersistenceID": "lHKVrkMlSsZx5lKVZRH63Q",
       "IconFile": "T_Icon_Sword_Chieftain_s_Blade.png"
     }
   },
@@ -1414,9 +1064,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Sword_Iron_1H_01'",
-      "PersistenceID": "gFA3V8-Y5UGLPAtJKYNnTw",
       "IconFile": "T_Icon_Sword_Iron_1H_01.png"
     }
   },
@@ -1427,9 +1074,6 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Sword_Wooden_Training'",
-      "PersistenceID": "fLnzAkbRMzh0TW-4zuBoLQ",
       "IconFile": "T_Icon_Sword_Wooden_Training.png"
     }
   },
@@ -1440,9 +1084,6 @@
     "PowerLevel": 1,
     "BaseDurability": 1800,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Tool_Torch'",
-      "PersistenceID": "lWGe1hSwiECAS9xhsMzJfg",
       "IconFile": "T_Icon_Tool_Torch.png"
     }
   },
@@ -1453,9 +1094,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Abyssal_Whip'",
-      "PersistenceID": "P3_Aq0nAXu5dlFuBNGgyaw",
       "IconFile": "T_Icon_Abyssal_Whip.png"
     }
   },
@@ -1466,9 +1104,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Warhammer_Granite_Maul'",
-      "PersistenceID": "yte2PUYaqeYZH02J_aviEg",
       "IconFile": "T_Icon_Warhammer_Granite_Maul.png"
     }
   },
@@ -1479,9 +1114,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Shortbow_Crystal_2H_01'",
-      "PersistenceID": "FK7SwEPmPfVFztSXScvKQA",
       "IconFile": "T_Icon_Shortbow_Crystal_2H_01.png"
     }
   },
@@ -1492,9 +1124,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Staff_of_Light'",
-      "PersistenceID": "Hcq0C0UjvN3n8q-X2uqa7w",
       "IconFile": "T_Icon_Staff_of_Light.png"
     }
   },
@@ -1504,9 +1133,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "D-8qyESiEHxIW06KSbukYA",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1516,9 +1142,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "DX96203Z9RTWnbiguX1FYg",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1528,9 +1151,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "Hrp4NUzvyg8dz-Gm1-z2DQ",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1540,9 +1160,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "jPpy8kY7hqir8kO87fzzZg",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1552,9 +1169,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "y2L4-k3UhpNxZWuWioqAJA",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1564,9 +1178,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "sIdr0kbfd2Vh-lG1MqtFaw",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1576,9 +1187,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "yBO0NEdxMTVnKD2dMKXIPA",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1588,9 +1196,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "mETsn0hsQKyU-h-s1LRQ6g",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1600,9 +1205,6 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "zMkPh01oP5052KmW1ctXeA",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
@@ -1612,22 +1214,15 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_icon_Resource_Ring_Of_Pursuit'",
-      "PersistenceID": "ZdUEQUlgodd2eLeZKYrHFA",
       "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
     }
   },
   {
-    "SourceString": "Adventurer's Leggings",
     "PersistenceID": "ewbJ37oeTkypaVfRgI_GPg",
     "Weight": 4.0,
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Legs_LightArmour_01'",
-      "PersistenceID": "ewbJ37oeTkypaVfRgI_GPg",
       "IconFile": "T_Icon_M_MED_Legs_LightArmour_01.png"
     }
   },
@@ -1638,9 +1233,6 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Leggings_of_Lightness'",
-      "PersistenceID": "E_DXg0sq6DA6beKuzxv_rA",
       "IconFile": "T_Icon_Leggings_of_Lightness.png"
     }
   },
@@ -1651,9 +1243,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_F_MED_Lowerhalf_DeerLeather_01'",
-      "PersistenceID": "Q6DUGmTWNkG5S1Ki_5Nz1w",
       "IconFile": "T_Icon_F_MED_Lowerhalf_DeerLeather_01.png"
     }
   },
@@ -1664,9 +1253,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Legs_LinenRobe_01'",
-      "PersistenceID": "AIZLP8mwfEij7hwWUOr-aQ",
       "IconFile": "T_Icon_M_MED_Legs_LinenRobe_01.png"
     }
   },
@@ -1677,9 +1263,6 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_LEGS_ReinforcedArmour_01'",
-      "PersistenceID": "GZuI4kHd7c-hpqWq5Nbdpw",
       "IconFile": "T_Icon_M_MED_LEGS_ReinforcedArmour_01.png"
     }
   },
@@ -1690,9 +1273,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_LowerHalf_BronzeArmour_01'",
-      "PersistenceID": "wQPcKK1XV0iF1_CADXUwEw",
       "IconFile": "T_Icon_M_MED_LowerHalf_BronzeArmour_01.png"
     }
   },
@@ -1703,9 +1283,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_LEGS_HardLeather_01'",
-      "PersistenceID": "7Ajx5nOVUUW6l8nU2YiLOA",
       "IconFile": "T_Icon_M_MED_LEGS_HardLeather_01.png"
     }
   },
@@ -1716,9 +1293,6 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Lowerhalf_WizardRobe_01'",
-      "PersistenceID": "FlnNkilo_EyfB0gbqf32AQ",
       "IconFile": "T_Icon_M_MED_Lowerhalf_WizardRobe_01.png"
     }
   },
@@ -1729,9 +1303,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_Legs_DarkMageRobes_01'",
-      "PersistenceID": "hWGilEcAZgtX2JWejH4ncA",
       "IconFile": "T_Icon_M_MED_Legs_DarkMageRobes_01.png"
     }
   },
@@ -1742,9 +1313,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dragonkin_Dark_Mage_Leggings'",
-      "PersistenceID": "uDBybUNuv5UipiSXb8BG-A",
       "IconFile": "T_Icon_Dragonkin_Dark_Mage_Leggings.png"
     }
   },
@@ -1755,9 +1323,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_F_MED_LEGS_IronArmour_01'",
-      "PersistenceID": "lWABtugu90SEqpE70Gf8ew",
       "IconFile": "T_Icon_F_MED_LEGS_IronArmour_01.png"
     }
   },
@@ -1768,9 +1333,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Paladin_s_Platelegs'",
-      "PersistenceID": "mkSObERGptKuVly00uIfTQ",
       "IconFile": "T_Icon_Paladin_s_Platelegs.png"
     }
   },
@@ -1781,9 +1343,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_M_MED_LEGS_StuddedLeather_01'",
-      "PersistenceID": "bZAEoUISHmuQXu6HlIFIyQ",
       "IconFile": "T_Icon_M_MED_LEGS_StuddedLeather_01.png"
     }
   },
@@ -1794,9 +1353,6 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Wild_Archer_s_Chaps'",
-      "PersistenceID": "l6qWl0-xTPdrhweMah3eTg",
       "IconFile": "T_Icon_Wild_Archer_s_Chaps.png"
     }
   },
@@ -1805,9 +1361,6 @@
     "PersistenceID": "TitYzk-CcDdnIrGzbUT7hg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dwellberry_Crunchies'",
-      "PersistenceID": "TitYzk-CcDdnIrGzbUT7hg",
       "IconFile": "T_Icon_Dwellberry_Crunchies.png"
     }
   },
@@ -1816,9 +1369,6 @@
     "PersistenceID": "KC5DW0XcQiikzPymCSlVZQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fortifying_Crunchies'",
-      "PersistenceID": "KC5DW0XcQiikzPymCSlVZQ",
       "IconFile": "T_Icon_Fortifying_Crunchies.png"
     }
   },
@@ -1827,9 +1377,6 @@
     "PersistenceID": "_gj4SUtBZXfY6Vm7zFko9w",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Hearty_Crunchies'",
-      "PersistenceID": "_gj4SUtBZXfY6Vm7zFko9w",
       "IconFile": "T_Icon_Hearty_Crunchies.png"
     }
   },
@@ -1838,9 +1385,6 @@
     "PersistenceID": "ipb2Z0dRiFIUUhqLsIqIxA",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Redberry_Crunchies'",
-      "PersistenceID": "ipb2Z0dRiFIUUhqLsIqIxA",
       "IconFile": "T_Icon_Redberry_Crunchies.png"
     }
   },
@@ -1849,9 +1393,6 @@
     "PersistenceID": "P9AaJUmKwNjQ_lWuDOGRTQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Varrock_Hotpot'",
-      "PersistenceID": "P9AaJUmKwNjQ_lWuDOGRTQ",
       "IconFile": "T_Icon_Resource_Varrock_Hotpot.png"
     }
   },
@@ -1860,9 +1401,6 @@
     "PersistenceID": "KxVJGk9-oaTznrKsVgwMPQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dwellberry_Glazed_Flank'",
-      "PersistenceID": "KxVJGk9-oaTznrKsVgwMPQ",
       "IconFile": "T_Icon_Dwellberry_Glazed_Flank.png"
     }
   },
@@ -1871,9 +1409,6 @@
     "PersistenceID": "Fy-bB0PP2zL0eQ6MBRBfrg",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dwellberry_Glazed_Roast_Meat'",
-      "PersistenceID": "Fy-bB0PP2zL0eQ6MBRBfrg",
       "IconFile": "T_Icon_Dwellberry_Glazed_Roast_Meat.png"
     }
   },
@@ -1882,9 +1417,6 @@
     "PersistenceID": "kP1gFUp7vT74QYWp9gwnNg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Redberry_Glazed_Flank'",
-      "PersistenceID": "kP1gFUp7vT74QYWp9gwnNg",
       "IconFile": "T_Icon_Redberry_Glazed_Flank.png"
     }
   },
@@ -1893,9 +1425,6 @@
     "PersistenceID": "h_Jzr26f5kiw_PRKFEkHrA",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Redberry_Glazed_Roast_Meat'",
-      "PersistenceID": "h_Jzr26f5kiw_PRKFEkHrA",
       "IconFile": "T_Icon_Redberry_Glazed_Roast_Meat.png"
     }
   },
@@ -1904,9 +1433,6 @@
     "PersistenceID": "_1F2mkEqVqGFC06z4Uw0Jw",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Mixed_Grill'",
-      "PersistenceID": "_1F2mkEqVqGFC06z4Uw0Jw",
       "IconFile": "T_Icon_Mixed_Grill.png"
     }
   },
@@ -1915,9 +1441,6 @@
     "PersistenceID": "HjRGr0FDXpD-d-65HZbdXA",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Mixed_Platter'",
-      "PersistenceID": "HjRGr0FDXpD-d-65HZbdXA",
       "IconFile": "T_Icon_Mixed_Platter.png"
     }
   },
@@ -1926,9 +1449,6 @@
     "PersistenceID": "ftNa7ksUxtKfXxixt-o_8w",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Grilled_Mushrooms'",
-      "PersistenceID": "ftNa7ksUxtKfXxixt-o_8w",
       "IconFile": "T_Icon_Grilled_Mushrooms.png"
     }
   },
@@ -1937,9 +1457,6 @@
     "PersistenceID": "O9t9Kknjb4lXvNKsNl7Vrg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fortifying_Soup'",
-      "PersistenceID": "O9t9Kknjb4lXvNKsNl7Vrg",
       "IconFile": "T_Icon_Fortifying_Soup.png"
     }
   },
@@ -1948,9 +1465,6 @@
     "PersistenceID": "j3p4M0t12J8IVHeC1bN4yg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Hearty_Soup'",
-      "PersistenceID": "j3p4M0t12J8IVHeC1bN4yg",
       "IconFile": "T_Icon_Hearty_Soup.png"
     }
   },
@@ -1959,9 +1473,6 @@
     "PersistenceID": "j36nJ0b9Xat20KicKMGzHw",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fortifying_Hearty_Soup'",
-      "PersistenceID": "j36nJ0b9Xat20KicKMGzHw",
       "IconFile": "T_Icon_Fortifying_Hearty_Soup.png"
     }
   },
@@ -1970,9 +1481,6 @@
     "PersistenceID": "lUXT6k3qLQtJa4CdnnJw5g",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Meat_Stew'",
-      "PersistenceID": "lUXT6k3qLQtJa4CdnnJw5g",
       "IconFile": "T_Icon_Resource_Meat_Stew.png"
     }
   },
@@ -1981,9 +1489,6 @@
     "PersistenceID": "Xq3aqE2osbcagCKBy8A_kg",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fortifying_Stew'",
-      "PersistenceID": "Xq3aqE2osbcagCKBy8A_kg",
       "IconFile": "T_Icon_Fortifying_Stew.png"
     }
   },
@@ -1992,9 +1497,6 @@
     "PersistenceID": "SNCcLEdRbF7GAwSkvob6NQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Hearty_Stew'",
-      "PersistenceID": "SNCcLEdRbF7GAwSkvob6NQ",
       "IconFile": "T_Icon_Hearty_Stew.png"
     }
   },
@@ -2003,9 +1505,6 @@
     "PersistenceID": "uYBo5UuEdMMdOyicMA9ikQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Meat_Stew'",
-      "PersistenceID": "uYBo5UuEdMMdOyicMA9ikQ",
       "IconFile": "T_Icon_Meat_Stew.png"
     }
   },
@@ -2014,9 +1513,6 @@
     "PersistenceID": "-jEah0znNr-2UVmbHK-Hqg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dwellberry_Infusion'",
-      "PersistenceID": "-jEah0znNr-2UVmbHK-Hqg",
       "IconFile": "T_Icon_Dwellberry_Infusion.png"
     }
   },
@@ -2025,9 +1521,6 @@
     "PersistenceID": "BHyv-U4eeKvSxeqdh5UswQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Redberry_Infusion'",
-      "PersistenceID": "BHyv-U4eeKvSxeqdh5UswQ",
       "IconFile": "T_Icon_Redberry_Infusion.png"
     }
   },
@@ -2036,9 +1529,6 @@
     "PersistenceID": "igveHUWYg2AeXe69EwW1PA",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Predators_Infusion'",
-      "PersistenceID": "igveHUWYg2AeXe69EwW1PA",
       "IconFile": "T_Icon_Predators_Infusion.png"
     }
   },
@@ -2047,9 +1537,6 @@
     "PersistenceID": "cZ6va0BSo6_5Dg2Pi23lUQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Wild_Reflex_Infusion'",
-      "PersistenceID": "cZ6va0BSo6_5Dg2Pi23lUQ",
       "IconFile": "T_Icon_Wild_Reflex_Infusion.png"
     }
   },
@@ -2058,9 +1545,6 @@
     "PersistenceID": "PZdR5E2sYqyUe-2JgBsCfA",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fleet_Footed_Infusion'",
-      "PersistenceID": "PZdR5E2sYqyUe-2JgBsCfA",
       "IconFile": "T_Icon_Fleet_Footed_Infusion.png"
     }
   },
@@ -2069,9 +1553,6 @@
     "PersistenceID": "sHsduqfNRkWma9kGQQ8u-w",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Food_Cake'",
-      "PersistenceID": "sHsduqfNRkWma9kGQQ8u-w",
       "IconFile": "T_Food_Cake.png"
     }
   },
@@ -2080,9 +1561,6 @@
     "PersistenceID": "hKYyX0vQ_pgLRAi2ugGK3w",
     "Weight": 1.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Clean_Water'",
-      "PersistenceID": "hKYyX0vQ_pgLRAi2ugGK3w",
       "IconFile": "T_Icon_Clean_Water.png"
     }
   },
@@ -2091,9 +1569,6 @@
     "PersistenceID": "xii8Q0dRJsnevvKv1g2bNQ",
     "Weight": 1.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dirty_Water'",
-      "PersistenceID": "xii8Q0dRJsnevvKv1g2bNQ",
       "IconFile": "T_Icon_Dirty_Water.png"
     }
   },
@@ -2102,9 +1577,6 @@
     "PersistenceID": "TODWPUpA_YR0EnaqhMstcQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Food_Cabbage'",
-      "PersistenceID": "TODWPUpA_YR0EnaqhMstcQ",
       "IconFile": "T_Food_Cabbage.png"
     }
   },
@@ -2113,9 +1585,6 @@
     "PersistenceID": "5AYjnUqlwTP9f12w5x2rlQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Iconic_Kebab'",
-      "PersistenceID": "5AYjnUqlwTP9f12w5x2rlQ",
       "IconFile": "T_Icon_Iconic_Kebab.png"
     }
   },
@@ -2124,9 +1593,6 @@
     "PersistenceID": "Ub1yCE7dcEADMJKZcOHMMQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Iconic_Pie_Wild'",
-      "PersistenceID": "Ub1yCE7dcEADMJKZcOHMMQ",
       "IconFile": "T_Icon_Iconic_Pie_Wild.png"
     }
   },
@@ -2135,9 +1601,6 @@
     "PersistenceID": "QfPOk0c4rF6PIUqOxt0ytg",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Iconic_Pizza_Meat'",
-      "PersistenceID": "QfPOk0c4rF6PIUqOxt0ytg",
       "IconFile": "T_Icon_Iconic_Pizza_Meat.png"
     }
   },
@@ -2146,9 +1609,6 @@
     "PersistenceID": "NeMd5ktRmFW1ZWqnCwsxKA",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icons_Journal_Recipes_Resources_Seared_Game_Steak'",
-      "PersistenceID": "NeMd5ktRmFW1ZWqnCwsxKA",
       "IconFile": "T_Icons_Journal_Recipes_Resources_Seared_Game_Steak.png"
     }
   },
@@ -2157,9 +1617,6 @@
     "PersistenceID": "DQdI2EZLlP0EJB2C6_R28w",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fried_Cabbage'",
-      "PersistenceID": "DQdI2EZLlP0EJB2C6_R28w",
       "IconFile": "T_Icon_Fried_Cabbage.png"
     }
   },
@@ -2168,9 +1625,6 @@
     "PersistenceID": "gC-ZukCFUhIWbCyJIkj3LQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Seared_Farm_Meat'",
-      "PersistenceID": "gC-ZukCFUhIWbCyJIkj3LQ",
       "IconFile": "T_Icon_Resource_Seared_Farm_Meat.png"
     }
   },
@@ -2179,9 +1633,6 @@
     "PersistenceID": "QpxVI0bu8fcLkpuM7HrEaw",
     "Weight": 0.6,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dried_Dwellberries'",
-      "PersistenceID": "QpxVI0bu8fcLkpuM7HrEaw",
       "IconFile": "T_Icon_Dried_Dwellberries.png"
     }
   },
@@ -2190,9 +1641,6 @@
     "PersistenceID": "sGZHV0IIuJLCDIyGNNBMbA",
     "Weight": 0.6,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dried_Redberries'",
-      "PersistenceID": "sGZHV0IIuJLCDIyGNNBMbA",
       "IconFile": "T_Icon_Dried_Redberries.png"
     }
   },
@@ -2201,9 +1649,6 @@
     "PersistenceID": "eCBq3UiiNADih26zDQBTVQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dwellberries'",
-      "PersistenceID": "eCBq3UiiNADih26zDQBTVQ",
       "IconFile": "T_Icon_Dwellberries.png"
     }
   },
@@ -2212,9 +1657,6 @@
     "PersistenceID": "FPYmOkCqcOpLYpaP1DKYjA",
     "Weight": 0.8,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Peach'",
-      "PersistenceID": "FPYmOkCqcOpLYpaP1DKYjA",
       "IconFile": "T_Icon_Resource_Peach.png"
     }
   },
@@ -2223,9 +1665,6 @@
     "PersistenceID": "GHxAwJ8gNkSe3vxloWof2A",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Redberries'",
-      "PersistenceID": "GHxAwJ8gNkSe3vxloWof2A",
       "IconFile": "T_Icon_Redberries.png"
     }
   },
@@ -2234,9 +1673,6 @@
     "PersistenceID": "TBfPmUBQqV_F0pCG34_XkQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Cooked_bird_meat'",
-      "PersistenceID": "TBfPmUBQqV_F0pCG34_XkQ",
       "IconFile": "T_Icon_Resource_Cooked_bird_meat.png"
     }
   },
@@ -2245,9 +1681,6 @@
     "PersistenceID": "pqhdt0z6D2sMGRWhCf5mkQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Juciey_Brisket'",
-      "PersistenceID": "pqhdt0z6D2sMGRWhCf5mkQ",
       "IconFile": "T_Icon_Resource_Juciey_Brisket.png"
     }
   },
@@ -2256,9 +1689,6 @@
     "PersistenceID": "0aufkk55nHU1TlSAXZ0o3g",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Beastly_Sausage'",
-      "PersistenceID": "0aufkk55nHU1TlSAXZ0o3g",
       "IconFile": "T_Icon_Resource_Beastly_Sausage.png"
     }
   },
@@ -2267,9 +1697,6 @@
     "PersistenceID": "yEEiukHPM7htB4WeWEXeWg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fried_Onions'",
-      "PersistenceID": "yEEiukHPM7htB4WeWEXeWg",
       "IconFile": "T_Icon_Fried_Onions.png"
     }
   },
@@ -2278,9 +1705,6 @@
     "PersistenceID": "wgV3TEOkcYod4tGRdutHqg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Baked_Potato'",
-      "PersistenceID": "wgV3TEOkcYod4tGRdutHqg",
       "IconFile": "T_Icon_Resource_Baked_Potato.png"
     }
   },
@@ -2289,9 +1713,6 @@
     "PersistenceID": "CPT7I01jfIBmhyCQLJH31A",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Clay_Potion'",
-      "PersistenceID": "CPT7I01jfIBmhyCQLJH31A",
       "IconFile": "T_Icon_Weak_Clay_Potion.png"
     }
   },
@@ -2300,9 +1721,6 @@
     "PersistenceID": "Gl810k3TcUSB866zC50I2g",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Yellow_Potion'",
-      "PersistenceID": "Gl810k3TcUSB866zC50I2g",
       "IconFile": "T_Icon_Weak_Yellow_Potion.png"
     }
   },
@@ -2311,9 +1729,6 @@
     "PersistenceID": "m4bFA0UwQOecAhah3hNtSA",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Blue_Potion'",
-      "PersistenceID": "m4bFA0UwQOecAhah3hNtSA",
       "IconFile": "T_Icon_Weak_Blue_Potion.png"
     }
   },
@@ -2322,9 +1737,6 @@
     "PersistenceID": "K7le0EXS_TjIx-Wb9d9PZg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Orange_Potion'",
-      "PersistenceID": "K7le0EXS_TjIx-Wb9d9PZg",
       "IconFile": "T_Icon_Weak_Orange_Potion.png"
     }
   },
@@ -2333,9 +1745,6 @@
     "PersistenceID": "8gh6wkTHrHGgAMSeSMHNTw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Orange_Potion'",
-      "PersistenceID": "8gh6wkTHrHGgAMSeSMHNTw",
       "IconFile": "T_Icon_Weak_Orange_Potion.png"
     }
   },
@@ -2344,9 +1753,6 @@
     "PersistenceID": "0PXPSUTx8SdrxW6J26Ljfw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Purple_Potion'",
-      "PersistenceID": "0PXPSUTx8SdrxW6J26Ljfw",
       "IconFile": "T_Icon_Weak_Purple_Potion.png"
     }
   },
@@ -2355,9 +1761,6 @@
     "PersistenceID": "U3WBak2LNdsGzrajcaLGpw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Green_Potion'",
-      "PersistenceID": "U3WBak2LNdsGzrajcaLGpw",
       "IconFile": "T_Icon_Weak_Green_Potion.png"
     }
   },
@@ -2366,9 +1769,6 @@
     "PersistenceID": "ukjoSEXQTWbO6zSJvP5Z4Q",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Green_Potion'",
-      "PersistenceID": "ukjoSEXQTWbO6zSJvP5Z4Q",
       "IconFile": "T_Icon_Weak_Green_Potion.png"
     }
   },
@@ -2377,9 +1777,6 @@
     "PersistenceID": "qRA1TEfZJkMoanWXc_l-Sg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Red_Potion'",
-      "PersistenceID": "qRA1TEfZJkMoanWXc_l-Sg",
       "IconFile": "T_Icon_Weak_Red_Potion.png"
     }
   },
@@ -2388,9 +1785,6 @@
     "PersistenceID": "ni4XGUQ7iWkplmuumD7kkA",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Green_Potion'",
-      "PersistenceID": "ni4XGUQ7iWkplmuumD7kkA",
       "IconFile": "T_Icon_Weak_Green_Potion.png"
     }
   },
@@ -2399,9 +1793,6 @@
     "PersistenceID": "2aa7lkBxEmc_Zuy6bPQ-Ag",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Weak_Black_Potion'",
-      "PersistenceID": "2aa7lkBxEmc_Zuy6bPQ-Ag",
       "IconFile": "T_Icon_Weak_Black_Potion.png"
     }
   },
@@ -2410,9 +1801,6 @@
     "PersistenceID": "u9KamEevDhDoqA-Ypsobrw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Lesser_Blue_Potion'",
-      "PersistenceID": "u9KamEevDhDoqA-Ypsobrw",
       "IconFile": "T_Icon_Lesser_Blue_Potion.png"
     }
   },
@@ -2421,9 +1809,6 @@
     "PersistenceID": "-9Zin0B1C7GQgVKwKSR0hQ",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Lesser_Red_Potion'",
-      "PersistenceID": "-9Zin0B1C7GQgVKwKSR0hQ",
       "IconFile": "T_Icon_Lesser_Red_Potion.png"
     }
   },
@@ -2432,7 +1817,6 @@
     "PersistenceID": "GC6S207zgsmHryqJEdEQaQ",
     "Weight": 0.0,
     "MaxStackSize": 20,
-    "Icon": {
       "ObjectName": "",
       "PersistenceID": "GC6S207zgsmHryqJEdEQaQ"
     }
@@ -2442,9 +1826,6 @@
     "PersistenceID": "u-HYwkRw-MdC8hSQnS84Vw",
     "Weight": 0.0,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Wardstone_M'",
-      "PersistenceID": "u-HYwkRw-MdC8hSQnS84Vw",
       "IconFile": "T_Icon_Wardstone_M.png"
     }
   },
@@ -2453,9 +1834,6 @@
     "PersistenceID": "xAyLrEN_5B3KGXOjhpGzrg",
     "Weight": 0.0,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Wardstone_S'",
-      "PersistenceID": "xAyLrEN_5B3KGXOjhpGzrg",
       "IconFile": "T_Icon_Wardstone_S.png"
     }
   },
@@ -2464,9 +1842,6 @@
     "PersistenceID": "jnxM90O5-e7GHmKF9e0dhA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bird_Nest'",
-      "PersistenceID": "jnxM90O5-e7GHmKF9e0dhA",
       "IconFile": "T_Icon_Resource_Bird_Nest.png"
     }
   },
@@ -2475,9 +1850,6 @@
     "PersistenceID": "XII5rkqVhw9I3sWWZNKteA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Garou_Pack'",
-      "PersistenceID": "XII5rkqVhw9I3sWWZNKteA",
       "IconFile": "T_Icon_Resources_Garou_Pack.png"
     }
   },
@@ -2486,9 +1858,6 @@
     "PersistenceID": "zm9DtUc8ieNZpWe7ioL_KA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Goblin_Pack'",
-      "PersistenceID": "zm9DtUc8ieNZpWe7ioL_KA",
       "IconFile": "T_Icon_Resources_Goblin_Pack.png"
     }
   },
@@ -2497,9 +1866,6 @@
     "PersistenceID": "3wV1xUv5zBDHRiaAk2qv7w",
     "Weight": 5.0,
     "MaxStackSize": 5,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Whetstone'",
-      "PersistenceID": "3wV1xUv5zBDHRiaAk2qv7w",
       "IconFile": "T_Icon_Whetstone.png"
     }
   },
@@ -2508,9 +1874,6 @@
     "PersistenceID": "KlQuMkdkj3bNzr2LWvCBxw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Tome_of_the_Dragon_Slayer'",
-      "PersistenceID": "KlQuMkdkj3bNzr2LWvCBxw",
       "IconFile": "T_Icon_Tome_of_the_Dragon_Slayer.png"
     }
   },
@@ -2519,9 +1882,6 @@
     "PersistenceID": "llpKZU92JhzHdva7AC5vqw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Artisan'",
-      "PersistenceID": "llpKZU92JhzHdva7AC5vqw",
       "IconFile": "T_Icon_Skill_Tome_Artisan.png"
     }
   },
@@ -2530,9 +1890,6 @@
     "PersistenceID": "4z-8l0h5MJBHfpm2GOyiDw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Attack'",
-      "PersistenceID": "4z-8l0h5MJBHfpm2GOyiDw",
       "IconFile": "T_Icon_Skill_Tome_Attack.png"
     }
   },
@@ -2541,9 +1898,6 @@
     "PersistenceID": "xKjZUEBiIC72rFitwW4m6Q",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Construction'",
-      "PersistenceID": "xKjZUEBiIC72rFitwW4m6Q",
       "IconFile": "T_Icon_Skill_Tome_Construction.png"
     }
   },
@@ -2552,9 +1906,6 @@
     "PersistenceID": "yxFSIE8VtUQs4c6l7eM_cw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Cooking'",
-      "PersistenceID": "yxFSIE8VtUQs4c6l7eM_cw",
       "IconFile": "T_Icon_Skill_Tome_Cooking.png"
     }
   },
@@ -2563,9 +1914,6 @@
     "PersistenceID": "2cTzA0DMigYJPoSk3U-WKw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Magic'",
-      "PersistenceID": "2cTzA0DMigYJPoSk3U-WKw",
       "IconFile": "T_Icon_Skill_Tome_Magic.png"
     }
   },
@@ -2574,9 +1922,6 @@
     "PersistenceID": "NfrIoUsI1Obs-4KY7LuBkQ",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Mining'",
-      "PersistenceID": "NfrIoUsI1Obs-4KY7LuBkQ",
       "IconFile": "T_Icon_Skill_Tome_Mining.png"
     }
   },
@@ -2585,9 +1930,6 @@
     "PersistenceID": "44ZDU03461OXgqSqIMb2IA",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Ranged'",
-      "PersistenceID": "44ZDU03461OXgqSqIMb2IA",
       "IconFile": "T_Icon_Skill_Tome_Ranged.png"
     }
   },
@@ -2596,9 +1938,6 @@
     "PersistenceID": "U6OtnkxHtcHAIPy1kMGc8A",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Runecrafting'",
-      "PersistenceID": "U6OtnkxHtcHAIPy1kMGc8A",
       "IconFile": "T_Icon_Skill_Tome_Runecrafting.png"
     }
   },
@@ -2607,9 +1946,6 @@
     "PersistenceID": "1lnRvU1YsQeoDdyR_9s6Ug",
     "Weight": 0.0,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Skill_Tome_Woodcutting'",
-      "PersistenceID": "1lnRvU1YsQeoDdyR_9s6Ug",
       "IconFile": "T_Icon_Skill_Tome_Woodcutting.png"
     }
   },
@@ -2618,9 +1954,6 @@
     "PersistenceID": "Mw42KUu2HuXm3baIbHa_8g",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Abyssal_Ashes'",
-      "PersistenceID": "Mw42KUu2HuXm3baIbHa_8g",
       "IconFile": "T_Icon_Abyssal_Ashes.png"
     }
   },
@@ -2628,9 +1961,6 @@
     "SourceString": "Abyssal Spine",
     "PersistenceID": "GHBDsEGyH5DJpTqa7xIC1w",
     "Weight": 0.5,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Abyssal_Spine'",
-      "PersistenceID": "GHBDsEGyH5DJpTqa7xIC1w",
       "IconFile": "T_Icon_Resource_Abyssal_Spine.png"
     }
   },
@@ -2639,9 +1969,6 @@
     "PersistenceID": "3_luxedD0kyY_dd3UKYvEQ",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Adhesive'",
-      "PersistenceID": "3_luxedD0kyY_dd3UKYvEQ",
       "IconFile": "T_Icon_Adhesive.png"
     }
   },
@@ -2649,9 +1976,6 @@
     "SourceString": "Dire Wolf Hide",
     "PersistenceID": "wqBk-EZDxcfPtH6VdUnlNg",
     "Weight": 0.5,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dire_Wolf_Skin'",
-      "PersistenceID": "wqBk-EZDxcfPtH6VdUnlNg",
       "IconFile": "T_Icon_Dire_Wolf_Skin.png"
     }
   },
@@ -2660,9 +1984,6 @@
     "PersistenceID": "EnjZ-B1MLkuduCRe1oLNQw",
     "Weight": 0.9,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Animal_Bone'",
-      "PersistenceID": "EnjZ-B1MLkuduCRe1oLNQw",
       "IconFile": "T_Icon_Animal_Bone.png"
     }
   },
@@ -2671,9 +1992,6 @@
     "PersistenceID": "ND81bEI1UktxBZK6a1kPtg",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Animal_Hide'",
-      "PersistenceID": "ND81bEI1UktxBZK6a1kPtg",
       "IconFile": "T_Icon_Animal_Hide.png"
     }
   },
@@ -2682,9 +2000,6 @@
     "PersistenceID": "AEnD3ErsJVZ3V7WT1YdPQQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icons_Resource_Antlers'",
-      "PersistenceID": "AEnD3ErsJVZ3V7WT1YdPQQ",
       "IconFile": "T_Icons_Resource_Antlers.png"
     }
   },
@@ -2693,9 +2008,6 @@
     "PersistenceID": "ISwwk0SMdhURciK1Sr3i6Q",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Coarse_Animal_Fur'",
-      "PersistenceID": "ISwwk0SMdhURciK1Sr3i6Q",
       "IconFile": "T_Icon_Resource_Coarse_Animal_Fur.png"
     }
   },
@@ -2704,9 +2016,6 @@
     "PersistenceID": "EWuEEEhBQ59daI2TL5y9YQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Animal_Fang'",
-      "PersistenceID": "EWuEEEhBQ59daI2TL5y9YQ",
       "IconFile": "T_Icon_Animal_Fang.png"
     }
   },
@@ -2715,9 +2024,6 @@
     "PersistenceID": "v5MSO2Wz4ke5xOGvKC5GlQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Feathers'",
-      "PersistenceID": "v5MSO2Wz4ke5xOGvKC5GlQ",
       "IconFile": "T_Icon_Resource_Feathers.png"
     }
   },
@@ -2726,9 +2032,6 @@
     "PersistenceID": "E5lUJEc3VidsqDGPkYhl4A",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Large_Animal_Horn'",
-      "PersistenceID": "E5lUJEc3VidsqDGPkYhl4A",
       "IconFile": "T_Icon_Resources_Large_Animal_Horn.png"
     }
   },
@@ -2737,9 +2040,6 @@
     "PersistenceID": "tosPpUxp9FZgwdGvvXrcjw",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bestial_Meat'",
-      "PersistenceID": "tosPpUxp9FZgwdGvvXrcjw",
       "IconFile": "T_Icon_Resource_Bestial_Meat.png"
     }
   },
@@ -2748,9 +2048,6 @@
     "PersistenceID": "6VtTq32kQkyOk-E3Ly05-A",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Raw_bird_meat'",
-      "PersistenceID": "6VtTq32kQkyOk-E3Ly05-A",
       "IconFile": "T_Icon_Resource_Raw_bird_meat.png"
     }
   },
@@ -2759,9 +2056,6 @@
     "PersistenceID": "Ttc6u0zyAi-JMaOjrxwtNQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Raw_Farm_Meat'",
-      "PersistenceID": "Ttc6u0zyAi-JMaOjrxwtNQ",
       "IconFile": "T_Icon_Resource_Raw_Farm_Meat.png"
     }
   },
@@ -2770,9 +2064,6 @@
     "PersistenceID": "Ua7XqsiwjUio_H540eRegw",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Raw_Venison_01'",
-      "PersistenceID": "Ua7XqsiwjUio_H540eRegw",
       "IconFile": "T_Icon_Raw_Venison_01.png"
     }
   },
@@ -2781,9 +2072,6 @@
     "PersistenceID": "7MA-NkEejSNBooCvO4XI9w",
     "Weight": 0.1,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Monstrous_Fang'",
-      "PersistenceID": "7MA-NkEejSNBooCvO4XI9w",
       "IconFile": "T_Icon_Resource_Monstrous_Fang.png"
     }
   },
@@ -2792,9 +2080,6 @@
     "PersistenceID": "1k8-cj3JqEGeRgu1P7PK2g",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Raw_Stringy_Meat'",
-      "PersistenceID": "1k8-cj3JqEGeRgu1P7PK2g",
       "IconFile": "T_Icon_Resource_Raw_Stringy_Meat.png"
     }
   },
@@ -2803,9 +2088,6 @@
     "PersistenceID": "mZWtu9Ir9ECtl0a7cV7uJw",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fleece'",
-      "PersistenceID": "mZWtu9Ir9ECtl0a7cV7uJw",
       "IconFile": "T_Icon_Fleece.png"
     }
   },
@@ -2814,9 +2096,6 @@
     "PersistenceID": "ab53An3iPkyjTqnHyme-0A",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Animal_Hide_Scraps'",
-      "PersistenceID": "ab53An3iPkyjTqnHyme-0A",
       "IconFile": "T_Icon_Animal_Hide_Scraps.png"
     }
   },
@@ -2825,19 +2104,12 @@
     "PersistenceID": "_a30PUP3vGbK6omuRTvw2Q",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Soft_Animal_Fur'",
-      "PersistenceID": "_a30PUP3vGbK6omuRTvw2Q",
       "IconFile": "T_Icon_Resource_Soft_Animal_Fur.png"
     }
   },
   {
-    "SourceString": "Velgar's Head",
     "PersistenceID": "3zU6qknpEF2Wg6STSQMHtQ",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Velgar_Head'",
-      "PersistenceID": "3zU6qknpEF2Wg6STSQMHtQ",
       "IconFile": "T_Icon_Velgar_Head.png"
     }
   },
@@ -2845,9 +2117,6 @@
     "SourceString": "Dragon Visage",
     "PersistenceID": "9D2K3U9jvwZc85KkIZjAFQ",
     "Weight": 0.5,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dragon_Visage'",
-      "PersistenceID": "9D2K3U9jvwZc85KkIZjAFQ",
       "IconFile": "T_Icon_Dragon_Visage.png"
     }
   },
@@ -2856,9 +2125,6 @@
     "PersistenceID": "nHQY00bMhzQL3Iare7lYgg",
     "Weight": 0.5,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Gemstone_Emerald_01'",
-      "PersistenceID": "nHQY00bMhzQL3Iare7lYgg",
       "IconFile": "T_Icon_Gemstone_Emerald_01.png"
     }
   },
@@ -2867,9 +2133,6 @@
     "PersistenceID": "hzztKE-CsjtgVaWFJoTw2w",
     "Weight": 0.5,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Jade'",
-      "PersistenceID": "hzztKE-CsjtgVaWFJoTw2w",
       "IconFile": "T_Icon_Jade.png"
     }
   },
@@ -2878,9 +2141,6 @@
     "PersistenceID": "GAnIKkuMoUfiGC2wiSfmqg",
     "Weight": 0.5,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Opal'",
-      "PersistenceID": "GAnIKkuMoUfiGC2wiSfmqg",
       "IconFile": "T_Icon_Resource_Opal.png"
     }
   },
@@ -2889,9 +2149,6 @@
     "PersistenceID": "DY6MkEu_wT76ukyxwYr45g",
     "Weight": 0.5,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Red_Topaz'",
-      "PersistenceID": "DY6MkEu_wT76ukyxwYr45g",
       "IconFile": "T_Icon_Resource_Red_Topaz.png"
     }
   },
@@ -2900,9 +2157,6 @@
     "PersistenceID": "TvL1Ik7Vc-NHKlCx--22Cg",
     "Weight": 0.5,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Sapphire'",
-      "PersistenceID": "TvL1Ik7Vc-NHKlCx--22Cg",
       "IconFile": "T_Icon_Resource_Sapphire.png"
     }
   },
@@ -2911,9 +2165,6 @@
     "PersistenceID": "fliBkkBZfNJwhpej98Q2xA",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Vial'",
-      "PersistenceID": "fliBkkBZfNJwhpej98Q2xA",
       "IconFile": "T_Icon_Resources_Vial.png"
     }
   },
@@ -2922,9 +2173,6 @@
     "PersistenceID": "mJ4P8qzfy0Wg8OxrYc_NBA",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Harralander'",
-      "PersistenceID": "mJ4P8qzfy0Wg8OxrYc_NBA",
       "IconFile": "T_Icon_Resource_Harralander.png"
     }
   },
@@ -2933,9 +2181,6 @@
     "PersistenceID": "U3fAKU2mI0apYz-rc0qWcQ",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Marrentil'",
-      "PersistenceID": "U3fAKU2mI0apYz-rc0qWcQ",
       "IconFile": "T_Icon_Resource_Marrentil.png"
     }
   },
@@ -2944,9 +2189,6 @@
     "PersistenceID": "vxn3aEpxraaQXJi9Btd7Cw",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Poison_Plant_Bulb'",
-      "PersistenceID": "vxn3aEpxraaQXJi9Btd7Cw",
       "IconFile": "T_Icon_Resources_Poison_Plant_Bulb.png"
     }
   },
@@ -2955,9 +2197,6 @@
     "PersistenceID": "6lzGokw1exVCJAmMfnUnkg",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Shocking_Plant_Bulb'",
-      "PersistenceID": "6lzGokw1exVCJAmMfnUnkg",
       "IconFile": "T_Icon_Resources_Shocking_Plant_Bulb.png"
     }
   },
@@ -2966,9 +2205,6 @@
     "PersistenceID": "VP4HYkC55gMC4pGC3c6L4w",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Snap_Dragon'",
-      "PersistenceID": "VP4HYkC55gMC4pGC3c6L4w",
       "IconFile": "T_Icon_Resource_Snap_Dragon.png"
     }
   },
@@ -2977,9 +2213,6 @@
     "PersistenceID": "61d3bkS0nDQWlVqHDt5OaQ",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Toadflax'",
-      "PersistenceID": "61d3bkS0nDQWlVqHDt5OaQ",
       "IconFile": "T_Icon_Resource_Toadflax.png"
     }
   },
@@ -2988,9 +2221,6 @@
     "PersistenceID": "dc0Cf0G0LytXhf6V-KtM2g",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Soda_Ash'",
-      "PersistenceID": "dc0Cf0G0LytXhf6V-KtM2g",
       "IconFile": "T_Icon_Resources_Soda_Ash.png"
     }
   },
@@ -2999,9 +2229,6 @@
     "PersistenceID": "zsimokwEIE-BaUmW949QtQ",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Swamp_Weed'",
-      "PersistenceID": "zsimokwEIE-BaUmW949QtQ",
       "IconFile": "T_Icon_Resource_Swamp_Weed.png"
     }
   },
@@ -3009,29 +2236,18 @@
     "SourceString": "Crystal Seed",
     "PersistenceID": "JYGJbEV-DrOkn5SNR5sYKQ",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Crystal_Seed'",
-      "PersistenceID": "JYGJbEV-DrOkn5SNR5sYKQ",
       "IconFile": "T_Icon_Crystal_Seed.png"
     }
   },
   {
-    "SourceString": "Tainted King's Token",
     "PersistenceID": "Vnjun0JNiDTYsG21iTb2gg",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Kings_Token'",
-      "PersistenceID": "Vnjun0JNiDTYsG21iTb2gg",
       "IconFile": "T_Icon_Kings_Token.png"
     }
   },
   {
-    "SourceString": "Purified King's Token",
     "PersistenceID": "GjJEvUEeLJDK4rC8sNKYXA",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Kings_Token'",
-      "PersistenceID": "GjJEvUEeLJDK4rC8sNKYXA",
       "IconFile": "T_Icon_Kings_Token.png"
     }
   },
@@ -3039,9 +2255,6 @@
     "SourceString": "Ghostspeak Amulet",
     "PersistenceID": "EZGayEl5U_ZQaZSscJGZQg",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Ghostspeak_Amulet'",
-      "PersistenceID": "EZGayEl5U_ZQaZSscJGZQg",
       "IconFile": "T_Icon_Ghostspeak_Amulet.png"
     }
   },
@@ -3049,19 +2262,12 @@
     "SourceString": "Bandosian Amulet",
     "PersistenceID": "1Gu7vU51PMnkRBu2wqlHHQ",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Bandosian_Amulet_1'",
-      "PersistenceID": "1Gu7vU51PMnkRBu2wqlHHQ",
       "IconFile": "T_Icon_Bandosian_Amulet_1.png"
     }
   },
   {
-    "SourceString": "Druid's Bandosian Amulet",
     "PersistenceID": "EacnEk2SKqmy6zGxnrhpRw",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Bandosian_Amulet_2'",
-      "PersistenceID": "EacnEk2SKqmy6zGxnrhpRw",
       "IconFile": "T_Icon_Bandosian_Amulet_2.png"
     }
   },
@@ -3069,9 +2275,6 @@
     "SourceString": "Mysterious Orb [Uncharged]",
     "PersistenceID": "kLFhCEF-uIEs1hW6ioa7pA",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Mysterious_Orb'",
-      "PersistenceID": "kLFhCEF-uIEs1hW6ioa7pA",
       "IconFile": "T_Icon_Mysterious_Orb.png"
     }
   },
@@ -3079,9 +2282,6 @@
     "SourceString": "Mysterious Orb [Charged]",
     "PersistenceID": "bjjJ1kCgKXKvMPyJC4YQkQ",
     "Weight": 0.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Charged_Mysterious_Orb'",
-      "PersistenceID": "bjjJ1kCgKXKvMPyJC4YQkQ",
       "IconFile": "T_Icon_Charged_Mysterious_Orb.png"
     }
   },
@@ -3090,9 +2290,6 @@
     "PersistenceID": "52QCB0uSNJD0UoC21lRJvA",
     "Weight": 50.0,
     "MaxStackSize": 10,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Vault_Core'",
-      "PersistenceID": "52QCB0uSNJD0UoC21lRJvA",
       "IconFile": "T_Icon_Resource_Vault_Core.png"
     }
   },
@@ -3101,9 +2298,6 @@
     "PersistenceID": "T8l7pktHUJoUuxi9mkrT7g",
     "Weight": 0.2,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Vault_Shard'",
-      "PersistenceID": "T8l7pktHUJoUuxi9mkrT7g",
       "IconFile": "T_Icon_Resource_Vault_Shard.png"
     }
   },
@@ -3112,9 +2306,6 @@
     "PersistenceID": "LURhZ0Q6FaLGzh-siBuT7g",
     "Weight": 0.2,
     "MaxStackSize": 5,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Anima_Wild_01'",
-      "PersistenceID": "LURhZ0Q6FaLGzh-siBuT7g",
       "IconFile": "T_Icon_Anima_Wild_01.png"
     }
   },
@@ -3123,9 +2314,6 @@
     "PersistenceID": "Dvo6TE2d7YNnoni8XbKYzw",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Air'",
-      "PersistenceID": "Dvo6TE2d7YNnoni8XbKYzw",
       "IconFile": "T_Icon_Rune_Air.png"
     }
   },
@@ -3134,9 +2322,6 @@
     "PersistenceID": "4wdYZE-FFMhS9Iia0ftWDg",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Astral'",
-      "PersistenceID": "4wdYZE-FFMhS9Iia0ftWDg",
       "IconFile": "T_Icon_Rune_Astral.png"
     }
   },
@@ -3145,9 +2330,6 @@
     "PersistenceID": "lCE7i3iXGUuHv7FphIOcXg",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Earth'",
-      "PersistenceID": "lCE7i3iXGUuHv7FphIOcXg",
       "IconFile": "T_Icon_Rune_Earth.png"
     }
   },
@@ -3156,9 +2338,6 @@
     "PersistenceID": "qOY004ZJaEaR8DmcDqB2KA",
     "Weight": 1.5,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Essence'",
-      "PersistenceID": "qOY004ZJaEaR8DmcDqB2KA",
       "IconFile": "T_Icon_Rune_Essence.png"
     }
   },
@@ -3167,9 +2346,6 @@
     "PersistenceID": "_QMgbMYhjU-9jAD_euFbyQ",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Fire'",
-      "PersistenceID": "_QMgbMYhjU-9jAD_euFbyQ",
       "IconFile": "T_Icon_Rune_Fire.png"
     }
   },
@@ -3178,9 +2354,6 @@
     "PersistenceID": "_c9JTkwKy8s88GWv586hbQ",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Law'",
-      "PersistenceID": "_c9JTkwKy8s88GWv586hbQ",
       "IconFile": "T_Icon_Rune_Law.png"
     }
   },
@@ -3189,9 +2362,6 @@
     "PersistenceID": "iKbF7k2XvufGqqyg5rK-vQ",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Nature'",
-      "PersistenceID": "iKbF7k2XvufGqqyg5rK-vQ",
       "IconFile": "T_Icon_Rune_Nature.png"
     }
   },
@@ -3200,9 +2370,6 @@
     "PersistenceID": "bbLdJRhwPEWt1ScENYRUCg",
     "Weight": 0.0,
     "MaxStackSize": 999,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Rune_Water'",
-      "PersistenceID": "bbLdJRhwPEWt1ScENYRUCg",
       "IconFile": "T_Icon_Rune_Water.png"
     }
   },
@@ -3210,9 +2377,6 @@
     "SourceString": "Challenge Horn",
     "PersistenceID": "45qRbkCgpbXsxAuswso8Aw",
     "Weight": 4.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Challenge_Horn_01'",
-      "PersistenceID": "45qRbkCgpbXsxAuswso8Aw",
       "IconFile": "T_Icon_Challenge_Horn_01.png"
     }
   },
@@ -3220,9 +2384,6 @@
     "SourceString": "Challenge Horn Mouthpiece",
     "PersistenceID": "ZbaFNUQBjcQFiBmssky-4g",
     "Weight": 4.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Masterworks_Horn_Mouthpiece'",
-      "PersistenceID": "ZbaFNUQBjcQFiBmssky-4g",
       "IconFile": "T_Masterworks_Horn_Mouthpiece.png"
     }
   },
@@ -3230,9 +2391,6 @@
     "SourceString": "Granite Maul Blueprints",
     "PersistenceID": "FzZcg0K5osblXSuuSNACQA",
     "Weight": 4.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Scroll'",
-      "PersistenceID": "FzZcg0K5osblXSuuSNACQA",
       "IconFile": "T_Icon_Scroll.png"
     }
   },
@@ -3240,9 +2398,6 @@
     "SourceString": "Imbued Granite Maul Head",
     "PersistenceID": "TRQBZ0gufJDy-HWCsXysNw",
     "Weight": 4.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Imbued_Maul_Head'",
-      "PersistenceID": "TRQBZ0gufJDy-HWCsXysNw",
       "IconFile": "T_Icon_Imbued_Maul_Head.png"
     }
   },
@@ -3250,9 +2405,6 @@
     "SourceString": "Imbued Leather Wrappings",
     "PersistenceID": "1kW1mUsw1eKjlOiBCMXcUg",
     "Weight": 4.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Imbued_Leather_Wrappings'",
-      "PersistenceID": "1kW1mUsw1eKjlOiBCMXcUg",
       "IconFile": "T_Icon_Imbued_Leather_Wrappings.png"
     }
   },
@@ -3260,9 +2412,6 @@
     "SourceString": "Ornate Maul Handle",
     "PersistenceID": "RFgA4kE-5E71wiGpmjWkKA",
     "Weight": 4.0,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Ornate_Maul_Handle'",
-      "PersistenceID": "RFgA4kE-5E71wiGpmjWkKA",
       "IconFile": "T_Icon_Ornate_Maul_Handle.png"
     }
   },
@@ -3271,9 +2420,6 @@
     "PersistenceID": "Y2Y48OMHukKIilN4srd7cA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bar_Bronze'",
-      "PersistenceID": "Y2Y48OMHukKIilN4srd7cA",
       "IconFile": "T_Icon_Resource_Bar_Bronze.png"
     }
   },
@@ -3282,9 +2428,6 @@
     "PersistenceID": "S7Kk_ZA9OEKZ8qwU9ciKCA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bar_Copper'",
-      "PersistenceID": "S7Kk_ZA9OEKZ8qwU9ciKCA",
       "IconFile": "T_Icon_Resource_Bar_Copper.png"
     }
   },
@@ -3293,9 +2436,6 @@
     "PersistenceID": "A8Lx3sZhHEeG4GXsl4ZLZw",
     "Weight": 4.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ore_Copper'",
-      "PersistenceID": "A8Lx3sZhHEeG4GXsl4ZLZw",
       "IconFile": "T_Icon_Resource_Ore_Copper.png"
     }
   },
@@ -3304,9 +2444,6 @@
     "PersistenceID": "9jFU2lh9l0qPbNTspGCBFA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bar_Gold'",
-      "PersistenceID": "9jFU2lh9l0qPbNTspGCBFA",
       "IconFile": "T_Icon_Resource_Bar_Gold.png"
     }
   },
@@ -3315,9 +2452,6 @@
     "PersistenceID": "D-BzgHFSHkyc53teVzmBNA",
     "Weight": 4.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ore_Gold'",
-      "PersistenceID": "D-BzgHFSHkyc53teVzmBNA",
       "IconFile": "T_Icon_Resource_Ore_Gold.png"
     }
   },
@@ -3326,9 +2460,6 @@
     "PersistenceID": "Ng6eFNNuiU-VdxSoZtI6kA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bar_Iron'",
-      "PersistenceID": "Ng6eFNNuiU-VdxSoZtI6kA",
       "IconFile": "T_Icon_Resource_Bar_Iron.png"
     }
   },
@@ -3337,9 +2468,6 @@
     "PersistenceID": "rTRm3cGOmUm1h1BMEYzTwA",
     "Weight": 4.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ore_Iron'",
-      "PersistenceID": "rTRm3cGOmUm1h1BMEYzTwA",
       "IconFile": "T_Icon_Resource_Ore_Iron.png"
     }
   },
@@ -3348,9 +2476,6 @@
     "PersistenceID": "gunABauXjk6khTFVIKifoA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bar_Silver'",
-      "PersistenceID": "gunABauXjk6khTFVIKifoA",
       "IconFile": "T_Icon_Resource_Bar_Silver.png"
     }
   },
@@ -3359,9 +2484,6 @@
     "PersistenceID": "xawyKY4sAkmNcNuINCw3ww",
     "Weight": 4.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ore_Silver'",
-      "PersistenceID": "xawyKY4sAkmNcNuINCw3ww",
       "IconFile": "T_Icon_Resource_Ore_Silver.png"
     }
   },
@@ -3370,9 +2492,6 @@
     "PersistenceID": "7fPUAi9DYkOSI5B_t79TVw",
     "Weight": 5.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Bar_Tin'",
-      "PersistenceID": "7fPUAi9DYkOSI5B_t79TVw",
       "IconFile": "T_Icon_Resource_Bar_Tin.png"
     }
   },
@@ -3381,9 +2500,6 @@
     "PersistenceID": "h1AqBkRETk-Fu_65W6BjVw",
     "Weight": 4.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ore_Tin'",
-      "PersistenceID": "h1AqBkRETk-Fu_65W6BjVw",
       "IconFile": "T_Icon_Resource_Ore_Tin.png"
     }
   },
@@ -3392,9 +2508,6 @@
     "PersistenceID": "x-SiNQenZEuF0yyTPkxhiw",
     "Weight": 1.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Charcoal'",
-      "PersistenceID": "x-SiNQenZEuF0yyTPkxhiw",
       "IconFile": "T_Icon_Resource_Charcoal.png"
     }
   },
@@ -3403,9 +2516,6 @@
     "PersistenceID": "Br8lTU45wX65kDigZkkgAg",
     "Weight": 1.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Charcoal'",
-      "PersistenceID": "Br8lTU45wX65kDigZkkgAg",
       "IconFile": "T_Icon_Resources_Charcoal.png"
     }
   },
@@ -3414,9 +2524,6 @@
     "PersistenceID": "LLV95ECQPPkItvyaC0gCzQ",
     "Weight": 1.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Clay'",
-      "PersistenceID": "LLV95ECQPPkItvyaC0gCzQ",
       "IconFile": "T_Icon_Resources_Clay.png"
     }
   },
@@ -3425,9 +2532,6 @@
     "PersistenceID": "C-Blv0bNk7v6BOWLA8Cw-g",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fired_Clay_Decoration'",
-      "PersistenceID": "C-Blv0bNk7v6BOWLA8Cw-g",
       "IconFile": "T_Icon_Fired_Clay_Decoration.png"
     }
   },
@@ -3436,9 +2540,6 @@
     "PersistenceID": "sycphkkEs4cXKKC721kS2w",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Unfired_Clay_Decoration'",
-      "PersistenceID": "sycphkkEs4cXKKC721kS2w",
       "IconFile": "T_Icon_Unfired_Clay_Decoration.png"
     }
   },
@@ -3447,9 +2548,6 @@
     "PersistenceID": "zEg0M0VWEp6-wLOhkvYJ8A",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Clay_Mould'",
-      "PersistenceID": "zEg0M0VWEp6-wLOhkvYJ8A",
       "IconFile": "T_Icon_Resource_Clay_Mould.png"
     }
   },
@@ -3458,9 +2556,6 @@
     "PersistenceID": "FXYVR0dXwrzmeo-goNwTHA",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Unfired_Clay_Mould'",
-      "PersistenceID": "FXYVR0dXwrzmeo-goNwTHA",
       "IconFile": "T_Icon_Resource_Unfired_Clay_Mould.png"
     }
   },
@@ -3469,9 +2564,6 @@
     "PersistenceID": "OQisqk4_V81aRxSm8IjMMg",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Clay_Slab'",
-      "PersistenceID": "OQisqk4_V81aRxSm8IjMMg",
       "IconFile": "T_Icon_Resource_Clay_Slab.png"
     }
   },
@@ -3480,9 +2572,6 @@
     "PersistenceID": "EK3fckHjkrHbATuNLd9Jhg",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Unfired_Clay_Slap'",
-      "PersistenceID": "EK3fckHjkrHbATuNLd9Jhg",
       "IconFile": "T_Icon_Resource_Unfired_Clay_Slap.png"
     }
   },
@@ -3491,9 +2580,6 @@
     "PersistenceID": "uTmDj0pXttZKU7qob4UvNw",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Fired_Clay_Vessel'",
-      "PersistenceID": "uTmDj0pXttZKU7qob4UvNw",
       "IconFile": "T_Icon_Fired_Clay_Vessel.png"
     }
   },
@@ -3502,9 +2588,6 @@
     "PersistenceID": "xhvDCkkTzJPbihGOZo3Hvw",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Unfired_Clay_Vessel'",
-      "PersistenceID": "xhvDCkkTzJPbihGOZo3Hvw",
       "IconFile": "T_Icon_Unfired_Clay_Vessel.png"
     }
   },
@@ -3512,9 +2595,6 @@
     "SourceString": "Dragon Tooth",
     "PersistenceID": "qelCL0cKP9oFmYaJkKg6wA",
     "Weight": 1.5,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Dragon_Tooth'",
-      "PersistenceID": "qelCL0cKP9oFmYaJkKg6wA",
       "IconFile": "T_Icon_Resource_Dragon_Tooth.png"
     }
   },
@@ -3523,9 +2603,6 @@
     "PersistenceID": "83Kcm0CpBOcYsk-eo-dfMw",
     "Weight": 1.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Granite'",
-      "PersistenceID": "83Kcm0CpBOcYsk-eo-dfMw",
       "IconFile": "T_Icon_Resource_Granite.png"
     }
   },
@@ -3534,9 +2611,6 @@
     "PersistenceID": "GXtUfUZIYgpsYAGE4y5vEg",
     "Weight": 1.5,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Ground_Clay'",
-      "PersistenceID": "GXtUfUZIYgpsYAGE4y5vEg",
       "IconFile": "T_Icon_Resources_Ground_Clay.png"
     }
   },
@@ -3545,9 +2619,6 @@
     "PersistenceID": "Cu5DREB0z4_XYRGkXu8U9A",
     "Weight": 1.5,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Ground_Granite'",
-      "PersistenceID": "Cu5DREB0z4_XYRGkXu8U9A",
       "IconFile": "T_Icon_Resources_Ground_Granite.png"
     }
   },
@@ -3556,9 +2627,6 @@
     "PersistenceID": "FcnXn0Sq3OS7tJKuCRAc1A",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Ground_Sandstone'",
-      "PersistenceID": "FcnXn0Sq3OS7tJKuCRAc1A",
       "IconFile": "T_Icon_Resources_Ground_Sandstone.png"
     }
   },
@@ -3567,9 +2635,6 @@
     "PersistenceID": "guCjkksBOmEcLFut-VH-qg",
     "Weight": 1.5,
     "MaxStackSize": 99,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Ground_Stone'",
-      "PersistenceID": "guCjkksBOmEcLFut-VH-qg",
       "IconFile": "T_Icon_Resources_Ground_Stone.png"
     }
   },
@@ -3578,9 +2643,6 @@
     "PersistenceID": "qwgPgkOGqffCUdG9M7YR2Q",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Molten_Glass'",
-      "PersistenceID": "qwgPgkOGqffCUdG9M7YR2Q",
       "IconFile": "T_Icon_Resource_Molten_Glass.png"
     }
   },
@@ -3589,9 +2651,6 @@
     "PersistenceID": "RdhNn0ebpZZIPQqMviMjNg",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Sandstone_Rock'",
-      "PersistenceID": "RdhNn0ebpZZIPQqMviMjNg",
       "IconFile": "T_Icon_Resource_Sandstone_Rock.png"
     }
   },
@@ -3600,9 +2659,6 @@
     "PersistenceID": "_R44FI_bhEm8Gx61swlzpA",
     "Weight": 0.5,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Stone'",
-      "PersistenceID": "_R44FI_bhEm8Gx61swlzpA",
       "IconFile": "T_Icon_Resource_Stone.png"
     }
   },
@@ -3611,9 +2667,6 @@
     "PersistenceID": "DJIQWUsnDB7Umey0E2dFgA",
     "Weight": 2.0,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Swamp_Tar_01'",
-      "PersistenceID": "DJIQWUsnDB7Umey0E2dFgA",
       "IconFile": "T_Icon_Swamp_Tar_01.png"
     }
   },
@@ -3621,9 +2674,6 @@
     "SourceString": "Bloodwood Sap",
     "PersistenceID": "OeUUZEKiGnt36CqCIkqJgw",
     "Weight": 0.1,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Bloodwood_Sap'",
-      "PersistenceID": "OeUUZEKiGnt36CqCIkqJgw",
       "IconFile": "T_Icon_Bloodwood_Sap.png"
     }
   },
@@ -3632,9 +2682,6 @@
     "PersistenceID": "EHN6Hs9NFkur7chZVfchJg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Cabbage'",
-      "PersistenceID": "EHN6Hs9NFkur7chZVfchJg",
       "IconFile": "T_Icon_Resource_Cabbage.png"
     }
   },
@@ -3643,9 +2690,6 @@
     "PersistenceID": "J3Ord4Mjnk-zz-Of_0oL8w",
     "Weight": 0.1,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Flax'",
-      "PersistenceID": "J3Ord4Mjnk-zz-Of_0oL8w",
       "IconFile": "T_Icon_Resource_Flax.png"
     }
   },
@@ -3654,9 +2698,6 @@
     "PersistenceID": "Bt9mnlMVnkipaZStzKEdmg",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Bittercap_Mushroom'",
-      "PersistenceID": "Bt9mnlMVnkipaZStzKEdmg",
       "IconFile": "T_Icon_Bittercap_Mushroom.png"
     }
   },
@@ -3665,9 +2706,6 @@
     "PersistenceID": "JsMp30dRbfOXIPuy-4NmFA",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Onion'",
-      "PersistenceID": "JsMp30dRbfOXIPuy-4NmFA",
       "IconFile": "T_Icon_Onion.png"
     }
   },
@@ -3676,9 +2714,6 @@
     "PersistenceID": "HwM2_HvXZUyt8FmT4F2iYQ",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Potato'",
-      "PersistenceID": "HwM2_HvXZUyt8FmT4F2iYQ",
       "IconFile": "T_Icon_Resource_Potato.png"
     }
   },
@@ -3687,9 +2722,6 @@
     "PersistenceID": "z-xbJy9IS0iWNNx9WciARQ",
     "Weight": 0.2,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Vine'",
-      "PersistenceID": "z-xbJy9IS0iWNNx9WciARQ",
       "IconFile": "T_Icon_Resources_Vine.png"
     }
   },
@@ -3698,9 +2730,6 @@
     "PersistenceID": "Rex-3ECcbilpOVqd6zWpIQ",
     "Weight": 0.4,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Dire_Wolf_Leather_NEW'",
-      "PersistenceID": "Rex-3ECcbilpOVqd6zWpIQ",
       "IconFile": "T_Icon_Dire_Wolf_Leather_NEW.png"
     }
   },
@@ -3709,9 +2738,6 @@
     "PersistenceID": "GQcT3TAgK0ulDFXjsp-k1A",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Linen_Cloth'",
-      "PersistenceID": "GQcT3TAgK0ulDFXjsp-k1A",
       "IconFile": "T_Icon_Resource_Linen_Cloth.png"
     }
   },
@@ -3720,9 +2746,6 @@
     "PersistenceID": "6kYeY05XaTnhySas_bXdnw",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Padded_Cloth'",
-      "PersistenceID": "6kYeY05XaTnhySas_bXdnw",
       "IconFile": "T_Icon_Resource_Padded_Cloth.png"
     }
   },
@@ -3731,9 +2754,6 @@
     "PersistenceID": "Jf2AM4PfnUqwTuW0cPXheA",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Woolen_Cloth'",
-      "PersistenceID": "Jf2AM4PfnUqwTuW0cPXheA",
       "IconFile": "T_Icon_Resource_Woolen_Cloth.png"
     }
   },
@@ -3742,9 +2762,6 @@
     "PersistenceID": "KejxKZhqBEy2BmyMUMidlA",
     "Weight": 0.4,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Leather'",
-      "PersistenceID": "KejxKZhqBEy2BmyMUMidlA",
       "IconFile": "T_Icon_Resources_Leather.png"
     }
   },
@@ -3753,9 +2770,6 @@
     "PersistenceID": "UyIYrQzoTkaR04aJNXLTJQ",
     "Weight": 0.5,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resources_Hard_leather'",
-      "PersistenceID": "UyIYrQzoTkaR04aJNXLTJQ",
       "IconFile": "T_Icon_Resources_Hard_leather.png"
     }
   },
@@ -3764,9 +2778,6 @@
     "PersistenceID": "Dns4MEGuhT5fcRWocI5o9Q",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Thread'",
-      "PersistenceID": "Dns4MEGuhT5fcRWocI5o9Q",
       "IconFile": "T_Icon_Resource_Thread.png"
     }
   },
@@ -3775,9 +2786,6 @@
     "PersistenceID": "ehZX4E-aGmiITq6BdnbgFA",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Swamp_Thread'",
-      "PersistenceID": "ehZX4E-aGmiITq6BdnbgFA",
       "IconFile": "T_Icon_Resource_Swamp_Thread.png"
     }
   },
@@ -3786,9 +2794,6 @@
     "PersistenceID": "vgsjm0jT19zFn1uH9N2Rbg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ball_Of_Wool'",
-      "PersistenceID": "vgsjm0jT19zFn1uH9N2Rbg",
       "IconFile": "T_Icon_Resource_Ball_Of_Wool.png"
     }
   },
@@ -3797,9 +2802,6 @@
     "PersistenceID": "tKokB0xYm6tJNHiWwmG2SQ",
     "Weight": 0.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Anima_Infused_Bark'",
-      "PersistenceID": "tKokB0xYm6tJNHiWwmG2SQ",
       "IconFile": "T_Icon_Resource_Anima_Infused_Bark.png"
     }
   },
@@ -3808,9 +2810,6 @@
     "PersistenceID": "Gv_wHkJnBgiXOfq0cCvggg",
     "Weight": 0.4,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Ash_Plank'",
-      "PersistenceID": "Gv_wHkJnBgiXOfq0cCvggg",
       "IconFile": "T_Icon_Resource_Ash_Plank.png"
     }
   },
@@ -3819,9 +2818,6 @@
     "PersistenceID": "FaDdOe9tLUOzvrkYSPpb3Q",
     "Weight": 2.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Resource_Oak_Plank'",
-      "PersistenceID": "FaDdOe9tLUOzvrkYSPpb3Q",
       "IconFile": "T_Icon_Resource_Oak_Plank.png"
     }
   },
@@ -3830,9 +2826,6 @@
     "PersistenceID": "2rxJ495rm0GDn4h5OWKiyQ",
     "Weight": 2.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Ash_Logs'",
-      "PersistenceID": "2rxJ495rm0GDn4h5OWKiyQ",
       "IconFile": "T_Icon_Ash_Logs.png"
     }
   },
@@ -3841,9 +2834,6 @@
     "PersistenceID": "CxUwQN-Me0qnNfyc207f0g",
     "Weight": 0.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Blightwood'",
-      "PersistenceID": "CxUwQN-Me0qnNfyc207f0g",
       "IconFile": "T_Icon_Blightwood.png"
     }
   },
@@ -3852,10 +2842,6 @@
     "PersistenceID": "TsGMyBWLNEWhBdNu21CwCA",
     "Weight": 2.0,
     "MaxStackSize": 50,
-    "Icon": {
-      "ObjectName": "Texture2D'T_Icon_Oak_Logs'",
-      "PersistenceID": "TsGMyBWLNEWhBdNu21CwCA",
       "IconFile": "T_Icon_Oak_Logs.png"
     }
   }
-]
