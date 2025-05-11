@@ -57,43 +57,300 @@ def resource_path(relative_path):
     return os.path.join(getattr(sys, '_MEIPASS', os.getcwd()), relative_path)
 
 ASSETS_DIR = resource_path("assets")
-DATA_DIR = resource_path("data")
+UI_DIR     = os.path.join(ASSETS_DIR, "UI")
+DATA_DIR   = resource_path("data")
+SLOT_ICON_SIZE = 58
+ICON_MAP, POWER_MAP   = {}, {}
+POWER_BADGES = {}
+ICON_CACHE = {}
 
 injection_queue = []
 
 def generate_guid():
     return uuid.uuid4().hex[:22]
 
-def load_json():
-    default_path = os.path.expandvars(r"%LOCALAPPDATA%\\RSDragonwilds\\Saved\\SaveCharacters")
-    initial_dir = default_path if os.path.exists(default_path) else os.getcwd()
-    file_path = filedialog.askopenfilename(
-        initialdir=initial_dir,
-        title="Select Save File",
-        filetypes=[("JSON Files", "*.json")]
-    )
-    if not file_path:
+
+def init_inventory_gui(parent):
+    try:
+        icons = {
+            "tab": {
+                "main" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Items_Normal.png" )) .resize((96,48))),
+                "rune" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Runes_Normal.png" )) .resize((96,48))),
+                "quest": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Quests_Normal.png")).resize((96,48)))
+            },
+            "tab_selected": {
+                "main" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Items_Highlight.png" )) .resize((96,48))),
+                "rune" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Runes_Highlight.png" )) .resize((96,48))),
+                "quest": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Quests_Highlight.png")).resize((96,48)))
+            },
+            "loadout": [
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentHelmet.png" )) .resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentBody.png"   )) .resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentLegs.png"   )) .resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentCape.png"   )) .resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentTrinket.png")) .resize((32,32)))
+            ]
+        }
+    except Exception as e:
+        print("Inventory icon loading failed:", e)
+        return {}
+
+    global POWER_BADGES
+    if not POWER_BADGES:
+        POWER_BADGES = {
+            lvl: ImageTk.PhotoImage(
+                Image.open(os.path.join(ASSETS_DIR, f"PowerLevel{lvl}.png"))
+                .resize((25, 25))
+            )
+            for lvl in range(1, 5)
+        }
+
+    parent._icon_refs = icons
+    current_tab = "main"
+    slot_labels = {}
+
+    bar = tk.Frame(parent, bg="#333"); bar.pack(pady=10)
+    for i in range(8):
+        lbl = tk.Label(bar, text=str(i), width=8, height=4, bg="#444", fg="white",
+                       bd=2, relief="groove")
+        lbl.grid(row=0, column=i, padx=4, pady=4)
+        slot_labels[i] = lbl
+
+    tab_switch = tk.Frame(parent, bg="#1c1b18"); tab_switch.pack(pady=(5,0))
+    grids_wrap = tk.Frame(parent, bg="#222");      grids_wrap.pack(pady=(0,10))
+
+    tab_frames, tab_buttons = {}, {}
+    def switch(name):
+        nonlocal current_tab
+        if name == current_tab:
+            return
+        for t, b in tab_buttons.items():
+            b.configure(image=icons["tab_selected"][t] if t==name else icons["tab"][t])
+        tab_frames[current_tab].lower(); tab_frames[name].lift(); current_tab = name
+
+    for t in ("main","rune","quest"):
+        img = icons["tab_selected"][t] if t==current_tab else icons["tab"][t]
+        lbl = tk.Label(tab_switch, image=img, bg="#1c1b18")
+        lbl.pack(side=tk.LEFT, padx=10)
+        lbl.bind("<Button-1>", lambda e,n=t: switch(n))
+        tab_buttons[t] = lbl
+
+    tab_start = {"main":8, "rune":32, "quest":56}
+    for name,start in tab_start.items():
+        f = tk.Frame(grids_wrap, bg="#222"); f.grid(row=0,column=0,sticky="nsew")
+        tab_frames[name] = f
+        for r in range(3):
+            for c in range(8):
+                num = start + r*8 + c
+                lbl = tk.Label(f, text=str(num), width=8, height=4, bg="#444", fg="white",
+                               bd=2, relief="ridge")
+                lbl.grid(row=r,column=c, padx=4,pady=4)
+                slot_labels[num] = lbl
+        f.lower()
+    tab_frames[current_tab].lift()
+
+    load = tk.Frame(parent, bg="#222"); load.pack(pady=(10,20))
+
+    loadout_labels = []
+    for i, img in enumerate(icons["loadout"]):
+        lbl = tk.Label(
+            load, image=img, width=62, height=62,
+            bg="#444", bd=2, relief="ridge"
+        )
+        lbl.grid(row=0, column=i, padx=10, pady=8)
+        loadout_labels.append(lbl)
+
+    parent._inventory_widgets = {
+        "slot_labels": slot_labels,
+        "loadout_labels": loadout_labels
+    }
+    parent._icon_refs = icons
+    return slot_labels
+
+
+
+def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
+    if not os.path.isfile(file_path):
         return
-    entry_file.delete(0, tk.END)
-    entry_file.insert(0, file_path)
+    try:
+        with open(file_path, "r", encoding="utf-8") as fh:
+            save = json.load(fh)
+    except Exception as exc:
+        print("Save parse error:", exc)
+        return
+
+    root_inv = save.get("Inventory", {})
+    inv_dict = root_inv.get("Inventory") or {k: v for k, v in root_inv.items() if k.isdigit()}
+    loadout_dict = (
+    save.get("Loadout") or
+    root_inv.get("Loadout") or
+    save.get("PersonalInventory", {}).get("Loadout", {}))
+
+    widgets        = getattr(inv_frame, "_inventory_widgets", {})
+    slot_labels    = widgets.get("slot_labels", {})
+    loadout_labels = widgets.get("loadout_labels", [])
+
+    for idx, lbl in slot_labels.items():
+        lbl.configure(image="", text=str(idx))
+        lbl.image = None
+
+    ph_imgs = getattr(inv_frame, "_icon_refs", {}).get("loadout", [])
+    for lbl, ph in zip(loadout_labels, ph_imgs):
+        lbl.configure(image=ph)
+        lbl.image = ph
+
+    for idx_str, entry in inv_dict.items():
+        if not idx_str.isdigit():
+            continue
+        item_id  = entry.get("ItemData")
+        icon_img = get_icon_image(item_id)
+        if not icon_img:
+            continue
+
+        lbl = slot_labels.get(int(idx_str))
+        if not lbl:
+            continue
+
+        lbl.configure(
+            image=icon_img,
+            text="",
+            width=SLOT_ICON_SIZE,
+            height=SLOT_ICON_SIZE,
+            compound="center"
+        )
+        lbl.image = icon_img
+        _set_count_badge(lbl, entry.get("Count"))
+        _set_power_badge(lbl, item_id)
+
+
+    missing_report = []
+    for idx_str, entry in loadout_dict.items():
+        if not idx_str.isdigit():
+            continue
+        idx = int(idx_str)
+        if idx >= len(loadout_labels):
+            continue
+
+
+        item_id = entry.get("ItemData")
+
+        if not item_id and "PlayerInventoryItemIndex" in entry:
+            ref     = str(entry["PlayerInventoryItemIndex"])
+            item_id = inv_dict.get(ref, {}).get("ItemData")
+
+        icon_img = get_icon_image(item_id)
+        if not icon_img:
+            missing_report.append((idx, item_id))
+            continue
+
+        lbl = loadout_labels[idx]
+        lbl.configure(image=icon_img)
+        lbl.image = icon_img
+        _set_count_badge(lbl, entry.get("Count")) 
+        _set_power_badge(lbl, item_id)
+
+    if missing_report:
+        print("Load‑out slots left on mask (no mapping):")
+        for idx, iid in missing_report:
+            print(f"  slot {idx}: ItemData {iid!r} not found in ItemID.txt or assets/UI/")
+
+def _set_count_badge(parent_lbl: tk.Label, count: int | None) -> None:
+    badge = getattr(parent_lbl, "_badge", None)
+    if badge is None:
+        badge = tk.Label(
+            parent_lbl,  text="", fg="white", bg="#444",
+            font=("Consolas", 10, "bold"), padx=2, pady=0
+        )
+        badge.place(relx=1.0, rely=1.0, anchor="se")
+        parent_lbl._badge = badge
+
+    if count is None:
+        badge.config(text="")
+        badge.place_forget()
+    else:
+        badge.config(text=str(count))
+        badge.place(relx=1.0, rely=1.0, anchor="se")
+
+def _set_power_badge(parent_lbl: tk.Label, item_id: str | None) -> None:
+    badge = getattr(parent_lbl, "_pwr_badge", None)
+    if badge is None:
+        badge = tk.Label(parent_lbl, image="", bd=0, bg=parent_lbl["bg"], highlightthickness=0)
+        badge.place(relx=0, rely=0, anchor="nw")
+        parent_lbl._pwr_badge = badge
+
+    lvl = POWER_MAP.get(item_id)
+    if lvl in POWER_BADGES:
+        badge.config(image=POWER_BADGES[lvl])
+        badge.image = POWER_BADGES[lvl]
+        badge.place(relx=0, rely=0, anchor="nw")
+    else:
+        badge.config(image="")
+        badge.place_forget()
 
 def load_item_list():
-    items = []
-    display_map = {}
-    item_map = {}
-    item_file_path = os.path.join(DATA_DIR, "ItemID.txt")
-    try:
-        with open(item_file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            for item in data:
-                name = item.get("SourceString", "").strip()
-                if name:
-                    items.append(name)
-                    display_map[name] = name
-                    item_map[name] = item
-    except FileNotFoundError:
+    global ICON_MAP, POWER_MAP
+    items, display_map, lookup = [], {}, {}
+    path = os.path.join(DATA_DIR, "ItemID.txt")
+    if not os.path.exists(path):
         messagebox.showerror("Missing File", f"ItemID.txt not found in {DATA_DIR}.")
-    return items, display_map, item_map
+        return items, display_map, lookup
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError:
+                txt = f.read() if f.closed else f""
+                if not txt:
+                    txt = open(path, "r", encoding="utf-8").read()
+                txt = txt.strip()
+                if not txt.startswith('['):
+                    txt = '[' + txt.rstrip(',\n') + ']'
+                data = json.loads(txt)
+    except Exception as e:
+        messagebox.showerror("Parse Error", f"Cannot read ItemID.txt: {e}")
+        return items, display_map, lookup
+
+    for entry in data:
+        name = entry.get("SourceString", "").strip()
+        if name:
+            items.append(name)
+            display_map[name] = name
+            lookup[name] = entry
+        pid  = entry.get("PersistenceID")
+        icon = entry.get("IconFile")
+        pwr   = entry.get("PowerLevel")
+        if pid and icon:
+            ICON_MAP[pid] = icon
+        if pid and pwr is not None:
+            POWER_MAP[pid] = pwr    
+    return items, display_map, lookup
+
+
+def get_icon_image(item_id: str) -> ImageTk.PhotoImage | None:
+    if not item_id:
+        return None
+
+    cache_key = (item_id, SLOT_ICON_SIZE)
+    if cache_key in ICON_CACHE:
+        return ICON_CACHE[cache_key]
+
+    icon_name = ICON_MAP.get(item_id)
+    if not icon_name:
+        return None
+
+    try:
+        p = os.path.join(UI_DIR, icon_name)
+        img = Image.open(p).convert("RGBA").resize(
+            (SLOT_ICON_SIZE, SLOT_ICON_SIZE),
+            Image.LANCZOS
+        )
+        tk_img = ImageTk.PhotoImage(img)
+        ICON_CACHE[cache_key] = tk_img
+        return tk_img
+    except Exception as e:
+        print("could not load", icon_name, "->", e)
+        return None
 
 def inject_items():
     file_path = entry_file.get()
@@ -154,7 +411,7 @@ def add_to_queue():
         start_slot = int(entry_start.get())
         end_slot = int(entry_end.get())
         count = int(entry_count.get()) if entry_count.winfo_ismapped() else 1
-        durability = int(entry_durability.get()) if entry_durability.winfo_ismapped() else 500
+        durability = int(entry_durability.get()) if entry_durability.winfo_ismapped() else None
     except ValueError:
         messagebox.showerror("Error", "Inputs must be valid numbers!")
         return
@@ -253,11 +510,27 @@ style.configure("TCombobox", fieldbackground="white", background="white", foregr
 
 notebook = ttk.Notebook(root)
 editor_tab = tk.Frame(notebook, bg="#1c1b18")
+def adjust_size(event):
+    tab = event.widget.tab(event.widget.select(), "text")
+    root = event.widget.winfo_toplevel()
+    root.geometry("800x550" if tab == "Inventory" else "800x400")
+
+notebook.bind("<<NotebookTabChanged>>", adjust_size)
 inventory_tab = tk.Frame(notebook, bg="#1c1b18")
 notebook.add(editor_tab, text="Editor")
 notebook.add(inventory_tab, text="Inventory")
 notebook.pack(expand=True, fill='both')
 
+def load_json():
+    default = os.path.expandvars(r"%LOCALAPPDATA%\\RSDragonwilds\\Saved\\SaveCharacters")
+    initdir = default if os.path.exists(default) else os.getcwd()
+    fp = filedialog.askopenfilename(initialdir=initdir, title="Select Save File", filetypes=[("JSON","*.json")])
+    if not fp:
+        return
+    entry_file.delete(0,tk.END); entry_file.insert(0, fp)
+    refresh_inventory_icons(fp, inventory_tab)
+
+init_inventory_gui(inventory_tab)
 
 item_list, display_lookup, item_lookup = load_item_list()
 selected_item = tk.StringVar()

@@ -349,8 +349,7 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_HEAD_ReinforcedArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_HEAD_ReinforcedArmour_01.png"
   },
   {
     "SourceString": "Bronze Helmet",
@@ -359,8 +358,7 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_Head_BronzeArmour_01.png"
-     
+    "IconFile": "T_Icon_M_Head_BronzeArmour_01.png"
   },
   {
     "SourceString": "Hard Leather Cowl",
@@ -369,8 +367,7 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_HEAD_HardLeather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_HEAD_HardLeather_01.png"
   },
   {
     "SourceString": "Wizard Hat",
@@ -379,8 +376,7 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Head_WizardRobe_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Head_WizardRobe_01.png"
   },
   {
     "SourceString": "Dark Mage Hood",
