@@ -5,6 +5,7 @@ import json
 import uuid
 import os
 import sys
+import webbrowser
 from collections import OrderedDict
 from PIL import Image, ImageTk
 
@@ -68,7 +69,6 @@ injection_queue = []
 
 def generate_guid():
     return uuid.uuid4().hex[:22]
-
 
 def init_inventory_gui(parent):
     try:
@@ -167,8 +167,6 @@ def init_inventory_gui(parent):
     parent._icon_refs = icons
     return slot_labels
 
-
-
 def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
     if not os.path.isfile(file_path):
         return
@@ -182,22 +180,41 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
     root_inv = save.get("Inventory", {})
     inv_dict = root_inv.get("Inventory") or {k: v for k, v in root_inv.items() if k.isdigit()}
     loadout_dict = (
-    save.get("Loadout") or
-    root_inv.get("Loadout") or
-    save.get("PersonalInventory", {}).get("Loadout", {}))
+        save.get("Loadout") or
+        root_inv.get("Loadout") or
+        save.get("PersonalInventory", {}).get("Loadout", {}))
 
     widgets        = getattr(inv_frame, "_inventory_widgets", {})
     slot_labels    = widgets.get("slot_labels", {})
     loadout_labels = widgets.get("loadout_labels", [])
 
+    # Load item lookup for SourceString
+    _, _, item_lookup = load_item_list()
+
     for idx, lbl in slot_labels.items():
         lbl.configure(image="", text=str(idx))
         lbl.image = None
+        # Remove existing tooltip and click binding if any
+        for binding in lbl.bind():
+            lbl.unbind(binding)
+        lbl._tooltip = None
 
     ph_imgs = getattr(inv_frame, "_icon_refs", {}).get("loadout", [])
     for lbl, ph in zip(loadout_labels, ph_imgs):
         lbl.configure(image=ph)
         lbl.image = ph
+        # Remove existing tooltip and click binding if any
+        for binding in lbl.bind():
+            lbl.unbind(binding)
+        lbl._tooltip = None
+
+    def get_item_name(item_id):
+        if not item_id:
+            return None
+        for item in item_lookup.values():
+            if item.get("PersistenceID") == item_id:
+                return item.get("SourceString")
+        return None
 
     for idx_str, entry in inv_dict.items():
         if not idx_str.isdigit():
@@ -222,6 +239,11 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
         _set_count_badge(lbl, entry.get("Count"))
         _set_power_badge(lbl, item_id)
 
+        # Add tooltip and click functionality
+        item_name = get_item_name(item_id)
+        if item_name:
+            lbl._tooltip = ToolTip(lbl, item_name)
+            lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name}"))
 
     missing_report = []
     for idx_str, entry in loadout_dict.items():
@@ -230,7 +252,6 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
         idx = int(idx_str)
         if idx >= len(loadout_labels):
             continue
-
 
         item_id = entry.get("ItemData")
 
@@ -246,11 +267,17 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
         lbl = loadout_labels[idx]
         lbl.configure(image=icon_img)
         lbl.image = icon_img
-        _set_count_badge(lbl, entry.get("Count")) 
+        _set_count_badge(lbl, entry.get("Count"))
         _set_power_badge(lbl, item_id)
 
+        # Add tooltip and click functionality
+        item_name = get_item_name(item_id)
+        if item_name:
+            lbl._tooltip = ToolTip(lbl, item_name)
+            lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name}"))
+
     if missing_report:
-        print("Load‑out slots left on mask (no mapping):")
+        print("Load-out slots left on mask (no mapping):")
         for idx, iid in missing_report:
             print(f"  slot {idx}: ItemData {iid!r} not found in ItemID.txt or assets/UI/")
 
@@ -325,7 +352,6 @@ def load_item_list():
         if pid and pwr is not None:
             POWER_MAP[pid] = pwr    
     return items, display_map, lookup
-
 
 def get_icon_image(item_id: str) -> ImageTk.PhotoImage | None:
     if not item_id:

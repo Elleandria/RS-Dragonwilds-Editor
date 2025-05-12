@@ -144,6 +144,7 @@
      
   },
   {
+    "SourceString": "Paladin's Platebody",
     "PersistenceID": "0LL6JE9-pi2e3VSDOwqqYw",
     "Weight": 10.0,
     "PowerLevel": 4,
@@ -222,6 +223,7 @@
      
   },
   {
+    "SourceString": "Pioneer's Cape",
     "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
     "Weight": 5.0,
       "IconFile": "T_Icon_Pioneer_Mantle.png"
@@ -235,6 +237,7 @@
      
   },
   {
+    "SourceString": "Garou Highborn's Cloak",
     "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
     "Weight": 5.0,
       "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
@@ -297,6 +300,7 @@
      
   },
   {
+    "SourceString": "Bag of Noggin'",    
     "PersistenceID": "U3WG60uJFgZl-BWJIj6_Iw",
     "Weight": 2.0,
     "PowerLevel": 1,
@@ -306,6 +310,7 @@
      
   },
   {
+    "SourceString": "Chef's Hat",    
     "PersistenceID": "SMdFlkruGF9Xveyh1Lz0lw",
     "Weight": 2.0,
     "PowerLevel": 1,
@@ -315,6 +320,7 @@
      
   },
   {
+    "SourceString": "Pioneer's Scarf",    
     "PersistenceID": "TNwe-UTLT1bxEPKBM9GnAQ",
     "Weight": 1.0,
     "BaseDurability": 1000,
@@ -409,6 +415,7 @@
      
   },
   {
+    "SourceString": "Paladin's Helm",
     "PersistenceID": "5PEcXkJHZY9PDqKb9Skqww",
     "Weight": 5.0,
     "PowerLevel": 4,
@@ -468,6 +475,7 @@
      
   },
   {
+    "SourceString": "Oak Longbow",
     "PersistenceID": "VVq58NyN8EKOk3WUg2130Q",
     "Weight": 4.0,
     "PowerLevel": 2,
@@ -497,6 +505,7 @@
      
   },
   {
+    "SourceString": "Wild Scout's Shortbow",
     "PersistenceID": "NqTlRkd7Zw4BE9GM_mDbtw",
     "Weight": 5.0,
     "PowerLevel": 3,
@@ -576,6 +585,7 @@
      
   },
   {
+    "SourceString": "Thane's Authority",
     "PersistenceID": "ARf7DUYPa_AlyLOOsnTIYw",
     "Weight": 8.0,
     "PowerLevel": 4,
@@ -1045,6 +1055,7 @@
      
   },
   {
+    "SourceString": "Chieftan's Blade",
     "PersistenceID": "lHKVrkMlSsZx5lKVZRH63Q",
     "Weight": 5.5,
     "PowerLevel": 3,
@@ -1214,6 +1225,7 @@
      
   },
   {
+    "SourceString": "Adventurer's Leggings",
     "PersistenceID": "ewbJ37oeTkypaVfRgI_GPg",
     "Weight": 4.0,
     "PowerLevel": 1,
@@ -1786,65 +1798,56 @@
     "PersistenceID": "2aa7lkBxEmc_Zuy6bPQ-Ag",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Black_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Black_Potion.png"
   },
   {
     "SourceString": "Attack Potion",
     "PersistenceID": "u9KamEevDhDoqA-Ypsobrw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Lesser_Blue_Potion.png"
-     
+    "IconFile": "T_Icon_Lesser_Blue_Potion.png"
   },
   {
     "SourceString": "Healing Potion",
     "PersistenceID": "-9Zin0B1C7GQgVKwKSR0hQ",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Lesser_Red_Potion.png"
-     
+    "IconFile": "T_Icon_Lesser_Red_Potion.png"
   },
   {
     "SourceString": "Large Wardstone",
     "PersistenceID": "GC6S207zgsmHryqJEdEQaQ",
     "Weight": 0.0,
     "MaxStackSize": 20,
-      "ObjectName": "",
-      "PersistenceID": "GC6S207zgsmHryqJEdEQaQ"
-     
+    "IconFile": "T_Icon_Wardstone.png"
   },
   {
     "SourceString": "Medium Wardstone",
     "PersistenceID": "u-HYwkRw-MdC8hSQnS84Vw",
     "Weight": 0.0,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Wardstone_M.png"
-     
+    "IconFile": "T_Icon_Wardstone_M.png"
   },
   {
     "SourceString": "Small Wardstone",
     "PersistenceID": "xAyLrEN_5B3KGXOjhpGzrg",
     "Weight": 0.0,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Wardstone_S.png"
-     
+    "IconFile": "T_Icon_Wardstone_S.png"
   },
   {
     "SourceString": "Bird Nest",
     "PersistenceID": "jnxM90O5-e7GHmKF9e0dhA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resource_Bird_Nest.png"
-     
+    "IconFile": "T_Icon_Resource_Bird_Nest.png"
   },
   {
     "SourceString": "Garou Pack",
     "PersistenceID": "XII5rkqVhw9I3sWWZNKteA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resources_Garou_Pack.png"
-     
+    "IconFile": "T_Icon_Resources_Garou_Pack.png"
   },
   {
     "SourceString": "Goblin Pack",
@@ -1954,8 +1957,7 @@
     "SourceString": "Abyssal Spine",
     "PersistenceID": "GHBDsEGyH5DJpTqa7xIC1w",
     "Weight": 0.5,
-      "IconFile": "T_Icon_Resource_Abyssal_Spine.png"
-     
+    "IconFile": "T_Icon_Resource_Abyssal_Spine.png"
   },
   {
     "SourceString": "Adhesive",
@@ -2101,6 +2103,7 @@
      
   },
   {
+    "SourceString": "Velgar's Head",
     "PersistenceID": "3zU6qknpEF2Wg6STSQMHtQ",
     "Weight": 0.0,
       "IconFile": "T_Icon_Velgar_Head.png"
@@ -2233,12 +2236,14 @@
      
   },
   {
+    "SourceString": "Tainted King's Token",
     "PersistenceID": "Vnjun0JNiDTYsG21iTb2gg",
     "Weight": 0.0,
       "IconFile": "T_Icon_Kings_Token.png"
      
   },
   {
+    "SourceString": "Purified King's Token",
     "PersistenceID": "GjJEvUEeLJDK4rC8sNKYXA",
     "Weight": 0.0,
       "IconFile": "T_Icon_Kings_Token.png"
@@ -2259,6 +2264,7 @@
      
   },
   {
+    "SourceString": "Druid's Bandosian Amulet",
     "PersistenceID": "EacnEk2SKqmy6zGxnrhpRw",
     "Weight": 0.0,
       "IconFile": "T_Icon_Bandosian_Amulet_2.png"
