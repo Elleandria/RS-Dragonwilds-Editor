@@ -5,6 +5,7 @@
     "Weight": 0.1,
     "PowerLevel": 2,
     "MaxStackSize": 99,
+	"VitalShield": 0,
     "IconFile": "T_Arrows_Bone.png"
      
   },
@@ -14,6 +15,7 @@
     "Weight": 0.1,
     "PowerLevel": 3,
     "MaxStackSize": 99,
+	"VitalShield": 0,
     "IconFile": "T_Icon_Arrows_Bronze.png"
      
   },
@@ -23,6 +25,7 @@
     "Weight": 0.1,
     "PowerLevel": 4,
     "MaxStackSize": 99,
+	"VitalShield": 0,
       "IconFile": "T_Icon_Arrows_Iron_.png"
      
   },
@@ -32,6 +35,7 @@
     "Weight": 0.1,
     "PowerLevel": 1,
     "MaxStackSize": 99,
+	"VitalShield": 0,
       "IconFile": "T_Icon_Arrows_Stone.png"
      
   },
@@ -40,6 +44,7 @@
     "PersistenceID": "v1ZsjAYc-EC084k4NAV-rA",
     "Weight": 0.1,
     "MaxStackSize": 99,
+	"VitalShield": 0,
       "IconFile": "T_Icon_Arrows_Wood.png"
      
   },
