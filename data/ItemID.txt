@@ -5,9 +5,9 @@
     "Weight": 0.1,
     "PowerLevel": 2,
     "MaxStackSize": 99,
-	"VitalShield": 0,
-    "IconFile": "T_Arrows_Bone.png"
-     
+    "VitalShield": 0,
+    "IconFile": "T_Arrows_Bone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Arrow",
@@ -15,9 +15,9 @@
     "Weight": 0.1,
     "PowerLevel": 3,
     "MaxStackSize": 99,
-	"VitalShield": 0,
-    "IconFile": "T_Icon_Arrows_Bronze.png"
-     
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Bronze.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Arrow",
@@ -25,9 +25,9 @@
     "Weight": 0.1,
     "PowerLevel": 4,
     "MaxStackSize": 99,
-	"VitalShield": 0,
-      "IconFile": "T_Icon_Arrows_Iron_.png"
-     
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Iron_.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Stone Arrow",
@@ -35,18 +35,18 @@
     "Weight": 0.1,
     "PowerLevel": 1,
     "MaxStackSize": 99,
-	"VitalShield": 0,
-      "IconFile": "T_Icon_Arrows_Stone.png"
-     
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wooden Arrow",
     "PersistenceID": "v1ZsjAYc-EC084k4NAV-rA",
     "Weight": 0.1,
     "MaxStackSize": 99,
-	"VitalShield": 0,
-      "IconFile": "T_Icon_Arrows_Wood.png"
-     
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Wood.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Adventurer's Tunic",
@@ -55,8 +55,8 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Body_LightArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Body_LightArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Leather Body",
@@ -65,8 +65,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_DeerLeather_01_M_TopHalf_DeerLeather_01.png"
-     
+    "IconFile": "T_Icon_DeerLeather_01_M_TopHalf_DeerLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Apprentice Robe",
@@ -75,8 +75,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Body_LinenRobe_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Body_LinenRobe_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Reinforced Body",
@@ -85,8 +85,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_BODY_ReinforcedArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_BODY_ReinforcedArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Platebody",
@@ -95,8 +95,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_UpperHalf_BronzeArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_UpperHalf_BronzeArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hard Leather Body",
@@ -105,8 +105,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_BODY_HardLeather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_BODY_HardLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wizard Robes",
@@ -115,8 +115,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Upperhalf_WizardRobe_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Upperhalf_WizardRobe_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dark Mage Robes",
@@ -125,8 +125,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Body_DarkMageRobes_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Body_DarkMageRobes_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragonkin Mage Robes",
@@ -135,8 +135,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dragonkin_Dark_Mage_Robes.png"
-     
+    "IconFile": "T_Icon_Dragonkin_Dark_Mage_Robes.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Platebody",
@@ -145,8 +145,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_F_MED_BODY_IronArmour_01.png"
-     
+    "IconFile": "T_Icon_F_MED_BODY_IronArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Paladin's Platebody",
@@ -155,8 +155,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Paladin_s_Chestplatel.png"
-     
+    "IconFile": "T_Icon_Paladin_s_Chestplatel.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Studded Leather Body",
@@ -165,8 +165,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_BODY_StuddedLeather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_BODY_StuddedLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wild Archer Body",
@@ -175,134 +175,134 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Wild_Archer_s_Chest.png"
-     
+    "IconFile": "T_Icon_Wild_Archer_s_Chest.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragonbane Cape",
     "PersistenceID": "1ReHrk6Keawr5E-eQ8WTCg",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Alpha_Cape.png"
-     
+    "IconFile": "T_Icon_Alpha_Cape.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Artisan Skillcape",
     "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Attack Skillcape",
     "PersistenceID": "QB-cekR96jMiFVqZ4b-eZQ",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Bloodblight Cape",
     "PersistenceID": "emA_O0RntNNsrNuNVOTmow",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_Bloodblight.png"
-     
+    "IconFile": "T_Icon_Cape_Bloodblight.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Bramblemead Cape",
     "PersistenceID": "4hYWzULKMjNsgOuwHL7UAA",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_Bramblemead.png"
-     
+    "IconFile": "T_Icon_Cape_Bramblemead.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Construction Skillcape",
     "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Cooking Skillcape",
     "PersistenceID": "CV3gFUxualOL_TK-w4iPtw",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Pioneer's Cape",
     "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Pioneer_Mantle.png"
-     
+    "IconFile": "T_Icon_Pioneer_Mantle.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Fractured Cape",
     "PersistenceID": "71LhGUmAvrlALY6KcS8W3Q",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_Fractured.png"
-     
+    "IconFile": "T_Icon_Cape_Fractured.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Garou Highborn's Cloak",
     "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Goblin War Banner",
     "PersistenceID": "24_UV0P2zlDAbcy48UOCkA",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_HighWarGodBanner.png"
-     
+    "IconFile": "T_Icon_Cape_HighWarGodBanner.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Adventurers Cape",
     "PersistenceID": "Nzf1rECKpuLNgX25lvNy5g",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_Adventurer.png"
-     
+    "IconFile": "T_Icon_Cape_Adventurer.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Mining Skillcape",
     "PersistenceID": "vAmVoEtvZ7KlXWqbZuDJsA",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Runecrafting Skillcape",
     "PersistenceID": "X4RwpkGAyra6l7Kjfo_GWw",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Stormtouched Cape",
     "PersistenceID": "KMexB0_3MwL8rEC0g0xd5g",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_Stormtouched.png"
-     
+    "IconFile": "T_Icon_Cape_Stormtouched.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Tattered Cape",
     "PersistenceID": "6L-fvUa58zMKWFabeAk0tg",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_TatteredCape.png"
-     
+    "IconFile": "T_Icon_Cape_TatteredCape.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Whispering Cape",
     "PersistenceID": "qANQGE8VKB_lSNeI-PHxGQ",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_Whispering.png"
-     
+    "IconFile": "T_Icon_Cape_Whispering.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Woodcutting Skillcape",
     "PersistenceID": "Gl4nHkekntdefgi0GdbAZw",
     "Weight": 5.0,
-      "IconFile": "T_Icon_Cape_RoyalThaneCloak.png"
-     
+    "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
+    "Category": "Capes"
   },
   {
     "SourceString": "Bag of Noggin'",    
@@ -311,8 +311,8 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Bag_o__Noggin.png"
-     
+    "IconFile": "T_Icon_Bag_o__Noggin.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Chef's Hat",    
@@ -321,8 +321,8 @@
     "PowerLevel": 1,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Chef_Hat_01.png"
-     
+    "IconFile": "T_Icon_Chef_Hat_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Pioneer's Scarf",    
@@ -330,8 +330,8 @@
     "Weight": 1.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Pioneer_Scarf.png"
-     
+    "IconFile": "T_Icon_Pioneer_Scarf.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Leather Cowl",
@@ -340,8 +340,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_HEAD_MED_DeerLather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_HEAD_MED_DeerLather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Apprentice Hat",
@@ -350,8 +350,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_Head_LinenRobe_01.png"
-     
+    "IconFile": "T_Icon_M_Head_LinenRobe_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Reinforced Helmet",
@@ -360,7 +360,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-    "IconFile": "T_Icon_M_MED_HEAD_ReinforcedArmour_01.png"
+    "IconFile": "T_Icon_M_MED_HEAD_ReinforcedArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Helmet",
@@ -369,7 +370,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "IconFile": "T_Icon_M_Head_BronzeArmour_01.png"
+    "IconFile": "T_Icon_M_Head_BronzeArmour_01.png",
+    "Category": "MISC"    
   },
   {
     "SourceString": "Hard Leather Cowl",
@@ -378,7 +380,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "IconFile": "T_Icon_M_MED_HEAD_HardLeather_01.png"
+    "IconFile": "T_Icon_M_MED_HEAD_HardLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wizard Hat",
@@ -387,7 +390,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-    "IconFile": "T_Icon_M_MED_Head_WizardRobe_01.png"
+    "IconFile": "T_Icon_M_MED_Head_WizardRobe_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dark Mage Hood",
@@ -396,8 +400,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Head_DarkMageRobes_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Head_DarkMageRobes_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragonkin Mage Hood",
@@ -406,8 +410,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dragonkin_Dark_Mage_Hood.png"
-     
+    "IconFile": "T_Icon_Dragonkin_Dark_Mage_Hood.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Helmet",
@@ -416,8 +420,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_F_MED_HEAD_IronArmour_01.png"
-     
+    "IconFile": "T_Icon_F_MED_HEAD_IronArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Paladin's Helm",
@@ -426,8 +430,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Paladin_s_Helmet.png"
-     
+    "IconFile": "T_Icon_Paladin_s_Helmet.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Studded Leather Cowl",
@@ -436,8 +440,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_HEAD_StuddedLeather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_HEAD_StuddedLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wild Archer Cowl",
@@ -446,8 +450,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Wild_Archer_s_Coif.png"
-     
+    "IconFile": "T_Icon_Wild_Archer_s_Coif.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hunter Stagbow",
@@ -456,8 +460,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Longbor_Hunter_Stag.png"
-     
+    "IconFile": "T_Icon_Longbor_Hunter_Stag.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Blightwood Longbow",
@@ -466,8 +470,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_HuntersLongbow_OakWood_2H_01.png"
-     
+    "IconFile": "T_Icon_HuntersLongbow_OakWood_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Oak Longbow",
@@ -476,8 +480,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_HuntersLongbow_OakWood_2H_01.png"
-     
+    "IconFile": "T_Icon_HuntersLongbow_OakWood_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Oak Longbow",
@@ -486,8 +490,8 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Longbow_OakWood_2H_01.png"
-     
+    "IconFile": "T_Icon_Longbow_OakWood_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Blightwood Shortbow",
@@ -496,8 +500,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_HuntersShortbow_OakWood_2H_01.png"
-     
+    "IconFile": "T_Icon_HuntersShortbow_OakWood_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Oak Shortbow",
@@ -506,8 +510,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Shortbow_OakWood_2H_01.png"
-     
+    "IconFile": "T_Icon_Shortbow_OakWood_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wild Scout's Shortbow",
@@ -516,8 +520,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Shortbow_Wild_Scout.png"
-     
+    "IconFile": "T_Icon_Shortbow_Wild_Scout.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ash Shortbow",
@@ -526,8 +530,8 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Shortbow_AshWood_2H_01.png"
-     
+    "IconFile": "T_Icon_Shortbow_AshWood_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bone Dagger",
@@ -536,8 +540,8 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dagger_Bone_1H_01.png"
-     
+    "IconFile": "T_Icon_Dagger_Bone_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Dagger",
@@ -546,8 +550,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dagger_Bronze_1H_01.png"
-     
+    "IconFile": "T_Icon_Dagger_Bronze_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragonbone Dagger",
@@ -556,8 +560,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dagger_Dragonbone.png"
-     
+    "IconFile": "T_Icon_Dagger_Dragonbone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Dagger",
@@ -566,8 +570,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dagger_Iron_1H_01.png"
-     
+    "IconFile": "T_Icon_Dagger_Iron_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Stone Dagger",
@@ -576,8 +580,8 @@
     "PowerLevel": 1,
     "BaseDurability": 700,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dagger_Stone_1H_01.png"
-     
+    "IconFile": "T_Icon_Dagger_Stone_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Greataxe",
@@ -586,8 +590,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Greataxe_Iron_2H_01.png"
-     
+    "IconFile": "T_Icon_Greataxe_Iron_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Thane's Authority",
@@ -596,8 +600,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Greataxe_Thane_s_Authority.png"
-     
+    "IconFile": "T_Icon_Greataxe_Thane_s_Authority.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Greatsword",
@@ -606,8 +610,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_GreatSword_Bronze_2H_01.png"
-     
+    "IconFile": "T_Icon_GreatSword_Bronze_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Greatsword",
@@ -616,8 +620,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_GreatSword_Iron_2H_01.png"
-     
+    "IconFile": "T_Icon_GreatSword_Iron_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Warhammer",
@@ -626,8 +630,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Warhammer_Bronze_2H_01.png"
-     
+    "IconFile": "T_Icon_Warhammer_Bronze_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Warhammer",
@@ -636,8 +640,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Warhammer_Iron_2H_01.png"
-     
+    "IconFile": "T_Icon_Warhammer_Iron_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Logging Axe",
@@ -646,8 +650,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1800,
     "VitalShield": 0,
-      "IconFile": "T_Icon_LoggingAxe_Refined_2H_01.png"
-     
+    "IconFile": "T_Icon_LoggingAxe_Refined_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Logging Axe",
@@ -656,8 +660,8 @@
     "PowerLevel": 4,
     "BaseDurability": 2400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_LoggingAxe_Iron_2H_01.png"
-     
+    "IconFile": "T_Icon_LoggingAxe_Iron_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Stone Logging Axe",
@@ -666,8 +670,8 @@
     "PowerLevel": 1,
     "BaseDurability": 1200,
     "VitalShield": 0,
-      "IconFile": "T_Icon_LoggingAxe_Crude_2H_01.png"
-     
+    "IconFile": "T_Icon_LoggingAxe_Crude_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bone Club",
@@ -676,8 +680,8 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Club_Bone_1H.png"
-     
+    "IconFile": "T_Icon_Club_Bone_1H.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Stone Club",
@@ -686,8 +690,8 @@
     "PowerLevel": 1,
     "BaseDurability": 700,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Club_Stone_1H_01.png"
-     
+    "IconFile": "T_Icon_Club_Stone_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Goblin \"Swingslash\"",
@@ -696,8 +700,8 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Swingslash.png"
-     
+    "IconFile": "T_Icon_Swingslash.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wooden Club",
@@ -706,8 +710,8 @@
     "PowerLevel": 1,
     "BaseDurability": 275,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Club_Wood_1H_01.png"
-     
+    "IconFile": "T_Icon_Club_Wood_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Mace",
@@ -716,8 +720,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Mace_Bronze_1H.png"
-     
+    "IconFile": "T_Icon_Mace_Bronze_1H.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Mace",
@@ -726,8 +730,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Mace_Iron_1H_01.png"
-     
+    "IconFile": "T_Icon_Mace_Iron_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Skullsplitter",
@@ -736,8 +740,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Club_Skull_Splitter.png"
-     
+    "IconFile": "T_Icon_Club_Skull_Splitter.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bone Pickaxe",
@@ -746,8 +750,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1350,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Pickaxe_Bone_2H_01.png"
-     
+    "IconFile": "T_Icon_Pickaxe_Bone_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Pickaxe",
@@ -756,8 +760,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1800,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Pickaxe_Bronze_2H_01.png"
-     
+    "IconFile": "T_Icon_Pickaxe_Bronze_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Pickaxe",
@@ -766,8 +770,8 @@
     "PowerLevel": 4,
     "BaseDurability": 2100,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Pickaxe_Iron_2H_01.png"
-     
+    "IconFile": "T_Icon_Pickaxe_Iron_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Stone Pickaxe",
@@ -776,8 +780,8 @@
     "PowerLevel": 1,
     "BaseDurability": 1200,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Pickaxe_Stone_2H_01.png"
-     
+    "IconFile": "T_Icon_Pickaxe_Stone_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Anti-dragon Shield",
@@ -786,8 +790,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Shield_AntiDragon.png"
-     
+    "IconFile": "T_Icon_Shield_AntiDragon.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragonblight Shield",
@@ -796,8 +800,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Shield_Poison_Dragonfire.png"
-     
+    "IconFile": "T_Icon_Shield_Poison_Dragonfire.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Shield",
@@ -806,8 +810,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Kite_Bronze_1H_01.png"
-     
+    "IconFile": "T_Icon_Kite_Bronze_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Shield",
@@ -816,8 +820,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Kite_Iron_1H_01.png"
-     
+    "IconFile": "T_Icon_Kite_Iron_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Leather Shield",
@@ -826,8 +830,8 @@
     "PowerLevel": 2,
     "BaseDurability": 900,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Kite_Leather_1H_01.png"
-     
+    "IconFile": "T_Icon_Kite_Leather_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wooden Shield",
@@ -836,8 +840,8 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Kite_Wood_1H_01.png"
-     
+    "IconFile": "T_Icon_Kite_Wood_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ash Battlestaff",
@@ -846,8 +850,8 @@
     "PowerLevel": 2,
     "BaseDurability": 900,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Battlestaff_Ash_2H_01.png"
-     
+    "IconFile": "T_Icon_Battlestaff_Ash_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Blightwood Battlestaff",
@@ -856,8 +860,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_BattleStaff_MindspikeStaff_2H_01.png"
-     
+    "IconFile": "T_Icon_BattleStaff_MindspikeStaff_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Draconic Staff",
@@ -866,8 +870,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1100,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Staff_Draconic.png"
-     
+    "IconFile": "T_Icon_Staff_Draconic.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Grieving Moon Staff",
@@ -876,8 +880,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Staff_Grieving_Moon.png"
-     
+    "IconFile": "T_Icon_Staff_Grieving_Moon.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Oak Battlestaff",
@@ -886,8 +890,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Battlestaff_Oak_2H_01.png"
-     
+    "IconFile": "T_Icon_Battlestaff_Oak_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T1 Bleeding Dagger",
@@ -896,8 +900,8 @@
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Stone.png"
-     
+    "IconFile": "T_Dagger_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T2 Bleeding Dagger",
@@ -906,8 +910,8 @@
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bone.png"
-     
+    "IconFile": "T_Dagger_Bone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T3 Bleeding Dagger",
@@ -916,8 +920,8 @@
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bronze.png"
-     
+    "IconFile": "T_Dagger_Bronze.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T4 Bleeding Dagger",
@@ -926,8 +930,8 @@
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Iron.png"
-     
+    "IconFile": "T_Dagger_Iron.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T1 Burning Dagger",
@@ -936,8 +940,8 @@
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Stone.png"
-     
+    "IconFile": "T_Dagger_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T2 Burning Dagger",
@@ -946,8 +950,8 @@
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bone.png"
-     
+    "IconFile": "T_Dagger_Bone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T3 Burning Dagger",
@@ -956,8 +960,8 @@
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bronze.png"
-     
+    "IconFile": "T_Dagger_Bronze.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T4 Burning Dagger",
@@ -966,8 +970,8 @@
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Iron.png"
-     
+    "IconFile": "T_Dagger_Iron.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T1 Poison Dagger",
@@ -976,8 +980,8 @@
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Stone.png"
-     
+    "IconFile": "T_Dagger_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T2 Poison Dagger",
@@ -986,8 +990,8 @@
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bone.png"
-     
+    "IconFile": "T_Dagger_Bone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T3 Poison Dagger",
@@ -996,8 +1000,8 @@
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bronze.png"
-     
+    "IconFile": "T_Dagger_Bronze.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T4 Poison Dagger",
@@ -1006,8 +1010,8 @@
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Iron.png"
-     
+    "IconFile": "T_Dagger_Iron.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T1 Shock Dagger",
@@ -1016,8 +1020,8 @@
     "PowerLevel": 1,
     "BaseDurability": 300,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Stone.png"
-     
+    "IconFile": "T_Dagger_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T2 Shock Dagger",
@@ -1026,8 +1030,8 @@
     "PowerLevel": 2,
     "BaseDurability": 375,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bone.png"
-     
+    "IconFile": "T_Dagger_Bone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T3 Shock Dagger",
@@ -1036,8 +1040,8 @@
     "PowerLevel": 3,
     "BaseDurability": 450,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Bronze.png"
-     
+    "IconFile": "T_Dagger_Bronze.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "T4 Shock Dagger",
@@ -1046,8 +1050,8 @@
     "PowerLevel": 4,
     "BaseDurability": 525,
     "VitalShield": 0,
-      "IconFile": "T_Dagger_Iron.png"
-     
+    "IconFile": "T_Dagger_Iron.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Sword",
@@ -1056,8 +1060,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Sword_Bronze_1H_01.png"
-     
+    "IconFile": "T_Icon_Sword_Bronze_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Chieftan's Blade",
@@ -1066,8 +1070,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Sword_Chieftain_s_Blade.png"
-     
+    "IconFile": "T_Icon_Sword_Chieftain_s_Blade.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Sword",
@@ -1076,8 +1080,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Sword_Iron_1H_01.png"
-     
+    "IconFile": "T_Icon_Sword_Iron_1H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wooden Training Sword",
@@ -1086,8 +1090,8 @@
     "PowerLevel": 2,
     "BaseDurability": 850,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Sword_Wooden_Training.png"
-     
+    "IconFile": "T_Icon_Sword_Wooden_Training.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Torch",
@@ -1096,8 +1100,8 @@
     "PowerLevel": 1,
     "BaseDurability": 1800,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Tool_Torch.png"
-     
+    "IconFile": "T_Icon_Tool_Torch.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Abyssal Whip",
@@ -1106,8 +1110,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Abyssal_Whip.png"
-     
+    "IconFile": "T_Icon_Abyssal_Whip.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Granite Maul",
@@ -1116,8 +1120,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Warhammer_Granite_Maul.png"
-     
+    "IconFile": "T_Icon_Warhammer_Granite_Maul.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Crystal Bow",
@@ -1126,8 +1130,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1050,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Shortbow_Crystal_2H_01.png"
-     
+    "IconFile": "T_Icon_Shortbow_Crystal_2H_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Staff of Light",
@@ -1136,8 +1140,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1300,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Staff_of_Light.png"
-     
+    "IconFile": "T_Icon_Staff_of_Light.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Gourmand Ring",
@@ -1145,8 +1149,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Herd Ring",
@@ -1154,8 +1158,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hermit Ring",
@@ -1163,8 +1167,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Miner Ring",
@@ -1172,8 +1176,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Moon Ring",
@@ -1181,8 +1185,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Mule Ring",
@@ -1190,8 +1194,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Phoenix Ring",
@@ -1199,8 +1203,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ring of Pursuit",
@@ -1208,8 +1212,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Sun Ring",
@@ -1217,8 +1221,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Woodsman Ring",
@@ -1226,8 +1230,8 @@
     "Weight": 2.0,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png"
-     
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Adventurer's Leggings",
@@ -1236,8 +1240,8 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Legs_LightArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Legs_LightArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Leggings Of Lightness",
@@ -1246,8 +1250,8 @@
     "PowerLevel": 1,
     "BaseDurability": 500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Leggings_of_Lightness.png"
-     
+    "IconFile": "T_Icon_Leggings_of_Lightness.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Leather Chaps",
@@ -1256,8 +1260,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_F_MED_Lowerhalf_DeerLeather_01.png"
-     
+    "IconFile": "T_Icon_F_MED_Lowerhalf_DeerLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Apprentice Leggings",
@@ -1266,8 +1270,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Legs_LinenRobe_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Legs_LinenRobe_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Reinforced Platelegs",
@@ -1276,8 +1280,8 @@
     "PowerLevel": 2,
     "BaseDurability": 1000,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_LEGS_ReinforcedArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_LEGS_ReinforcedArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Platelegs",
@@ -1286,8 +1290,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_LowerHalf_BronzeArmour_01.png"
-     
+    "IconFile": "T_Icon_M_MED_LowerHalf_BronzeArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hard Leather Chaps",
@@ -1296,8 +1300,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_LEGS_HardLeather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_LEGS_HardLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wizard Robe Legs",
@@ -1306,8 +1310,8 @@
     "PowerLevel": 3,
     "BaseDurability": 1250,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Lowerhalf_WizardRobe_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Lowerhalf_WizardRobe_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dark Mage Robe Legs",
@@ -1316,8 +1320,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_Legs_DarkMageRobes_01.png"
-     
+    "IconFile": "T_Icon_M_MED_Legs_DarkMageRobes_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragonkin Mage Robe Legs",
@@ -1326,8 +1330,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Dragonkin_Dark_Mage_Leggings.png"
-     
+    "IconFile": "T_Icon_Dragonkin_Dark_Mage_Leggings.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Platelegs",
@@ -1336,8 +1340,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_F_MED_LEGS_IronArmour_01.png"
-     
+    "IconFile": "T_Icon_F_MED_LEGS_IronArmour_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Paladin Platelegs",
@@ -1346,8 +1350,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Paladin_s_Platelegs.png"
-     
+    "IconFile": "T_Icon_Paladin_s_Platelegs.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Studded Leather Chaps",
@@ -1356,8 +1360,8 @@
     "PowerLevel": 4,
     "BaseDurability": 1500,
     "VitalShield": 0,
-      "IconFile": "T_Icon_M_MED_LEGS_StuddedLeather_01.png"
-     
+    "IconFile": "T_Icon_M_MED_LEGS_StuddedLeather_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wild Archer Chaps",
@@ -1366,1486 +1370,1499 @@
     "PowerLevel": 4,
     "BaseDurability": 1400,
     "VitalShield": 0,
-      "IconFile": "T_Icon_Wild_Archer_s_Chaps.png"
-     
+    "IconFile": "T_Icon_Wild_Archer_s_Chaps.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dwellberry Crunchies",
     "PersistenceID": "TitYzk-CcDdnIrGzbUT7hg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Dwellberry_Crunchies.png"
-     
+    "IconFile": "T_Icon_Dwellberry_Crunchies.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fortifying Crunchies",
     "PersistenceID": "KC5DW0XcQiikzPymCSlVZQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fortifying_Crunchies.png"
-     
+    "IconFile": "T_Icon_Fortifying_Crunchies.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hearty Crunchies",
     "PersistenceID": "_gj4SUtBZXfY6Vm7zFko9w",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Hearty_Crunchies.png"
-     
+    "IconFile": "T_Icon_Hearty_Crunchies.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Redberry Crunchies",
     "PersistenceID": "ipb2Z0dRiFIUUhqLsIqIxA",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Redberry_Crunchies.png"
-     
+    "IconFile": "T_Icon_Redberry_Crunchies.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Berry Compote",
     "PersistenceID": "P9AaJUmKwNjQ_lWuDOGRTQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Resource_Varrock_Hotpot.png"
+    "IconFile": "T_Icon_Resource_Varrock_Hotpot.png",
+    "Category": "Food"
   },
   {
     "SourceString": "Dwellberry Glazed Roast Flank",
     "PersistenceID": "KxVJGk9-oaTznrKsVgwMPQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Dwellberry_Glazed_Flank.png"
+    "IconFile": "T_Icon_Dwellberry_Glazed_Flank.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dwellberry Glazed Roast Meat",
     "PersistenceID": "Fy-bB0PP2zL0eQ6MBRBfrg",
     "Weight": 0.7,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Dwellberry_Glazed_Roast_Meat.png" 
+    "IconFile": "T_Icon_Dwellberry_Glazed_Roast_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Redberry Glazed Roast Flank",
     "PersistenceID": "kP1gFUp7vT74QYWp9gwnNg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Redberry_Glazed_Flank.png"
-     
+    "IconFile": "T_Icon_Redberry_Glazed_Flank.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Redberry Glazed Roast Meat",
     "PersistenceID": "h_Jzr26f5kiw_PRKFEkHrA",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Redberry_Glazed_Roast_Meat.png"
-     
+    "IconFile": "T_Icon_Redberry_Glazed_Roast_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Mixed Grill",
     "PersistenceID": "_1F2mkEqVqGFC06z4Uw0Jw",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Mixed_Grill.png"
-     
+    "IconFile": "T_Icon_Mixed_Grill.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Mixed Platter",
     "PersistenceID": "HjRGr0FDXpD-d-65HZbdXA",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Mixed_Platter.png"
-     
+    "IconFile": "T_Icon_Mixed_Platter.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Grilled Mushrooms",
     "PersistenceID": "ftNa7ksUxtKfXxixt-o_8w",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Grilled_Mushrooms.png"
-     
+    "IconFile": "T_Icon_Grilled_Mushrooms.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fortifying Soup",
     "PersistenceID": "O9t9Kknjb4lXvNKsNl7Vrg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fortifying_Soup.png"
-     
+    "IconFile": "T_Icon_Fortifying_Soup.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hearty Soup",
     "PersistenceID": "j3p4M0t12J8IVHeC1bN4yg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Hearty_Soup.png"
-     
+    "IconFile": "T_Icon_Hearty_Soup.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hearty Fortifying Soup",
     "PersistenceID": "j36nJ0b9Xat20KicKMGzHw",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fortifying_Hearty_Soup.png"
-     
+    "IconFile": "T_Icon_Fortifying_Hearty_Soup.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Vegetable Soup",
     "PersistenceID": "lUXT6k3qLQtJa4CdnnJw5g",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Meat_Stew.png"
-     
+    "IconFile": "T_Icon_Resource_Meat_Stew.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fortifying Stew",
     "PersistenceID": "Xq3aqE2osbcagCKBy8A_kg",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fortifying_Stew.png"
-     
+    "IconFile": "T_Icon_Fortifying_Stew.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hearty Stew",
     "PersistenceID": "SNCcLEdRbF7GAwSkvob6NQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Hearty_Stew.png"
-     
+    "IconFile": "T_Icon_Hearty_Stew.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Meat Stew",
     "PersistenceID": "uYBo5UuEdMMdOyicMA9ikQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Meat_Stew.png"
-     
+    "IconFile": "T_Icon_Meat_Stew.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dwellberry Infusion",
     "PersistenceID": "-jEah0znNr-2UVmbHK-Hqg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Dwellberry_Infusion.png"
-     
+    "IconFile": "T_Icon_Dwellberry_Infusion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Redberry Infusion",
     "PersistenceID": "BHyv-U4eeKvSxeqdh5UswQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Redberry_Infusion.png"
-     
+    "IconFile": "T_Icon_Redberry_Infusion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ferocious Infusion",
     "PersistenceID": "igveHUWYg2AeXe69EwW1PA",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Predators_Infusion.png"
-     
+    "IconFile": "T_Icon_Predators_Infusion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Evasive Infusion",
     "PersistenceID": "cZ6va0BSo6_5Dg2Pi23lUQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Wild_Reflex_Infusion.png"
-     
+    "IconFile": "T_Icon_Wild_Reflex_Infusion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fleet-Footed Infusion",
     "PersistenceID": "PZdR5E2sYqyUe-2JgBsCfA",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fleet_Footed_Infusion.png"
-     
+    "IconFile": "T_Icon_Fleet_Footed_Infusion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "TEST_Cake",
     "PersistenceID": "sHsduqfNRkWma9kGQQ8u-w",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Food_Cake.png"
-     
+    "IconFile": "T_Food_Cake.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clean Water",
     "PersistenceID": "hKYyX0vQ_pgLRAi2ugGK3w",
     "Weight": 1.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Clean_Water.png"
-     
+    "IconFile": "T_Icon_Clean_Water.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dirty Water",
     "PersistenceID": "xii8Q0dRJsnevvKv1g2bNQ",
     "Weight": 1.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Dirty_Water.png"
-     
+    "IconFile": "T_Icon_Dirty_Water.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Divine Cabbage",
     "PersistenceID": "TODWPUpA_YR0EnaqhMstcQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Food_Cabbage.png"
-     
+    "IconFile": "T_Food_Cabbage.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Kebab",
     "PersistenceID": "5AYjnUqlwTP9f12w5x2rlQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Iconic_Kebab.png"
-     
+    "IconFile": "T_Icon_Iconic_Kebab.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wild Pie",
     "PersistenceID": "Ub1yCE7dcEADMJKZcOHMMQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Iconic_Pie_Wild.png"
-     
+    "IconFile": "T_Icon_Iconic_Pie_Wild.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Meat Pizza",
     "PersistenceID": "QfPOk0c4rF6PIUqOxt0ytg",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Iconic_Pizza_Meat.png"
-     
+    "IconFile": "T_Icon_Iconic_Pizza_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Flank Steak",
     "PersistenceID": "NeMd5ktRmFW1ZWqnCwsxKA",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icons_Journal_Recipes_Resources_Seared_Game_Steak.png"
-     
+    "IconFile": "T_Icons_Journal_Recipes_Resources_Seared_Game_Steak.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fried Cabbage",
     "PersistenceID": "DQdI2EZLlP0EJB2C6_R28w",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fried_Cabbage.png"
-     
+    "IconFile": "T_Icon_Fried_Cabbage.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Steak",
     "PersistenceID": "gC-ZukCFUhIWbCyJIkj3LQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Seared_Farm_Meat.png"
-     
+    "IconFile": "T_Icon_Resource_Seared_Farm_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dried Dwellberries",
     "PersistenceID": "QpxVI0bu8fcLkpuM7HrEaw",
     "Weight": 0.6,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Dried_Dwellberries.png"
-     
+    "IconFile": "T_Icon_Dried_Dwellberries.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dried Redberries",
     "PersistenceID": "sGZHV0IIuJLCDIyGNNBMbA",
     "Weight": 0.6,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Dried_Redberries.png"
-     
+    "IconFile": "T_Icon_Dried_Redberries.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dwellberries",
     "PersistenceID": "eCBq3UiiNADih26zDQBTVQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Dwellberries.png"
-     
+    "IconFile": "T_Icon_Dwellberries.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Peach",
     "PersistenceID": "FPYmOkCqcOpLYpaP1DKYjA",
     "Weight": 0.8,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Peach.png"
-     
+    "IconFile": "T_Icon_Resource_Peach.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Redberries",
     "PersistenceID": "GHxAwJ8gNkSe3vxloWof2A",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Redberries.png"
-     
+    "IconFile": "T_Icon_Redberries.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fillet",
     "PersistenceID": "TBfPmUBQqV_F0pCG34_XkQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Cooked_bird_meat.png"
-     
+    "IconFile": "T_Icon_Resource_Cooked_bird_meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Haunch",
     "PersistenceID": "pqhdt0z6D2sMGRWhCf5mkQ",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Juciey_Brisket.png"
-     
+    "IconFile": "T_Icon_Resource_Juciey_Brisket.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Rat Roast",
     "PersistenceID": "0aufkk55nHU1TlSAXZ0o3g",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Beastly_Sausage.png"
-     
+    "IconFile": "T_Icon_Resource_Beastly_Sausage.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fried Onions",
     "PersistenceID": "yEEiukHPM7htB4WeWEXeWg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fried_Onions.png"
-     
+    "IconFile": "T_Icon_Fried_Onions.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Baked Potato",
     "PersistenceID": "wgV3TEOkcYod4tGRdutHqg",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Baked_Potato.png"
-     
+    "IconFile": "T_Icon_Resource_Baked_Potato.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Artisan Potion",
     "PersistenceID": "CPT7I01jfIBmhyCQLJH31A",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Clay_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Clay_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Attack Potion",
     "PersistenceID": "Gl810k3TcUSB866zC50I2g",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Yellow_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Yellow_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Construction Potion",
     "PersistenceID": "m4bFA0UwQOecAhah3hNtSA",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Blue_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Blue_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Cooking Potion",
     "PersistenceID": "K7le0EXS_TjIx-Wb9d9PZg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Orange_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Orange_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Mining Potion",
     "PersistenceID": "8gh6wkTHrHGgAMSeSMHNTw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Orange_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Orange_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Runecraft Potion",
     "PersistenceID": "0PXPSUTx8SdrxW6J26Ljfw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Purple_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Purple_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Focused Woodcutting Potion",
     "PersistenceID": "U3WBak2LNdsGzrajcaLGpw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Green_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Green_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Antipoison Potion",
     "PersistenceID": "ukjoSEXQTWbO6zSJvP5Z4Q",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Green_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Green_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Healing Potion",
     "PersistenceID": "qRA1TEfZJkMoanWXc_l-Sg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Red_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Red_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Lumberjack Potion",
     "PersistenceID": "ni4XGUQ7iWkplmuumD7kkA",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Weak_Green_Potion.png"
-     
+    "IconFile": "T_Icon_Weak_Green_Potion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Weak Quarrymaster Potion",
     "PersistenceID": "2aa7lkBxEmc_Zuy6bPQ-Ag",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Weak_Black_Potion.png"
+    "IconFile": "T_Icon_Weak_Black_Potion.png",
+    "Category": "Potion"
   },
   {
     "SourceString": "Attack Potion",
     "PersistenceID": "u9KamEevDhDoqA-Ypsobrw",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Lesser_Blue_Potion.png"
+    "IconFile": "T_Icon_Lesser_Blue_Potion.png",
+    "Category": "Potion"
   },
   {
     "SourceString": "Healing Potion",
     "PersistenceID": "-9Zin0B1C7GQgVKwKSR0hQ",
     "Weight": 0.3,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Lesser_Red_Potion.png"
+    "IconFile": "T_Icon_Lesser_Red_Potion.png",
+    "Category": "Potion"
   },
   {
     "SourceString": "Large Wardstone",
     "PersistenceID": "GC6S207zgsmHryqJEdEQaQ",
     "Weight": 0.0,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Wardstone.png"
+    "IconFile": "T_Icon_Wardstone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Medium Wardstone",
     "PersistenceID": "u-HYwkRw-MdC8hSQnS84Vw",
     "Weight": 0.0,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Wardstone_M.png"
+    "IconFile": "T_Icon_Wardstone_M.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Small Wardstone",
     "PersistenceID": "xAyLrEN_5B3KGXOjhpGzrg",
     "Weight": 0.0,
     "MaxStackSize": 20,
-    "IconFile": "T_Icon_Wardstone_S.png"
+    "IconFile": "T_Icon_Wardstone_S.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bird Nest",
     "PersistenceID": "jnxM90O5-e7GHmKF9e0dhA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-    "IconFile": "T_Icon_Resource_Bird_Nest.png"
+    "IconFile": "T_Icon_Resource_Bird_Nest.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Garou Pack",
     "PersistenceID": "XII5rkqVhw9I3sWWZNKteA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-    "IconFile": "T_Icon_Resources_Garou_Pack.png"
+    "IconFile": "T_Icon_Resources_Garou_Pack.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Goblin Pack",
     "PersistenceID": "zm9DtUc8ieNZpWe7ioL_KA",
     "Weight": 1.0,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resources_Goblin_Pack.png"
-     
+    "IconFile": "T_Icon_Resources_Goblin_Pack.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Whetstone",
     "PersistenceID": "3wV1xUv5zBDHRiaAk2qv7w",
     "Weight": 5.0,
     "MaxStackSize": 5,
-      "IconFile": "T_Icon_Whetstone.png"
-     
+    "IconFile": "T_Icon_Whetstone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of the Dragon Slayer",
     "PersistenceID": "KlQuMkdkj3bNzr2LWvCBxw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Tome_of_the_Dragon_Slayer.png"
-     
+    "IconFile": "T_Icon_Tome_of_the_Dragon_Slayer.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of the Artisan - Vol 1.",
     "PersistenceID": "llpKZU92JhzHdva7AC5vqw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Artisan.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Artisan.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Attack - Vol 1.",
     "PersistenceID": "4z-8l0h5MJBHfpm2GOyiDw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Attack.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Attack.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Construction - Vol 1.",
     "PersistenceID": "xKjZUEBiIC72rFitwW4m6Q",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Construction.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Construction.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Cooking - Vol 1.",
     "PersistenceID": "yxFSIE8VtUQs4c6l7eM_cw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Cooking.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Cooking.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Magic - Vol 1.",
     "PersistenceID": "2cTzA0DMigYJPoSk3U-WKw",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Magic.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Magic.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Mining - Vol 1.",
     "PersistenceID": "NfrIoUsI1Obs-4KY7LuBkQ",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Mining.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Mining.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Ranged - Vol 1.",
     "PersistenceID": "44ZDU03461OXgqSqIMb2IA",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Ranged.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Ranged.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Runecrafting - Vol 1.",
     "PersistenceID": "U6OtnkxHtcHAIPy1kMGc8A",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Runecrafting.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Runecrafting.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tome of Woodcutting - Vol 1.",
     "PersistenceID": "1lnRvU1YsQeoDdyR_9s6Ug",
     "Weight": 0.0,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Skill_Tome_Woodcutting.png"
-     
+    "IconFile": "T_Icon_Skill_Tome_Woodcutting.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Abyssal Ashes",
     "PersistenceID": "Mw42KUu2HuXm3baIbHa_8g",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Abyssal_Ashes.png"
-     
+    "IconFile": "T_Icon_Abyssal_Ashes.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Abyssal Spine",
     "PersistenceID": "GHBDsEGyH5DJpTqa7xIC1w",
     "Weight": 0.5,
-    "IconFile": "T_Icon_Resource_Abyssal_Spine.png"
+    "IconFile": "T_Icon_Resource_Abyssal_Spine.png",
+    "Category": "Boss Loot"
   },
   {
     "SourceString": "Adhesive",
     "PersistenceID": "3_luxedD0kyY_dd3UKYvEQ",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Adhesive.png"
-     
+    "IconFile": "T_Icon_Adhesive.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dire Wolf Hide",
     "PersistenceID": "wqBk-EZDxcfPtH6VdUnlNg",
     "Weight": 0.5,
-      "IconFile": "T_Icon_Dire_Wolf_Skin.png"
-     
+    "IconFile": "T_Icon_Dire_Wolf_Skin.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Animal Bone",
     "PersistenceID": "EnjZ-B1MLkuduCRe1oLNQw",
     "Weight": 0.9,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Animal_Bone.png"
-     
+    "IconFile": "T_Icon_Animal_Bone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Animal Hide",
     "PersistenceID": "ND81bEI1UktxBZK6a1kPtg",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Animal_Hide.png"
-     
+    "IconFile": "T_Icon_Animal_Hide.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Antler",
     "PersistenceID": "AEnD3ErsJVZ3V7WT1YdPQQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icons_Resource_Antlers.png"
-     
+    "IconFile": "T_Icons_Resource_Antlers.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Coarse Animal Fur",
     "PersistenceID": "ISwwk0SMdhURciK1Sr3i6Q",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Coarse_Animal_Fur.png"
-     
+    "IconFile": "T_Icon_Resource_Coarse_Animal_Fur.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Small Animal Fang",
     "PersistenceID": "EWuEEEhBQ59daI2TL5y9YQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Animal_Fang.png"
-     
+    "IconFile": "T_Icon_Animal_Fang.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Feathers",
     "PersistenceID": "v5MSO2Wz4ke5xOGvKC5GlQ",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Feathers.png"
-     
+    "IconFile": "T_Icon_Resource_Feathers.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ram Horn",
     "PersistenceID": "E5lUJEc3VidsqDGPkYhl4A",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resources_Large_Animal_Horn.png"
-     
+    "IconFile": "T_Icon_Resources_Large_Animal_Horn.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Raw Bestial Meat",
     "PersistenceID": "tosPpUxp9FZgwdGvvXrcjw",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Bestial_Meat.png"
-     
+    "IconFile": "T_Icon_Resource_Bestial_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Raw Bird Meat",
     "PersistenceID": "6VtTq32kQkyOk-E3Ly05-A",
     "Weight": 0.6,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Raw_bird_meat.png"
-     
+    "IconFile": "T_Icon_Resource_Raw_bird_meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Raw Farm Meat",
     "PersistenceID": "Ttc6u0zyAi-JMaOjrxwtNQ",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Raw_Farm_Meat.png"
-     
+    "IconFile": "T_Icon_Resource_Raw_Farm_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Raw Game Meat",
     "PersistenceID": "Ua7XqsiwjUio_H540eRegw",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Raw_Venison_01.png"
-     
+    "IconFile": "T_Icon_Raw_Venison_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Monstrous Fang",
     "PersistenceID": "7MA-NkEejSNBooCvO4XI9w",
     "Weight": 0.1,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Monstrous_Fang.png"
-     
+    "IconFile": "T_Icon_Resource_Monstrous_Fang.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Raw Rat Meat",
     "PersistenceID": "1k8-cj3JqEGeRgu1P7PK2g",
     "Weight": 0.7,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Raw_Stringy_Meat.png"
-     
+    "IconFile": "T_Icon_Resource_Raw_Stringy_Meat.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fleece",
     "PersistenceID": "mZWtu9Ir9ECtl0a7cV7uJw",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fleece.png"
-     
+    "IconFile": "T_Icon_Fleece.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Animal Hide Scraps",
     "PersistenceID": "ab53An3iPkyjTqnHyme-0A",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Animal_Hide_Scraps.png"
-     
+    "IconFile": "T_Icon_Animal_Hide_Scraps.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Soft Animal Fur",
     "PersistenceID": "_a30PUP3vGbK6omuRTvw2Q",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Soft_Animal_Fur.png"
-     
+    "IconFile": "T_Icon_Resource_Soft_Animal_Fur.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Velgar's Head",
     "PersistenceID": "3zU6qknpEF2Wg6STSQMHtQ",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Velgar_Head.png"
-     
+    "IconFile": "T_Icon_Velgar_Head.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragon Visage",
     "PersistenceID": "9D2K3U9jvwZc85KkIZjAFQ",
     "Weight": 0.5,
-      "IconFile": "T_Icon_Dragon_Visage.png"
-     
+    "IconFile": "T_Icon_Dragon_Visage.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Emerald",
     "PersistenceID": "nHQY00bMhzQL3Iare7lYgg",
     "Weight": 0.5,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Gemstone_Emerald_01.png"
-     
+    "IconFile": "T_Icon_Gemstone_Emerald_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Jade",
     "PersistenceID": "hzztKE-CsjtgVaWFJoTw2w",
     "Weight": 0.5,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Jade.png"
-     
+    "IconFile": "T_Icon_Jade.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Opal",
     "PersistenceID": "GAnIKkuMoUfiGC2wiSfmqg",
     "Weight": 0.5,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resource_Opal.png"
-     
+    "IconFile": "T_Icon_Resource_Opal.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Red Topaz",
     "PersistenceID": "DY6MkEu_wT76ukyxwYr45g",
     "Weight": 0.5,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resource_Red_Topaz.png"
-     
+    "IconFile": "T_Icon_Resource_Red_Topaz.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Sapphire",
     "PersistenceID": "TvL1Ik7Vc-NHKlCx--22Cg",
     "Weight": 0.5,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resource_Sapphire.png"
-     
+    "IconFile": "T_Icon_Resource_Sapphire.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Vial",
     "PersistenceID": "fliBkkBZfNJwhpej98Q2xA",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resources_Vial.png"
-     
+    "IconFile": "T_Icon_Resources_Vial.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Harralander",
     "PersistenceID": "mJ4P8qzfy0Wg8OxrYc_NBA",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Harralander.png"
-     
+    "IconFile": "T_Icon_Resource_Harralander.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Marrentill",
     "PersistenceID": "U3fAKU2mI0apYz-rc0qWcQ",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Marrentil.png"
-     
+    "IconFile": "T_Icon_Resource_Marrentil.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Poison Plant Bulb",
     "PersistenceID": "vxn3aEpxraaQXJi9Btd7Cw",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resources_Poison_Plant_Bulb.png"
-     
+    "IconFile": "T_Icon_Resources_Poison_Plant_Bulb.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Shocking Plant Bulb",
     "PersistenceID": "6lzGokw1exVCJAmMfnUnkg",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resources_Shocking_Plant_Bulb.png"
-     
+    "IconFile": "T_Icon_Resources_Shocking_Plant_Bulb.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Snapdragon",
     "PersistenceID": "VP4HYkC55gMC4pGC3c6L4w",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Snap_Dragon.png"
-     
+    "IconFile": "T_Icon_Resource_Snap_Dragon.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Toadflax",
     "PersistenceID": "61d3bkS0nDQWlVqHDt5OaQ",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Toadflax.png"
-     
+    "IconFile": "T_Icon_Resource_Toadflax.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Soda Ash",
     "PersistenceID": "dc0Cf0G0LytXhf6V-KtM2g",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resources_Soda_Ash.png"
-     
+    "IconFile": "T_Icon_Resources_Soda_Ash.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Swamp Weed",
     "PersistenceID": "zsimokwEIE-BaUmW949QtQ",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Swamp_Weed.png"
-     
+    "IconFile": "T_Icon_Resource_Swamp_Weed.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Crystal Seed",
     "PersistenceID": "JYGJbEV-DrOkn5SNR5sYKQ",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Crystal_Seed.png"
-     
+    "IconFile": "T_Icon_Crystal_Seed.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tainted King's Token",
     "PersistenceID": "Vnjun0JNiDTYsG21iTb2gg",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Kings_Token.png"
-     
+    "IconFile": "T_Icon_Kings_Token.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Purified King's Token",
     "PersistenceID": "GjJEvUEeLJDK4rC8sNKYXA",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Kings_Token.png"
-     
+    "IconFile": "T_Icon_Kings_Token.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ghostspeak Amulet",
     "PersistenceID": "EZGayEl5U_ZQaZSscJGZQg",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Ghostspeak_Amulet.png"
-     
+    "IconFile": "T_Icon_Ghostspeak_Amulet.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bandosian Amulet",
     "PersistenceID": "1Gu7vU51PMnkRBu2wqlHHQ",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Bandosian_Amulet_1.png"
-     
+    "IconFile": "T_Icon_Bandosian_Amulet_1.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Druid's Bandosian Amulet",
     "PersistenceID": "EacnEk2SKqmy6zGxnrhpRw",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Bandosian_Amulet_2.png"
-     
+    "IconFile": "T_Icon_Bandosian_Amulet_2.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Mysterious Orb [Uncharged]",
     "PersistenceID": "kLFhCEF-uIEs1hW6ioa7pA",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Mysterious_Orb.png"
-     
+    "IconFile": "T_Icon_Mysterious_Orb.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Mysterious Orb [Charged]",
     "PersistenceID": "bjjJ1kCgKXKvMPyJC4YQkQ",
     "Weight": 0.0,
-      "IconFile": "T_Icon_Charged_Mysterious_Orb.png"
-     
+    "IconFile": "T_Icon_Charged_Mysterious_Orb.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Vault Core",
     "PersistenceID": "52QCB0uSNJD0UoC21lRJvA",
     "Weight": 50.0,
     "MaxStackSize": 10,
-      "IconFile": "T_Icon_Resource_Vault_Core.png"
-     
+    "IconFile": "T_Icon_Resource_Vault_Core.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Vault Shard",
     "PersistenceID": "T8l7pktHUJoUuxi9mkrT7g",
     "Weight": 0.2,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Vault_Shard.png"
-     
+    "IconFile": "T_Icon_Resource_Vault_Shard.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wild Anima",
     "PersistenceID": "LURhZ0Q6FaLGzh-siBuT7g",
     "Weight": 0.2,
     "MaxStackSize": 5,
-      "IconFile": "T_Icon_Anima_Wild_01.png"
-     
+    "IconFile": "T_Icon_Anima_Wild_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Air Rune",
     "PersistenceID": "Dvo6TE2d7YNnoni8XbKYzw",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Air.png"
-     
+    "IconFile": "T_Icon_Rune_Air.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Astral Rune",
     "PersistenceID": "4wdYZE-FFMhS9Iia0ftWDg",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Astral.png"
-     
+    "IconFile": "T_Icon_Rune_Astral.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Earth Rune",
     "PersistenceID": "lCE7i3iXGUuHv7FphIOcXg",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Earth.png"
-     
+    "IconFile": "T_Icon_Rune_Earth.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Rune Essence",
     "PersistenceID": "qOY004ZJaEaR8DmcDqB2KA",
     "Weight": 1.5,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Rune_Essence.png"
-     
+    "IconFile": "T_Icon_Rune_Essence.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Fire Rune",
     "PersistenceID": "_QMgbMYhjU-9jAD_euFbyQ",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Fire.png"
-     
+    "IconFile": "T_Icon_Rune_Fire.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Law Rune",
     "PersistenceID": "_c9JTkwKy8s88GWv586hbQ",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Law.png"
-     
+    "IconFile": "T_Icon_Rune_Law.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Nature Runes",
     "PersistenceID": "iKbF7k2XvufGqqyg5rK-vQ",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Nature.png"
-     
+    "IconFile": "T_Icon_Rune_Nature.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Water Rune",
     "PersistenceID": "bbLdJRhwPEWt1ScENYRUCg",
     "Weight": 0.0,
     "MaxStackSize": 999,
-      "IconFile": "T_Icon_Rune_Water.png"
-     
+    "IconFile": "T_Icon_Rune_Water.png",
+    "Category": "Runes"
   },
   {
     "SourceString": "Challenge Horn",
     "PersistenceID": "45qRbkCgpbXsxAuswso8Aw",
     "Weight": 4.0,
-      "IconFile": "T_Icon_Challenge_Horn_01.png"
-     
+    "IconFile": "T_Icon_Challenge_Horn_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Challenge Horn Mouthpiece",
     "PersistenceID": "ZbaFNUQBjcQFiBmssky-4g",
     "Weight": 4.0,
-      "IconFile": "T_Masterworks_Horn_Mouthpiece.png"
-     
+    "IconFile": "T_Masterworks_Horn_Mouthpiece.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Granite Maul Blueprints",
     "PersistenceID": "FzZcg0K5osblXSuuSNACQA",
     "Weight": 4.0,
-      "IconFile": "T_Icon_Scroll.png"
-     
+    "IconFile": "T_Icon_Scroll.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Imbued Granite Maul Head",
     "PersistenceID": "TRQBZ0gufJDy-HWCsXysNw",
     "Weight": 4.0,
-      "IconFile": "T_Icon_Imbued_Maul_Head.png"
-     
+    "IconFile": "T_Icon_Imbued_Maul_Head.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Imbued Leather Wrappings",
     "PersistenceID": "1kW1mUsw1eKjlOiBCMXcUg",
     "Weight": 4.0,
-      "IconFile": "T_Icon_Imbued_Leather_Wrappings.png"
-     
+    "IconFile": "T_Icon_Imbued_Leather_Wrappings.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ornate Maul Handle",
     "PersistenceID": "RFgA4kE-5E71wiGpmjWkKA",
     "Weight": 4.0,
-      "IconFile": "T_Icon_Ornate_Maul_Handle.png"
-     
+    "IconFile": "T_Icon_Ornate_Maul_Handle.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bronze Bar",
     "PersistenceID": "Y2Y48OMHukKIilN4srd7cA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Bar_Bronze.png"
-     
+    "IconFile": "T_Icon_Resource_Bar_Bronze.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Copper Bar",
     "PersistenceID": "S7Kk_ZA9OEKZ8qwU9ciKCA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Bar_Copper.png"
-     
+    "IconFile": "T_Icon_Resource_Bar_Copper.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Copper Ore",
     "PersistenceID": "A8Lx3sZhHEeG4GXsl4ZLZw",
     "Weight": 4.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Ore_Copper.png"
-     
+    "IconFile": "T_Icon_Resource_Ore_Copper.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Gold Bar",
     "PersistenceID": "9jFU2lh9l0qPbNTspGCBFA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Bar_Gold.png"
-     
+    "IconFile": "T_Icon_Resource_Bar_Gold.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Gold Ore",
     "PersistenceID": "D-BzgHFSHkyc53teVzmBNA",
     "Weight": 4.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Ore_Gold.png"
-     
+    "IconFile": "T_Icon_Resource_Ore_Gold.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Bar",
     "PersistenceID": "Ng6eFNNuiU-VdxSoZtI6kA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Bar_Iron.png"
-     
+    "IconFile": "T_Icon_Resource_Bar_Iron.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Iron Ore",
     "PersistenceID": "rTRm3cGOmUm1h1BMEYzTwA",
     "Weight": 4.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Ore_Iron.png"
-     
+    "IconFile": "T_Icon_Resource_Ore_Iron.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Silver Bar",
     "PersistenceID": "gunABauXjk6khTFVIKifoA",
     "Weight": 5.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Bar_Silver.png"
-     
+    "IconFile": "T_Icon_Resource_Bar_Silver.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Silver Ore",
     "PersistenceID": "xawyKY4sAkmNcNuINCw3ww",
     "Weight": 4.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Ore_Silver.png"
-     
+    "IconFile": "T_Icon_Resource_Ore_Silver.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tin Bar",
     "PersistenceID": "7fPUAi9DYkOSI5B_t79TVw",
     "Weight": 5.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Bar_Tin.png"
-     
+    "IconFile": "T_Icon_Resource_Bar_Tin.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Tin Ore",
     "PersistenceID": "h1AqBkRETk-Fu_65W6BjVw",
     "Weight": 4.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Ore_Tin.png"
-     
+    "IconFile": "T_Icon_Resource_Ore_Tin.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Charcoal",
     "PersistenceID": "x-SiNQenZEuF0yyTPkxhiw",
     "Weight": 1.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Charcoal.png"
-     
+    "IconFile": "T_Icon_Resource_Charcoal.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Fuel Briquette",
     "PersistenceID": "Br8lTU45wX65kDigZkkgAg",
     "Weight": 1.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resources_Charcoal.png"
-     
+    "IconFile": "T_Icon_Resources_Charcoal.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay",
     "PersistenceID": "LLV95ECQPPkItvyaC0gCzQ",
     "Weight": 1.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resources_Clay.png"
-     
+    "IconFile": "T_Icon_Resources_Clay.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Decoration",
     "PersistenceID": "C-Blv0bNk7v6BOWLA8Cw-g",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fired_Clay_Decoration.png"
-     
+    "IconFile": "T_Icon_Fired_Clay_Decoration.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Decoration (Unfired)",
     "PersistenceID": "sycphkkEs4cXKKC721kS2w",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Unfired_Clay_Decoration.png"
-     
+    "IconFile": "T_Icon_Unfired_Clay_Decoration.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Mould",
     "PersistenceID": "zEg0M0VWEp6-wLOhkvYJ8A",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Clay_Mould.png"
-     
+    "IconFile": "T_Icon_Resource_Clay_Mould.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Mould (Unfired)",
     "PersistenceID": "FXYVR0dXwrzmeo-goNwTHA",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Unfired_Clay_Mould.png"
-     
+    "IconFile": "T_Icon_Resource_Unfired_Clay_Mould.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Slab",
     "PersistenceID": "OQisqk4_V81aRxSm8IjMMg",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Clay_Slab.png"
-     
+    "IconFile": "T_Icon_Resource_Clay_Slab.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Slab (Unfired)",
     "PersistenceID": "EK3fckHjkrHbATuNLd9Jhg",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Unfired_Clay_Slap.png"
-     
+    "IconFile": "T_Icon_Resource_Unfired_Clay_Slap.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Vessel",
     "PersistenceID": "uTmDj0pXttZKU7qob4UvNw",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Fired_Clay_Vessel.png"
-     
+    "IconFile": "T_Icon_Fired_Clay_Vessel.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Clay Vessel (Unfired)",
     "PersistenceID": "xhvDCkkTzJPbihGOZo3Hvw",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Unfired_Clay_Vessel.png"
-     
+    "IconFile": "T_Icon_Unfired_Clay_Vessel.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dragon Tooth",
     "PersistenceID": "qelCL0cKP9oFmYaJkKg6wA",
     "Weight": 1.5,
-      "IconFile": "T_Icon_Resource_Dragon_Tooth.png"
-     
+    "IconFile": "T_Icon_Resource_Dragon_Tooth.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Granite",
     "PersistenceID": "83Kcm0CpBOcYsk-eo-dfMw",
     "Weight": 1.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Granite.png"
-     
+    "IconFile": "T_Icon_Resource_Granite.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ground Clay",
     "PersistenceID": "GXtUfUZIYgpsYAGE4y5vEg",
     "Weight": 1.5,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Resources_Ground_Clay.png"
-     
+    "IconFile": "T_Icon_Resources_Ground_Clay.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ground Granite",
     "PersistenceID": "Cu5DREB0z4_XYRGkXu8U9A",
     "Weight": 1.5,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Resources_Ground_Granite.png"
-     
+    "IconFile": "T_Icon_Resources_Ground_Granite.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ground Sandstone",
     "PersistenceID": "FcnXn0Sq3OS7tJKuCRAc1A",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resources_Ground_Sandstone.png"
-     
+    "IconFile": "T_Icon_Resources_Ground_Sandstone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ground Stone",
     "PersistenceID": "guCjkksBOmEcLFut-VH-qg",
     "Weight": 1.5,
     "MaxStackSize": 99,
-      "IconFile": "T_Icon_Resources_Ground_Stone.png"
-     
+    "IconFile": "T_Icon_Resources_Ground_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Molten Glass",
     "PersistenceID": "qwgPgkOGqffCUdG9M7YR2Q",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Molten_Glass.png"
-     
+    "IconFile": "T_Icon_Resource_Molten_Glass.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Sandstone",
     "PersistenceID": "RdhNn0ebpZZIPQqMviMjNg",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Sandstone_Rock.png"
-     
+    "IconFile": "T_Icon_Resource_Sandstone_Rock.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Stone",
     "PersistenceID": "_R44FI_bhEm8Gx61swlzpA",
     "Weight": 0.5,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Stone.png"
-     
+    "IconFile": "T_Icon_Resource_Stone.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Swamp Tar",
     "PersistenceID": "DJIQWUsnDB7Umey0E2dFgA",
     "Weight": 2.0,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Swamp_Tar_01.png"
-     
+    "IconFile": "T_Icon_Swamp_Tar_01.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bloodwood Sap",
     "PersistenceID": "OeUUZEKiGnt36CqCIkqJgw",
     "Weight": 0.1,
-      "IconFile": "T_Icon_Bloodwood_Sap.png"
-     
+    "IconFile": "T_Icon_Bloodwood_Sap.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Cabbage",
     "PersistenceID": "EHN6Hs9NFkur7chZVfchJg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Cabbage.png"
-     
+    "IconFile": "T_Icon_Resource_Cabbage.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Flax",
     "PersistenceID": "J3Ord4Mjnk-zz-Of_0oL8w",
     "Weight": 0.1,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Flax.png"
-     
+    "IconFile": "T_Icon_Resource_Flax.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Bittercap Mushroom",
     "PersistenceID": "Bt9mnlMVnkipaZStzKEdmg",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Bittercap_Mushroom.png"
-     
+    "IconFile": "T_Icon_Bittercap_Mushroom.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Onion",
     "PersistenceID": "JsMp30dRbfOXIPuy-4NmFA",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Onion.png"
-     
+    "IconFile": "T_Icon_Onion.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Potato",
     "PersistenceID": "HwM2_HvXZUyt8FmT4F2iYQ",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Potato.png"
-     
+    "IconFile": "T_Icon_Resource_Potato.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Vine Root",
     "PersistenceID": "z-xbJy9IS0iWNNx9WciARQ",
     "Weight": 0.2,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resources_Vine.png"
-     
+    "IconFile": "T_Icon_Resources_Vine.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Dire Wolf Leather",
     "PersistenceID": "Rex-3ECcbilpOVqd6zWpIQ",
     "Weight": 0.4,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Dire_Wolf_Leather_NEW.png"
-     
+    "IconFile": "T_Icon_Dire_Wolf_Leather_NEW.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Rough Cloth",
     "PersistenceID": "GQcT3TAgK0ulDFXjsp-k1A",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Linen_Cloth.png"
-     
+    "IconFile": "T_Icon_Resource_Linen_Cloth.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Padded Cloth",
     "PersistenceID": "6kYeY05XaTnhySas_bXdnw",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Padded_Cloth.png"
-     
+    "IconFile": "T_Icon_Resource_Padded_Cloth.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wool Cloth",
     "PersistenceID": "Jf2AM4PfnUqwTuW0cPXheA",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Woolen_Cloth.png"
-     
+    "IconFile": "T_Icon_Resource_Woolen_Cloth.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Leather",
     "PersistenceID": "KejxKZhqBEy2BmyMUMidlA",
     "Weight": 0.4,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resources_Leather.png"
-     
+    "IconFile": "T_Icon_Resources_Leather.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Hard Leather",
     "PersistenceID": "UyIYrQzoTkaR04aJNXLTJQ",
     "Weight": 0.5,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resources_Hard_leather.png"
-     
+    "IconFile": "T_Icon_Resources_Hard_leather.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Coarse Thread",
     "PersistenceID": "Dns4MEGuhT5fcRWocI5o9Q",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Thread.png"
-     
+    "IconFile": "T_Icon_Resource_Thread.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Swamp Thread",
     "PersistenceID": "ehZX4E-aGmiITq6BdnbgFA",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Swamp_Thread.png"
-     
+    "IconFile": "T_Icon_Resource_Swamp_Thread.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Wool Thread",
     "PersistenceID": "vgsjm0jT19zFn1uH9N2Rbg",
     "Weight": 0.3,
     "MaxStackSize": 20,
-      "IconFile": "T_Icon_Resource_Ball_Of_Wool.png"
-     
+    "IconFile": "T_Icon_Resource_Ball_Of_Wool.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Anima-infused Bark",
     "PersistenceID": "tKokB0xYm6tJNHiWwmG2SQ",
     "Weight": 0.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Anima_Infused_Bark.png"
-     
+    "IconFile": "T_Icon_Resource_Anima_Infused_Bark.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ash Plank",
     "PersistenceID": "Gv_wHkJnBgiXOfq0cCvggg",
     "Weight": 0.4,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Ash_Plank.png"
-     
+    "IconFile": "T_Icon_Resource_Ash_Plank.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Oak Plank",
     "PersistenceID": "FaDdOe9tLUOzvrkYSPpb3Q",
     "Weight": 2.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Resource_Oak_Plank.png"
-     
+    "IconFile": "T_Icon_Resource_Oak_Plank.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Ash Logs",
     "PersistenceID": "2rxJ495rm0GDn4h5OWKiyQ",
     "Weight": 2.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Ash_Logs.png"
-     
+    "IconFile": "T_Icon_Ash_Logs.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Blightwood",
     "PersistenceID": "CxUwQN-Me0qnNfyc207f0g",
     "Weight": 0.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Blightwood.png"
-     
+    "IconFile": "T_Icon_Blightwood.png",
+    "Category": "MISC"
   },
   {
     "SourceString": "Oak Logs",
     "PersistenceID": "TsGMyBWLNEWhBdNu21CwCA",
     "Weight": 2.0,
     "MaxStackSize": 50,
-      "IconFile": "T_Icon_Oak_Logs.png"
+    "IconFile": "T_Icon_Oak_Logs.png",
+    "Category": "MISC"
   }
 ]
