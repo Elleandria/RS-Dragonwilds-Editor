@@ -1,6 +1,7 @@
 build/
 dist/
 *.spec
+*.bat
 __pycache__/
 
 RS-Dragonwilds Editor.zip
