@@ -190,6 +190,7 @@
     "SourceString": "Artisan Skillcape",
     "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -197,6 +198,7 @@
     "SourceString": "Attack Skillcape",
     "PersistenceID": "QB-cekR96jMiFVqZ4b-eZQ",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -204,6 +206,7 @@
     "SourceString": "Bloodblight Cape",
     "PersistenceID": "emA_O0RntNNsrNuNVOTmow",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Bloodblight.png",
     "Category": "Capes"
   },
@@ -211,6 +214,7 @@
     "SourceString": "Bramblemead Cape",
     "PersistenceID": "4hYWzULKMjNsgOuwHL7UAA",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Bramblemead.png",
     "Category": "Capes"
   },
@@ -218,6 +222,7 @@
     "SourceString": "Construction Skillcape",
     "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -225,6 +230,7 @@
     "SourceString": "Cooking Skillcape",
     "PersistenceID": "CV3gFUxualOL_TK-w4iPtw",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -232,6 +238,7 @@
     "SourceString": "Pioneer's Cape",
     "PersistenceID": "BOb1iEzyCdDhlNWQVxo_eA",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Pioneer_Mantle.png",
     "Category": "Capes"
   },
@@ -239,6 +246,7 @@
     "SourceString": "Fractured Cape",
     "PersistenceID": "71LhGUmAvrlALY6KcS8W3Q",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Fractured.png",
     "Category": "Capes"
   },
@@ -246,6 +254,7 @@
     "SourceString": "Garou Highborn's Cloak",
     "PersistenceID": "q6popEFaVyrZbq6kc0-Drg",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -253,6 +262,7 @@
     "SourceString": "Goblin War Banner",
     "PersistenceID": "24_UV0P2zlDAbcy48UOCkA",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_HighWarGodBanner.png",
     "Category": "Capes"
   },
@@ -260,6 +270,7 @@
     "SourceString": "Adventurers Cape",
     "PersistenceID": "Nzf1rECKpuLNgX25lvNy5g",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Adventurer.png",
     "Category": "Capes"
   },
@@ -267,6 +278,7 @@
     "SourceString": "Mining Skillcape",
     "PersistenceID": "vAmVoEtvZ7KlXWqbZuDJsA",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -274,6 +286,7 @@
     "SourceString": "Runecrafting Skillcape",
     "PersistenceID": "X4RwpkGAyra6l7Kjfo_GWw",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
@@ -281,6 +294,7 @@
     "SourceString": "Stormtouched Cape",
     "PersistenceID": "KMexB0_3MwL8rEC0g0xd5g",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Stormtouched.png",
     "Category": "Capes"
   },
@@ -288,6 +302,7 @@
     "SourceString": "Tattered Cape",
     "PersistenceID": "6L-fvUa58zMKWFabeAk0tg",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_TatteredCape.png",
     "Category": "Capes"
   },
@@ -295,6 +310,7 @@
     "SourceString": "Whispering Cape",
     "PersistenceID": "qANQGE8VKB_lSNeI-PHxGQ",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Whispering.png",
     "Category": "Capes"
   },
@@ -302,6 +318,7 @@
     "SourceString": "Woodcutting Skillcape",
     "PersistenceID": "Gl4nHkekntdefgi0GdbAZw",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Capes"
   },
