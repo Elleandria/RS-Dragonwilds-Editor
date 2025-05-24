@@ -182,6 +182,7 @@
     "SourceString": "Dragonbane Cape",
     "PersistenceID": "1ReHrk6Keawr5E-eQ8WTCg",
     "Weight": 5.0,
+    "VitalShield": 0,
     "IconFile": "T_Icon_Alpha_Cape.png",
     "Category": "Capes"
   },
