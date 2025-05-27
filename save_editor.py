@@ -36,11 +36,9 @@ class ToolTip:
             self.tipwindow = None
 
 def resource_path(relative_path):
-    # Use the directory of the script instead of cwd
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
-# Define paths using the script's directory
 ASSETS_DIR = resource_path("assets")
 UI_DIR = os.path.join(ASSETS_DIR, "UI")
 DATA_DIR = resource_path("data")
@@ -160,20 +158,17 @@ def reset_inventory_tab(inv_frame: tk.Frame) -> None:
     slot_labels = widgets.get("slot_labels", {})
     loadout_labels = widgets.get("loadout_labels", [])
 
-    # Reset all slot labels to their initial state
     for idx, lbl in slot_labels.items():
-        lbl.configure(image="", text=str(idx), width=8, height=4)  # Reset to character-based sizes
+        lbl.configure(image="", text=str(idx), width=8, height=4)
         lbl.image = None
         for binding in lbl.bind():
             lbl.unbind(binding)
         lbl._tooltip = None
-        # Clear badges
-        _set_count_badge(lbl, None)  # Hide count badge
-        _set_power_badge(lbl, None)  # Hide power badge
-        # Reapply grid layout to ensure proper placement
-        if idx < 8:  # Action Bar slots
+        _set_count_badge(lbl, None)
+        _set_power_badge(lbl, None)
+        if idx < 8:
             lbl.grid(row=0, column=idx, padx=4, pady=4)
-        else:  # Main, Rune, Quest slots
+        else:
             tab_start = {"main": 8, "rune": 32, "quest": 56}
             for tab, start in tab_start.items():
                 if start <= idx < start + 24:
@@ -182,29 +177,27 @@ def reset_inventory_tab(inv_frame: tk.Frame) -> None:
                     lbl.grid(row=row, column=col, padx=4, pady=4)
                     break
 
-    # Reset loadout labels
     ph_imgs = getattr(inv_frame, "_icon_refs", {}).get("loadout", [])
     for idx, (lbl, ph) in enumerate(zip(loadout_labels, ph_imgs)):
-        lbl.configure(image=ph, width=62, height=62)  # Reset to pixel-based sizes
+        lbl.configure(image=ph, width=62, height=62)
         lbl.image = ph
         for binding in lbl.bind():
             lbl.unbind(binding)
         lbl._tooltip = None
-        # Clear badges for loadout labels
-        _set_count_badge(lbl, None)  # Hide count badge
-        _set_power_badge(lbl, None)  # Hide power badge
-        lbl.grid(row=0, column=idx, padx=10, pady=8)  # Reapply grid layout
+        _set_count_badge(lbl, None)
+        _set_power_badge(lbl, None)
+        lbl.grid(row=0, column=idx, padx=10, pady=8)
 
 def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
     if not os.path.isfile(file_path):
-        reset_inventory_tab(inv_frame)  # Reset if file is invalid
+        reset_inventory_tab(inv_frame)
         return
     try:
         with open(file_path, "r", encoding="utf-8") as fh:
             save = json.load(fh)
     except Exception as exc:
         print("Save parse error:", exc)
-        reset_inventory_tab(inv_frame)  # Reset on parse error
+        reset_inventory_tab(inv_frame)
         return
 
     root_inv = save.get("Inventory", {})
@@ -220,20 +213,17 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
 
     _, _, item_lookup, _ = load_item_list()
 
-    # Reset all slot labels to their initial state
     for idx, lbl in slot_labels.items():
-        lbl.configure(image="", text=str(idx), width=8, height=4)  # Reset to character-based sizes
+        lbl.configure(image="", text=str(idx), width=8, height=4)
         lbl.image = None
         for binding in lbl.bind():
             lbl.unbind(binding)
         lbl._tooltip = None
-        # Clear badges
-        _set_count_badge(lbl, None)  # Hide count badge
-        _set_power_badge(lbl, None)  # Hide power badge
-        # Reapply grid layout to ensure proper placement
-        if idx < 8:  # Action Bar slots
+        _set_count_badge(lbl, None)
+        _set_power_badge(lbl, None)
+        if idx < 8:
             lbl.grid(row=0, column=idx, padx=4, pady=4)
-        else:  # Main, Rune, Quest slots
+        else:
             tab_start = {"main": 8, "rune": 32, "quest": 56}
             for tab, start in tab_start.items():
                 if start <= idx < start + 24:
@@ -242,18 +232,16 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
                     lbl.grid(row=row, column=col, padx=4, pady=4)
                     break
 
-    # Reset loadout labels
     ph_imgs = getattr(inv_frame, "_icon_refs", {}).get("loadout", [])
     for idx, (lbl, ph) in enumerate(zip(loadout_labels, ph_imgs)):
-        lbl.configure(image=ph, width=62, height=62)  # Reset to pixel-based sizes
+        lbl.configure(image=ph, width=62, height=62)
         lbl.image = ph
         for binding in lbl.bind():
             lbl.unbind(binding)
         lbl._tooltip = None
-        # Clear badges for loadout labels as well
-        _set_count_badge(lbl, None)  # Hide count badge
-        _set_power_badge(lbl, None)  # Hide power badge
-        lbl.grid(row=0, column=idx, padx=10, pady=8)  # Reapply grid layout
+        _set_count_badge(lbl, None)
+        _set_power_badge(lbl, None)
+        lbl.grid(row=0, column=idx, padx=10, pady=8)
 
     def get_item_name(item_id):
         if not item_id:
@@ -293,7 +281,6 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
             lbl._tooltip = ToolTip(lbl, item_name)
             lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name}"))
 
-    # Populate loadout slots
     missing_report = []
     for idx_str, entry in loadout_dict.items():
         if not idx_str.isdigit():
@@ -426,7 +413,6 @@ def load_item_list():
         if pid and pwr is not None:
             POWER_MAP[pid] = pwr
 
-    # Minimal debug print to confirm loaded categories
     print(f"Loaded {len(categorized_items)} categories: {sorted(categorized_items.keys())}")
 
     return items, display_map, lookup, categorized_items
@@ -500,7 +486,6 @@ def inject_items():
         messagebox.showerror("Error", "Invalid JSON format in save file.")
         return
 
-    # If the queue is empty, inject the currently selected item
     if not injection_queue:
         selected = selected_item.get().strip()
         if not selected:
@@ -521,7 +506,6 @@ def inject_items():
             messagebox.showerror("Error", "Inputs must be valid numbers!")
             return
 
-        # Create a temporary entry for the selected item
         temp_entry = {
             "item_name": selected,
             "persistence_id": item_data["PersistenceID"],
@@ -574,7 +558,7 @@ def inject_items():
         json.dump(save_data, f, indent=4)
 
     messagebox.showinfo("Success", f"Injected {len(new_items)} items.")
-    if injection_queue:  # Only clear the queue if it was used
+    if injection_queue:
         injection_queue.clear()
         update_queue_display()
     refresh_inventory_icons(file_path, inventory_tab)
@@ -715,8 +699,8 @@ def create_item_box(parent, categorized_items, item_lookup):
     render_cooldown = 0.05
     last_visible_top = None
     initial_render_done = {cat: False for cat in categorized_items.keys()}
-    current_filtered_items = {}  # Initialize as empty to force initial render
-    last_search_text = None  # Track last search text to force initial render
+    current_filtered_items = {}
+    last_search_text = None
     search_debounce_id = None
 
     def initialize_widget_pools():
@@ -748,7 +732,7 @@ def create_item_box(parent, categorized_items, item_lookup):
             category_frames[category]["toggle_btn"].config(text=f"{category_frames[category]['display_name']} ►")
             for lbl in widget_pools.get(category, []):
                 lbl.grid_remove()
-        update_box(search_entry.get())  # Recompute layout to collapse space
+        update_box(search_entry.get())
 
     def select_item(item_name, label):
         nonlocal selected_label
@@ -841,12 +825,11 @@ def create_item_box(parent, categorized_items, item_lookup):
         nonlocal selected_label, last_visible_top, current_filtered_items, last_search_text, search_debounce_id
         last_visible_top = None
 
-        # Always update filtered items
         if search_text:
             new_filtered_items = {}
             for category, items in categorized_items.items():
                 filtered = [(item, orig_cat) for item, orig_cat in items if search_text.lower() in item.lower()]
-                if filtered:  # Only include categories with matching items
+                if filtered:
                     new_filtered_items[category] = filtered
         else:
             new_filtered_items = categorized_items.copy()
@@ -860,7 +843,6 @@ def create_item_box(parent, categorized_items, item_lookup):
         for category in initial_render_done:
             initial_render_done[category] = False
 
-        # Rebuild UI if category_frames is empty (initial render)
         if not category_frames:
             row = 0
             for category, items in sorted(current_filtered_items.items()):
@@ -894,27 +876,24 @@ def create_item_box(parent, categorized_items, item_lookup):
 
             initialize_widget_pools()
 
-        # Dynamically reassign rows to visible categories and resize scrollable area
         row = 0
-        for r in range(scrollable_frame.grid_size()[1]):  # Clear existing row configurations
+        for r in range(scrollable_frame.grid_size()[1]):
             scrollable_frame.grid_rowconfigure(r, minsize=0)
         for category in sorted(categorized_items.keys()):
             if category not in category_frames:
                 continue
             cat_frame = category_frames[category]["toggle_btn"].master
             items_frame = category_frames[category]["frame"]
-            if category not in current_filtered_items:  # Hide categories with no matching items
+            if category not in current_filtered_items:
                 cat_frame.grid_remove()
                 items_frame.grid_remove()
                 continue
-            # Reassign row positions to pack categories tightly
-            scrollable_frame.grid_rowconfigure(row, minsize=20)  # Height for toggle button
+            scrollable_frame.grid_rowconfigure(row, minsize=20)
             cat_frame.grid(row=row, column=0, sticky="w", pady=0)
             row += 1
             items = current_filtered_items[category]
             num_rows = (len(items) + items_per_row - 1) // items_per_row
-            # Reconfigure items_frame rows based on filtered items
-            for r in range(items_frame.grid_size()[1]):  # Clear existing row configurations
+            for r in range(items_frame.grid_size()[1]):
                 items_frame.grid_rowconfigure(r, minsize=0)
             for r in range(num_rows):
                 items_frame.grid_rowconfigure(r, minsize=ITEM_ICON_SIZE + 10)
@@ -922,15 +901,14 @@ def create_item_box(parent, categorized_items, item_lookup):
                 scrollable_frame.grid_rowconfigure(row, minsize=(ITEM_ICON_SIZE + 10) * num_rows)
                 items_frame.grid(row=row, column=0, sticky="w", pady=0)
             else:
-                scrollable_frame.grid_rowconfigure(row, minsize=0)  # Collapse the row
+                scrollable_frame.grid_rowconfigure(row, minsize=0)
                 items_frame.grid_remove()
             y_position = row * (ITEM_ICON_SIZE + 10)
             item_positions[category] = {"items": [(item, y_position, orig_cat) for item, orig_cat in items], "y_position": y_position}
-            row += 1 if category_visible[category] else 0  # Only increment if visible
+            row += 1 if category_visible[category] else 0
             if category_visible[category]:
                 render_visible_items(category)
 
-        # Update canvas scroll region to match visible content
         update_scrollregion()
 
     def on_scroll(event):
@@ -956,7 +934,6 @@ def create_item_box(parent, categorized_items, item_lookup):
     canvas.bind("<Button-4>", lambda e: on_scroll(e))
     canvas.bind("<Button-5>", lambda e: on_scroll(e))
 
-    # Force initial render
     update_box()
 
     return update_box, debounce_search
@@ -1000,7 +977,6 @@ notebook.add(inventory_tab, text="Inventory")
 notebook.pack(expand=True, fill='both')
 
 def load_json():
-    # Clear the entry field and reset the Inventory tab
     entry_file.delete(0, tk.END)
     reset_inventory_tab(inventory_tab)
 
@@ -1034,7 +1010,7 @@ clear_search_btn.grid(row=1, column=2, padx=(2, 0), sticky="w")
 clear_search_btn.bind("<Button-1>", lambda e: search_entry.delete(0, tk.END))
 
 update_box_func, debounce_search = create_item_box(editor_tab, categorized_items, item_lookup)
-update_box_func()  # Initial render
+update_box_func()
 search_entry.bind("<KeyRelease>", debounce_search)
 clear_search_btn.bind("<Button-1>", lambda e: [search_entry.delete(0, tk.END), update_box_func("")])
 
