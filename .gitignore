@@ -1,25 +1,39 @@
 build/
 dist/
+*.exe
 *.spec
-*.bat
+*.onefile-build/      # sometimes created
+
 __pycache__/
-
-RS-Dragonwilds Editor.zip
-
-RS-Dragonwilds Editor/save_editor.exe
-
+*.pyc
+*.pyo
+*.pyd
 *.log
 *.tmp
 *.bak
 *.swp
-.DS_Store
-Thumbs.db
 
 venv/
-.env/
+.venv/
+env/
+ENV/
 
-RS-Dragonwilds Editor/data/*.json
-RS-Dragonwilds Editor/*.bak
+# OS-specific junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
 
-# Don't ignore the source script (allow collab)
-!RS-Dragonwilds Editor/save_editor.py
+RS-Dragonwilds Editor.zip
+RS-Dragonwilds Editor/save_editor.exe
+*.bak
+
+# Keep these in the repo (do NOT ignore)
+# !data/ItemID.json
+# !save_editor.py
+
+!save_editor.py
+!IDscan.py
+!UpdateIcons.py
+!CleanToItemJsons.py
+!UpdateAll.bat

@@ -192,6 +192,7 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
     if not os.path.isfile(file_path):
         reset_inventory_tab(inv_frame)
         return
+
     try:
         with open(file_path, "r", encoding="utf-8") as fh:
             save = json.load(fh)
@@ -202,13 +203,15 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
 
     root_inv = save.get("Inventory", {})
     inv_dict = root_inv.get("Inventory") or {k: v for k, v in root_inv.items() if k.isdigit()}
+
     loadout_dict = (
         save.get("Loadout") or
         root_inv.get("Loadout") or
-        save.get("PersonalInventory", {}).get("Loadout", {}))
+        save.get("PersonalInventory", {}).get("Loadout", {})
+    )
 
-    widgets        = getattr(inv_frame, "_inventory_widgets", {})
-    slot_labels    = widgets.get("slot_labels", {})
+    widgets = getattr(inv_frame, "_inventory_widgets", {})
+    slot_labels = widgets.get("slot_labels", {})
     loadout_labels = widgets.get("loadout_labels", [])
 
     _, _, item_lookup, _ = load_item_list()
@@ -216,7 +219,7 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
     for idx, lbl in slot_labels.items():
         lbl.configure(image="", text=str(idx), width=8, height=4)
         lbl.image = None
-        for binding in lbl.bind():
+        for binding in list(lbl.bind()):
             lbl.unbind(binding)
         lbl._tooltip = None
         _set_count_badge(lbl, None)
@@ -236,35 +239,34 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
     for idx, (lbl, ph) in enumerate(zip(loadout_labels, ph_imgs)):
         lbl.configure(image=ph, width=62, height=62)
         lbl.image = ph
-        for binding in lbl.bind():
+        for binding in list(lbl.bind()):
             lbl.unbind(binding)
         lbl._tooltip = None
         _set_count_badge(lbl, None)
         _set_power_badge(lbl, None)
         lbl.grid(row=0, column=idx, padx=10, pady=8)
 
-    def get_item_name(item_id):
+    def get_item_name(item_id: str | None) -> str | None:
         if not item_id:
             return None
-        for item in item_lookup.values():
-            if item.get("PersistenceID") == item_id:
-                return item.get("SourceString")
+        for name, entry in item_lookup.items():
+            if entry.get("PersistenceID") == item_id:
+                return name
         return None
 
-    # Populate inventory slots
     for idx_str, entry in inv_dict.items():
         if not idx_str.isdigit():
             continue
         item_id = entry.get("ItemData")
+        if not item_id:
+            continue
         icon_img = get_icon_image(item_id)
         if not icon_img:
             continue
-
         idx = int(idx_str)
         lbl = slot_labels.get(idx)
         if not lbl:
             continue
-
         lbl.configure(
             image=icon_img,
             text="",
@@ -275,11 +277,10 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
         lbl.image = icon_img
         _set_count_badge(lbl, entry.get("Count"))
         _set_power_badge(lbl, item_id)
-
         item_name = get_item_name(item_id)
         if item_name:
             lbl._tooltip = ToolTip(lbl, item_name)
-            lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name}"))
+            lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name.replace(' ', '_')}"))
 
     missing_report = []
     for idx_str, entry in loadout_dict.items():
@@ -290,7 +291,6 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
             continue
 
         item_id = entry.get("ItemData")
-
         if not item_id and "PlayerInventoryItemIndex" in entry:
             ref = str(entry["PlayerInventoryItemIndex"])
             item_id = inv_dict.get(ref, {}).get("ItemData")
@@ -305,33 +305,33 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
         lbl.image = icon_img
         _set_count_badge(lbl, entry.get("Count"))
         _set_power_badge(lbl, item_id)
-
         item_name = get_item_name(item_id)
         if item_name:
             lbl._tooltip = ToolTip(lbl, item_name)
-            lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name}"))
+            lbl.bind("<Button-1>", lambda e, name=item_name: webbrowser.open(f"https://dragonwilds.runescape.wiki/w/{name.replace(' ', '_')}"))
 
     if missing_report:
         print("Load-out slots left on mask (no mapping):")
         for idx, iid in missing_report:
-            print(f"  slot {idx}: ItemData {iid!r} not found in ItemID.txt or assets/UI/")
+            print(f" slot {idx}: ItemData {iid!r} not found in ItemID.json or assets/UI/")
+
 
 def _set_count_badge(parent_lbl: tk.Label, count: int | None) -> None:
     badge = getattr(parent_lbl, "_badge", None)
     if badge is None:
         badge = tk.Label(
-            parent_lbl,  text="", fg="white", bg="#444",
+            parent_lbl, text="", fg="white", bg="#444",
             font=("Consolas", 10, "bold"), padx=2, pady=0
         )
         badge.place(relx=1.0, rely=1.0, anchor="se")
         parent_lbl._badge = badge
-
-    if count is None:
+    if count is None or count <= 1:
         badge.config(text="")
         badge.place_forget()
     else:
         badge.config(text=str(count))
         badge.place(relx=1.0, rely=1.0, anchor="se")
+
 
 def _set_power_badge(parent_lbl: tk.Label, item_id: str | None) -> None:
     badge = getattr(parent_lbl, "_pwr_badge", None)
@@ -339,6 +339,11 @@ def _set_power_badge(parent_lbl: tk.Label, item_id: str | None) -> None:
         badge = tk.Label(parent_lbl, image="", bd=0, bg=parent_lbl["bg"], highlightthickness=0)
         badge.place(relx=0, rely=0, anchor="nw")
         parent_lbl._pwr_badge = badge
+
+    if not item_id:
+        badge.config(image="")
+        badge.place_forget()
+        return
 
     lvl = POWER_MAP.get(item_id)
     if lvl in POWER_BADGES:
@@ -352,25 +357,21 @@ def _set_power_badge(parent_lbl: tk.Label, item_id: str | None) -> None:
 def load_item_list():
     global ICON_MAP, POWER_MAP
     items, display_map, lookup, categorized_items = [], {}, {}, {}
-    path = os.path.join(DATA_DIR, "ItemID.txt")
-    if not os.path.exists(path):
-        messagebox.showerror("Missing File", f"ItemID.txt not found in {DATA_DIR}.")
+
+    json_path = os.path.join(DATA_DIR, "ItemID.json")
+    if not os.path.exists(json_path):
+        messagebox.showerror(
+            "Missing Item Data",
+            f"ItemID.json not found in:\n{DATA_DIR}\n\n"
+            "Run UpdateItems.bat first to generate fresh item data from your latest FModel extract."
+        )
         return items, display_map, lookup, categorized_items
 
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            try:
-                data = json.load(f)
-            except json.JSONDecodeError:
-                txt = f.read() if f.closed else f""
-                if not txt:
-                    txt = open(path, "r", encoding="utf-8").read()
-                txt = txt.strip()
-                if not txt.startswith('['):
-                    txt = '[' + txt.rstrip(',\n') + ']'
-                data = json.loads(txt)
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
     except Exception as e:
-        messagebox.showerror("Parse Error", f"Cannot read ItemID.txt: {e}")
+        messagebox.showerror("Parse Error", f"Cannot read ItemID.json:\n{e}")
         return items, display_map, lookup, categorized_items
 
     for entry in data:
@@ -414,7 +415,6 @@ def load_item_list():
             POWER_MAP[pid] = pwr
 
     print(f"Loaded {len(categorized_items)} categories: {sorted(categorized_items.keys())}")
-
     return items, display_map, lookup, categorized_items
 
 def get_icon_image(item_id: str) -> ImageTk.PhotoImage | None:

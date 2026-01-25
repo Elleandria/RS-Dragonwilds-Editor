@@ -1,8 +1,7 @@
-# UTF-8
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(1, 2, 3, 0),
-    prodvers=(1, 2, 3, 0),
+    filevers=(2, 0, 0, 0),
+    prodvers=(2, 0, 0, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -11,17 +10,18 @@ VSVersionInfo(
     date=(0, 0)
   ),
   kids=[
-    StringFileInfo([
-      StringTable('040904B0', [
-        StringStruct('CompanyName', 'The Seven'),
-        StringStruct('FileDescription', 'RuneScape Save Editor'),
-        StringStruct('FileVersion', '1.2.3.0'),
-        StringStruct('InternalName', 'save_editor'),
-        StringStruct('OriginalFilename', 'save_editor.exe'),
-        StringStruct('ProductName', 'SaveEditor'),
-        StringStruct('ProductVersion', '1.2.3.0')
-      ])
-    ]),
-    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+    StringFileInfo(
+      [
+        StringStruct('CompanyName', 'Elleandria'),
+        StringStruct('FileDescription', 'RuneScape: Dragonwilds Save Editor'),
+        StringStruct('FileVersion', '2.0.0'),
+        StringStruct('InternalName', 'rs_editor'),
+        StringStruct('LegalCopyright', '© 2026 Elleandria'),
+        StringStruct('OriginalFilename', 'rs_editor.exe'),
+        StringStruct('ProductName', 'Dragonwilds Editor'),
+        StringStruct('ProductVersion', '2.0.0')
+      ]
+    ),
+    VarFileInfo([VarStruct('Translation', [0x0409, 1252])])
   ]
 )
