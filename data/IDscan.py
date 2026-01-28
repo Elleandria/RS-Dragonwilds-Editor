@@ -5,17 +5,17 @@ import argparse
 from pathlib import Path
 
 # ----------------------------------------------------------------
-#  Helper functions (unchanged from previous version)
+#  Helper functions
 # -----------------------------------------------------------------
 
 def extract_icon_filename(icon_obj):
     if not icon_obj or "ObjectName" not in icon_obj:
-        return "T_Icon_Default.png"
+        return "ICON PLACEHOLDER.png"  # ← your custom placeholder
     match = re.search(r"Texture2D'([^']+)'", icon_obj["ObjectName"])
     if match:
         path = match.group(1)
         return f"{Path(path).name}.png"
-    return "T_Icon_Default.png"
+    return "ICON PLACEHOLDER.png"
 
 
 def get_category(name, default="Basic Item"):
@@ -88,24 +88,28 @@ def process_item_json(data):
     props = data.get("Properties", {})
     if not props:
         return []
+
     name_obj = props.get("Name", {})
     source_string = (
         name_obj.get("SourceString") or
         name_obj.get("LocalizedString") or
         props.get("DisplayName", {}).get("SourceString", "")
     ).strip()
+
     pid = (
         props.get("PersistenceID") or
         props.get("ItemID") or
         props.get("PersistentID")
     )
+
     if not source_string or not pid:
         return []
+
     item = {
         "SourceString": source_string,
         "PersistenceID": pid,
         "Weight": props.get("Weight", 0.0),
-        "MaxStackSize": props.get("MaxStackSize", 99),
+        "MaxStackSize": props.get("MaxStackSize", 1),
         "VitalShield": props.get("VitalShield", 0),
         "IconFile": extract_icon_filename(props.get("Icon")),
         "Category": get_category(source_string),
@@ -114,6 +118,7 @@ def process_item_json(data):
         item["PowerLevel"] = props["PowerLevel"]
     if "BaseDurability" in props and props["BaseDurability"] > 0:
         item["BaseDurability"] = props["BaseDurability"]
+
     return [item]
 
 
@@ -122,14 +127,14 @@ def main():
     os.chdir(script_dir)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("input_dir", nargs="?", 
-                        default=r"C:\Users\NYPD6\Desktop\Fmodel\Output\Exports\RSDragonwilds\Content\Gameplay")
+    parser.add_argument("input_dir", nargs="?",
+                        default=r"C:\Users\NYPD6\Desktop\Fmodel\Output\Exports\RSDragonwilds\Content\Gameplay-ITEMs")
     parser.add_argument("--output", default="ItemID.json")
     args = parser.parse_args()
 
     input_dir = Path(args.input_dir).resolve()
     output_path = Path(args.output)
-    
+
     if not output_path.is_absolute():
         output_path = script_dir / output_path
 
@@ -142,7 +147,7 @@ def main():
 
     for root, _, files in os.walk(input_dir):
         for file in files:
-            if file.endswith(".json"):
+            if file.upper().endswith(".JSON") and file.upper().startswith("ITEM_"):
                 path = Path(root) / file
                 try:
                     with open(path, "r", encoding="utf-8") as f:

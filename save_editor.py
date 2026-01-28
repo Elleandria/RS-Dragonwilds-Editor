@@ -60,20 +60,22 @@ def init_inventory_gui(parent):
     try:
         icons = {
             "tab": {
-                "main" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Items_Normal.png" )) .resize((96,48))),
-                "rune" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Runes_Normal.png" )) .resize((96,48))),
+                "main": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Items_Normal.png")).resize((96,48))),
+                "rune": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Runes_Normal.png")).resize((96,48))),
+                "arrow": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_ArrowsBolts_Normal.png")).resize((96,48))),
                 "quest": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Quests_Normal.png")).resize((96,48)))
             },
             "tab_selected": {
-                "main" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Items_Highlight.png" )) .resize((96,48))),
-                "rune" : ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Runes_Highlight.png" )) .resize((96,48))),
+                "main": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Items_Highlight.png")).resize((96,48))),
+                "rune": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Runes_Highlight.png")).resize((96,48))),
+                "arrow": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_ArrowsBolts_Highlight.png")).resize((96,48))),
                 "quest": ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Quests_Highlight.png")).resize((96,48)))
             },
             "loadout": [
-                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentHelmet.png" )) .resize((48,48))),
-                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentBody.png"   )) .resize((48,48))),
-                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentLegs.png"   )) .resize((48,48))),
-                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentCape.png"   )) .resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentHelmet.png")).resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentBody.png")).resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentLegs.png")).resize((48,48))),
+                ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentCape.png")).resize((48,48))),
                 ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Inventory_EquipmentTrinket.png")).resize((32,32)))
             ]
         }
@@ -114,14 +116,14 @@ def init_inventory_gui(parent):
             b.configure(image=icons["tab_selected"][t] if t==name else icons["tab"][t])
         tab_frames[current_tab].lower(); tab_frames[name].lift(); current_tab = name
 
-    for t in ("main","rune","quest"):
+    for t in ("main", "rune", "arrow", "quest"):
         img = icons["tab_selected"][t] if t==current_tab else icons["tab"][t]
         lbl = tk.Label(tab_switch, image=img, bg="#1c1b18")
-        lbl.pack(side=tk.LEFT, padx=10)
+        lbl.pack(side=tk.LEFT, padx=18)
         lbl.bind("<Button-1>", lambda e,n=t: switch(n))
         tab_buttons[t] = lbl
 
-    tab_start = {"main":8, "rune":32, "quest":56}
+    tab_start = {"main":8, "rune":32, "arrow":56, "quest":80}
     for name,start in tab_start.items():
         f = tk.Frame(grids_wrap, bg="#222"); f.grid(row=0,column=0,sticky="nsew")
         tab_frames[name] = f
@@ -614,27 +616,32 @@ def clear_queue():
 def update_max_stack_display(*args):
     selected = selected_item.get().strip()
     item = item_lookup.get(selected)
-    if item:
-        if "MaxStackSize" in item:
-            label_count.grid()
-            entry_count.grid()
-            label_durability.grid_remove()
-            entry_durability.grid_remove()
-            label_maxstack.config(text=f"MaxStackSize: {item['MaxStackSize']}", foreground="red")
-        elif "BaseDurability" in item:
-            label_count.grid_remove()
-            entry_count.grid_remove()
-            label_maxstack.config(text="")
-            label_durability.grid()
-            entry_durability.grid()
-            entry_durability.delete(0, tk.END)
-            entry_durability.insert(0, str(item['BaseDurability']))
-        else:
-            label_count.grid_remove()
-            entry_count.grid_remove()
-            label_maxstack.config(text="")
-            label_durability.grid_remove()
-            entry_durability.grid_remove()
+    if not item:
+        return
+
+    is_stackable = "MaxStackSize" in item and item["MaxStackSize"] > 1
+    is_durable   = "BaseDurability" in item
+
+    if is_stackable:
+        label_count.grid()
+        entry_count.grid()
+        label_durability.grid_remove()
+        entry_durability.grid_remove()
+        label_maxstack.config(text=f"Max: {item['MaxStackSize']}", foreground="red")
+    elif is_durable:
+        label_count.grid_remove()
+        entry_count.grid_remove()
+        label_maxstack.config(text="")
+        label_durability.grid()
+        entry_durability.grid()
+        entry_durability.delete(0, tk.END)
+        entry_durability.insert(0, str(item['BaseDurability']))
+    else:
+        label_count.grid_remove()
+        entry_count.grid_remove()
+        label_durability.grid_remove()
+        entry_durability.grid_remove()
+        label_maxstack.config(text="×1", foreground="gray")
 
 def set_slot_range(start, end):
     entry_start.delete(0, tk.END)
@@ -1043,15 +1050,17 @@ entry_end.grid(row=5, column=1, padx=5, pady=5, sticky="w")
 entry_end.insert(0, "8")
 
 try:
-    icon_main = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icons_Journal_Recipes_Resources_VaultCore.png")).resize((20, 20)))
-    icon_rune = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Rune_Law.png")).resize((20, 20)))
-    icon_quest = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icons_Journal_Imbued_Maul_Head.png")).resize((20, 20)))
+    icon_main   = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icons_Journal_Recipes_Resources_VaultCore.png")).resize((20, 20)))
+    icon_rune   = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icon_Rune_Law.png")).resize((20, 20)))
+    icon_arrow  = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Arrows_Bone.png")).resize((20, 20)))
+    icon_quest  = ImageTk.PhotoImage(Image.open(os.path.join(ASSETS_DIR, "T_Icons_Journal_Imbued_Maul_Head.png")).resize((20, 20)))
 
-    ttk.Button(editor_tab, image=icon_main, text=" Main", compound="left", command=lambda: set_slot_range(8, 31)).grid(row=3, column=2)
-    ttk.Button(editor_tab, image=icon_rune, text=" Rune", compound="left", command=lambda: set_slot_range(32, 55)).grid(row=4, column=2)
-    ttk.Button(editor_tab, image=icon_quest, text=" Quest", compound="left", command=lambda: set_slot_range(56, 79)).grid(row=5, column=2)
+    ttk.Button(editor_tab, image=icon_main,  text=" Main",  compound="left", command=lambda: set_slot_range(8,  31)).grid(row=3, column=2, padx=5, pady=2, sticky="w")
+    ttk.Button(editor_tab, image=icon_rune,  text=" Rune",  compound="left", command=lambda: set_slot_range(32, 55)).grid(row=4, column=2, padx=5, pady=2, sticky="w")
+    ttk.Button(editor_tab, image=icon_arrow, text=" Arrow", compound="left", command=lambda: set_slot_range(56, 79)).grid(row=5, column=2, padx=5, pady=2, sticky="w")
+    ttk.Button(editor_tab, image=icon_quest, text=" Quest", compound="left", command=lambda: set_slot_range(80, 103)).grid(row=6, column=2, padx=5, pady=2, sticky="w")
 except Exception as e:
-    print("Icon loading failed:", e)
+    print("Preset icon loading failed:", e)
 
 ttk.Button(editor_tab, text="Add to Queue", command=add_to_queue).grid(row=12, column=0, padx=(50, 5), pady=15, sticky="e")
 ttk.Button(editor_tab, text="Inject Items", command=inject_items).grid(row=12, column=1, padx=(5, 0), pady=15, sticky="w")
@@ -1070,13 +1079,15 @@ ToolTip(label_start,
     "• 0–7   for Action Bar slots               \n"
     "• 8–31  for Main Inventory slots    \n"
     "• 32–55  for Rune Inventory slots  \n"
-    "• 56–79  for Quest Inventory slots")
+    "• 56–79  for Arrow Inventory slots  \n"
+    "• 80-103 for Quest Inventory slots")
 ToolTip(label_end,
     "Inventory slot to stop injecting at:\n"
     "• 0–7   for Action Bar slots               \n"
     "• 8–31  for Main Inventory slots    \n"
     "• 32–55  for Rune Inventory slots  \n"
-    "• 56–79  for Quest Inventory slots")
+    "• 56–79  for Arrow Inventory slots  \n"
+    "• 80-103  for Quest Inventory slots")
 
 bind_scroll_increment(entry_count)
 bind_scroll_increment(entry_durability)
