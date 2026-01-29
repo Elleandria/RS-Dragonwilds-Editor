@@ -7,6 +7,7 @@ Currently updating for Patch 0.10.1.1
 **REPORT ALL ISSUES IN THE DISCORD**
 
 https://github.com/Elleandria/RS-Dragonwilds-Editor (Will have WIP/unstable builds)
+
 https://discord.gg/PbXZrWzEkH (Public Discord)
 
 **PLEASE CHECK THE PUBLIC GITHUB FOR THE RAW PYTHON FILES**
