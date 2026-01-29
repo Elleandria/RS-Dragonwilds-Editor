@@ -670,8 +670,15 @@ def create_item_box(parent, categorized_items, item_lookup):
     box_frame.grid(row=2, column=0, columnspan=3, sticky="nsew", pady=5)
 
     canvas = tk.Canvas(box_frame, bg="#1c1b18", highlightthickness=0)
-    scrollable_frame = tk.Frame(canvas, bg="#1c1b18")
 
+    # Add scrollbar
+    scrollbar = ttk.Scrollbar(box_frame, orient="vertical", command=canvas.yview)
+    scrollbar.pack(side="right", fill="y")
+
+    canvas.configure(yscrollcommand=scrollbar.set)
+    canvas.pack(side="left", fill="both", expand=True)
+
+    scrollable_frame = tk.Frame(canvas, bg="#1c1b18")
     window_id = canvas.create_window((0, 0), window=scrollable_frame, anchor="n")
 
     def update_scrollregion(event=None):
@@ -687,8 +694,7 @@ def create_item_box(parent, categorized_items, item_lookup):
     scrollable_frame.bind("<Configure>", update_scrollregion)
     canvas.bind("<Configure>", update_scrollregion)
 
-    canvas.pack(side="left", fill="both", expand=True)
-
+    # Mouse wheel scrolling (cross-platform)
     def on_mouse_wheel(event):
         canvas.yview_scroll(-1 * (event.delta // 120), "units")
 
@@ -780,25 +786,21 @@ def create_item_box(parent, categorized_items, item_lookup):
         items = item_positions[category]["items"]
         items_frame = category_frames[category]["frame"]
         top, bottom = get_visible_range()
-
         num_items = len(items)
         num_rows = (num_items + items_per_row - 1) // items_per_row
         category_height = num_rows * (ITEM_ICON_SIZE + 10)
         category_start_y = item_positions[category]["y_position"]
         category_end_y = category_start_y + category_height
-
         if force_render or not initial_render_done[category] or (category_end_y >= top and category_start_y <= bottom):
             for lbl in widget_pools.get(category, []):
                 lbl.grid_remove()
                 for binding in lbl.bind():
                     lbl.unbind(binding)
                 lbl._tooltip = None
-
             widget_index = 0
             for idx, (item, y_position, original_category) in enumerate(items):
                 item_id = item_lookup.get(item, {}).get("PersistenceID")
                 icon = get_box_icon_image(item_id, size=ITEM_ICON_SIZE) if item_id else PLACEHOLDER_ICON
-
                 if widget_index >= len(widget_pools[category]):
                     lbl = tk.Label(
                         items_frame,
@@ -809,7 +811,6 @@ def create_item_box(parent, categorized_items, item_lookup):
                     widget_pools[category].append(lbl)
                 else:
                     lbl = widget_pools[category][widget_index]
-
                 lbl.configure(
                     image=icon,
                     text="",
@@ -825,13 +826,11 @@ def create_item_box(parent, categorized_items, item_lookup):
                 ToolTip(lbl, item)
                 lbl.bind("<Button-1>", lambda e, i=item, l=lbl: select_item(i, l))
                 widget_index += 1
-
         initial_render_done[category] = True
 
     def update_box(search_text=""):
         nonlocal selected_label, last_visible_top, current_filtered_items, last_search_text, search_debounce_id
         last_visible_top = None
-
         if search_text:
             new_filtered_items = {}
             for category, items in categorized_items.items():
@@ -840,16 +839,12 @@ def create_item_box(parent, categorized_items, item_lookup):
                     new_filtered_items[category] = filtered
         else:
             new_filtered_items = categorized_items.copy()
-
         last_search_text = search_text
         current_filtered_items = new_filtered_items
-
         selected_label = None
         selected_item.set("")
-
         for category in initial_render_done:
             initial_render_done[category] = False
-
         if not category_frames:
             row = 0
             for category, items in sorted(current_filtered_items.items()):
@@ -869,20 +864,16 @@ def create_item_box(parent, categorized_items, item_lookup):
                 )
                 toggle_btn.grid(row=0, column=0, sticky="w")
                 row += 1
-
                 items_frame = tk.Frame(scrollable_frame, bg="#1c1b18")
                 items_frame.grid(row=row, column=0, sticky="w", pady=2)
                 category_frames[category] = {"frame": items_frame, "toggle_btn": toggle_btn, "display_name": display_name}
-
                 y_position = row * (ITEM_ICON_SIZE + 10)
                 item_positions[category] = {"items": [(item, y_position, orig_cat) for item, orig_cat in items], "y_position": y_position}
                 num_rows = (len(items) + items_per_row - 1) // items_per_row
                 for r in range(num_rows):
                     items_frame.grid_rowconfigure(r, minsize=ITEM_ICON_SIZE + 10)
                 row += num_rows
-
             initialize_widget_pools()
-
         row = 0
         for r in range(scrollable_frame.grid_size()[1]):
             scrollable_frame.grid_rowconfigure(r, minsize=0)
@@ -915,7 +906,6 @@ def create_item_box(parent, categorized_items, item_lookup):
             row += 1 if category_visible[category] else 0
             if category_visible[category]:
                 render_visible_items(category)
-
         update_scrollregion()
 
     def on_scroll(event):
@@ -1088,6 +1078,22 @@ ToolTip(label_end,
     "• 32–55  for Rune Inventory slots  \n"
     "• 56–79  for Arrow Inventory slots  \n"
     "• 80-103  for Quest Inventory slots")
+
+def bind_scroll_increment(entry_widget):
+    def on_scroll(event):
+        try:
+            val = int(entry_widget.get())
+            if event.delta > 0 or event.num == 4:
+                val += 1
+            elif event.delta < 0 or event.num == 5:
+                val = max(0, val - 1)
+            entry_widget.delete(0, tk.END)
+            entry_widget.insert(0, str(val))
+        except ValueError:
+            pass
+    entry_widget.bind("<MouseWheel>", on_scroll)
+    entry_widget.bind("<Button-4>", on_scroll)
+    entry_widget.bind("<Button-5>", on_scroll)
 
 bind_scroll_increment(entry_count)
 bind_scroll_increment(entry_durability)

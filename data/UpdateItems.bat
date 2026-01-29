@@ -26,9 +26,9 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 echo.
-echo Step 3: Scanning cleaned ITEM_ files...
+echo Step 3: Scanning UNCLEAN ITEM_ files...
 python IDscan.py ^
-  "C:\Users\NYPD6\Desktop\Fmodel\Output\Exports\RSDragonwilds\Content\Gameplay-ITEMs" ^
+  "C:\Users\NYPD6\Desktop\Fmodel\Output\Exports\RSDragonwilds\Content\Gameplay" ^
   --output "ItemID.json"
 
 if %ERRORLEVEL% == 0 (

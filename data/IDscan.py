@@ -5,12 +5,12 @@ import argparse
 from pathlib import Path
 
 # ----------------------------------------------------------------
-#  Helper functions
+#  Helper functions (v2 update)
 # -----------------------------------------------------------------
 
 def extract_icon_filename(icon_obj):
     if not icon_obj or "ObjectName" not in icon_obj:
-        return "ICON PLACEHOLDER.png"  # ← your custom placeholder
+        return "ICON PLACEHOLDER.png"
     match = re.search(r"Texture2D'([^']+)'", icon_obj["ObjectName"])
     if match:
         path = match.group(1)
@@ -20,45 +20,63 @@ def extract_icon_filename(icon_obj):
 
 def get_category(name, default="Basic Item"):
     categories = {
-        "Arrow": "Arrows",
-        "Bolt": "Arrows",
+        "Sword": "Melee Weapons",
+        "Scimitar": "Melee Weapons",
+        "Dagger": "Melee Weapons",
+        "Knife": "Melee Weapons",
+        "Axe": "Melee Weapons",
+        "Battleaxe": "Melee Weapons",
+        "Warhammer": "Melee Weapons",
+        "Maul": "Melee Weapons",
+        "Club": "Melee Weapons",
+        "Whip": "Melee Weapons",
+        "Spear": "Polearms",
+        "Halberd": "Polearms",
+        "Staff": "Staves",
         "Bow": "Bows",
         "Crossbow": "Crossbows",
-        "Staff": "Staves",
-        "Sword": "Melee Weapons",
-        "Dagger": "Melee Weapons",
-        "Axe": "Melee Weapons",
-        "Pickaxe": "Tools",
-        "Maul": "Melee Weapons",
-        "Warhammer": "Melee Weapons",
-        "Scimitar": "Melee Weapons",
+        "Shield": "Shields",
+        "Kite": "Shields",
+        "Buckler": "Shields",
+        "Defender": "Shields",
         "Platebody": "Chestplates",
         "Body": "Chestplates",
         "Robe": "Chestplates",
         "Tunic": "Chestplates",
+        "Platelegs": "Leggings",
         "Legs": "Leggings",
         "Chaps": "Leggings",
-        "Platelegs": "Leggings",
         "Helm": "Helms",
+        "Cowl": "Helms",
         "Hat": "Helms",
         "Hood": "Helms",
-        "Cape": "Capes",
-        "Cloak": "Capes",
-        "Scarf": "Capes",
+        "Boots": "Boots",
+        "Gloves": "Gloves",
         "Ring": "Rings",
         "Amulet": "Amulets",
-        "Logs": "Woodcutting",
-        "Plank": "Woodcutting",
-        "Bark": "Woodcutting",
-        "Leather": "Basic Item",
-        "Cloth": "Basic Item",
-        "Thread": "Basic Item",
+        "Necklace": "Amulets",
+        "Pendant": "Amulets",
+        "Arrow": "Arrows",
+        "Bolt": "Arrows",
+        "Dart": "Arrows",
+        "Pickaxe": "Tools",
+        "Hatchet": "Tools",
+        "Axe": "Tools",
         "Ore": "Ores",
         "Bar": "Bars",
+        "Logs": "Woodcutting",
+        "Plank": "Woodcutting",
+        "Wood": "Woodcutting",
         "Rune": "Runes",
+        "Essence": "Runecrafting",
+        "Seeds":"Farming",
+        "Seed":"Farming",
         "Pie": "Food",
         "Stew": "Food",
         "Soup": "Food",
+        "Burnt": "Food",
+        "Dried": "Food",
+        "Fried": "Food",
         "Crunchies": "Food",
         "Roast": "Food",
         "Mushroom": "Food",
@@ -66,10 +84,17 @@ def get_category(name, default="Basic Item"):
         "Onion": "Food",
         "Potion": "Potions",
         "Infusion": "Potions",
+        "Herb": "Herbs",
+        "Grimy": "Grimy Herbs",
+        "Clean": "Herbs",
         "Skillcape": "Skillcapes",
         "Tome": "Tombs",
+        "Cape": "Capes",
+        "Cloak": "Capes",
+        "Scarf": "Helms",
         "TEST": "TEST",
     }
+
     name_lower = name.lower()
     for key, cat in categories.items():
         if key.lower() in name_lower:
@@ -128,7 +153,7 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("input_dir", nargs="?",
-                        default=r"C:\Users\NYPD6\Desktop\Fmodel\Output\Exports\RSDragonwilds\Content\Gameplay-ITEMs")
+                        default=r"C:\Users\NYPD6\Desktop\Fmodel\Output\Exports\RSDragonwilds\Content\Gameplay")
     parser.add_argument("--output", default="ItemID.json")
     args = parser.parse_args()
 

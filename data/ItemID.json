@@ -24,7 +24,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Abyssal_Whip.png",
-    "Category": "Basic Item",
+    "Category": "Melee Weapons",
     "PowerLevel": 4,
     "BaseDurability": 1300
   },
@@ -90,6 +90,16 @@
     "BaseDurability": 2500
   },
   {
+    "SourceString": "Amulet of Defence",
+    "PersistenceID": "bkZosEFhzpZdonqm9gx-vA",
+    "Weight": 2.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Amulet_of_Defense.png",
+    "Category": "Amulets",
+    "BaseDurability": 2500
+  },
+  {
     "SourceString": "Amulet of Magic",
     "PersistenceID": "MQ9B9EFqxWoPzFSfC8X2dg",
     "Weight": 2.0,
@@ -116,7 +126,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Anima_Infused_Bark.png",
-    "Category": "Woodcutting"
+    "Category": "Bars"
   },
   {
     "SourceString": "Animal Bone",
@@ -152,7 +162,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Shield_AntiDragon.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 3,
     "BaseDurability": 1050
   },
@@ -199,13 +209,22 @@
     "BaseDurability": 1000
   },
   {
+    "SourceString": "Arcane Infusion",
+    "PersistenceID": "twHjF0oX62SopfSMJwt00g",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arcane_infusion.png",
+    "Category": "Potions"
+  },
+  {
     "SourceString": "Artisan Skillcape",
     "PersistenceID": "YE5XYUqrSVkPXp6byr7VMw",
     "Weight": 0.0,
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Skillcapes"
   },
   {
     "SourceString": "Ash Battlestaff",
@@ -254,7 +273,7 @@
     "MaxStackSize": 10,
     "VitalShield": 0,
     "IconFile": "T_Icon_Ash_Tree_Seed.png",
-    "Category": "Basic Item",
+    "Category": "Farming",
     "PowerLevel": 1
   },
   {
@@ -273,7 +292,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Skillcapes"
   },
   {
     "SourceString": "Bag of Flour",
@@ -368,7 +387,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Blightwood.png",
-    "Category": "Basic Item"
+    "Category": "Woodcutting"
   },
   {
     "SourceString": "Blightwood Battlestaff",
@@ -419,7 +438,7 @@
     "MaxStackSize": 25,
     "VitalShield": 0,
     "IconFile": "T_Icon_Bloodwood_Sap.png",
-    "Category": "Basic Item"
+    "Category": "Woodcutting"
   },
   {
     "SourceString": "Blue Adventurer's Cape",
@@ -479,13 +498,23 @@
     "Category": "Ores"
   },
   {
+    "SourceString": "Bone Bolt",
+    "PersistenceID": "DOsOLkIUyXaO8-yRed2iUg",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Bone_Bolt.png",
+    "Category": "Arrows",
+    "PowerLevel": 5
+  },
+  {
     "SourceString": "Bone Club",
     "PersistenceID": "djtTEkaTg3ARdre_xsNXCg",
     "Weight": 4.5,
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Club_Bone_1H.png",
-    "Category": "Basic Item",
+    "Category": "Melee Weapons",
     "PowerLevel": 2,
     "BaseDurability": 850
   },
@@ -516,7 +545,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Bone_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 2,
     "BaseDurability": 1350
   },
@@ -557,6 +586,16 @@
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Bar_Bronze.png",
     "Category": "Bars"
+  },
+  {
+    "SourceString": "Bronze Barbed Arrow",
+    "PersistenceID": "0Tp64UgXjCbF69aH3ZhQQA",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Bronze.png",
+    "Category": "Arrows",
+    "PowerLevel": 3
   },
   {
     "SourceString": "Bronze Bolt",
@@ -600,6 +639,16 @@
     "BaseDurability": 1050
   },
   {
+    "SourceString": "Bronze Fire Arrow",
+    "PersistenceID": "l8ARoEESskYD1mag4nRKlQ",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Bronze.png",
+    "Category": "Arrows",
+    "PowerLevel": 3
+  },
+  {
     "SourceString": "Bronze Greatsword",
     "PersistenceID": "PSWEV0JzVwxsalWCFqPbOw",
     "Weight": 25.0,
@@ -628,7 +677,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_LoggingAxe_Refined_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 3,
     "BaseDurability": 1800
   },
@@ -650,7 +699,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Bronze_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 3,
     "BaseDurability": 1800
   },
@@ -683,7 +732,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Kite_Bronze_1H_01.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 3,
     "BaseDurability": 1050
   },
@@ -736,7 +785,7 @@
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Bread.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -746,7 +795,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Fried_Cabbage.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 2
   },
   {
@@ -756,7 +805,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_Cadaverberries.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 4
   },
   {
@@ -766,7 +815,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_Dwellberries.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 3
   },
   {
@@ -776,7 +825,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Fried_egg.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -786,7 +835,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Cooked_bird_meat.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -796,7 +845,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Flank_Steak.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 3
   },
   {
@@ -806,7 +855,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cooked_Tough_Meat_01.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 2
   },
   {
@@ -836,7 +885,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_peach.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 3
   },
   {
@@ -856,7 +905,7 @@
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Roasted_Pumkin.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -876,7 +925,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_Redberries.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -886,7 +935,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Seared_Farm_Meat.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 2
   },
   {
@@ -896,7 +945,17 @@
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Grilled_Tomato.png",
-    "Category": "Basic Item",
+    "Category": "Food",
+    "PowerLevel": 1
+  },
+  {
+    "SourceString": "Burnt Undead Steak",
+    "PersistenceID": "vdz5gURsII92tQaXERfDsg",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Cooked_Undead_meat.png",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -906,7 +965,7 @@
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Watermelon_Jerky.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -926,7 +985,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cabbage_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Cadavaberries",
@@ -945,7 +1004,26 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cadaverberry_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
+  },
+  {
+    "SourceString": "Cadaveberry Infusion",
+    "PersistenceID": "yhTo-0sFyMXGYMWrwVpQ7Q",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Cadavaberry_infusion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Cauterised Undead Steak",
+    "PersistenceID": "XMOdf0Zc5L04hfSCIdpybA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Cooked_Undead_meat.png",
+    "Category": "Basic Item",
+    "PowerLevel": 4
   },
   {
     "SourceString": "Challenge Horn",
@@ -972,6 +1050,15 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Charcoal.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Cheeky Fryup",
+    "PersistenceID": "woAWUkDJFS_g2Y-viCDznQ",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Cheeky_fry_up.png",
     "Category": "Basic Item"
   },
   {
@@ -1066,7 +1153,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Clean_Water.png",
-    "Category": "Basic Item"
+    "Category": "Herbs"
   },
   {
     "SourceString": "Coal",
@@ -1096,13 +1183,22 @@
     "Category": "Basic Item"
   },
   {
+    "SourceString": "Compost Bucket",
+    "PersistenceID": "8Ftd_kB5cANr16a6Bd8-OQ",
+    "Weight": 5.5,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_icon_Wooden_Bucket.png",
+    "Category": "Basic Item"
+  },
+  {
     "SourceString": "Construction Skillcape",
     "PersistenceID": "OkGwZ0lbT46ElpuGzzsCCA",
     "Weight": 0.0,
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Skillcapes"
   },
   {
     "SourceString": "Cooking Skillcape",
@@ -1111,7 +1207,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Skillcapes"
   },
   {
     "SourceString": "Copper Bar",
@@ -1147,7 +1243,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Corpsecotton_seed.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Crystal Bow",
@@ -1167,7 +1263,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Crystal_Seed.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Curse Fragment (Despair)",
@@ -1263,6 +1359,15 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dirty_Water.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Divine Cabbage",
+    "PersistenceID": "TODWPUpA_YR0EnaqhMstcQ",
+    "Weight": 0.7,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Food_Cabbage.png",
     "Category": "Basic Item"
   },
   {
@@ -1375,7 +1480,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Shield_Poison_Dragonfire.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 4,
     "BaseDurability": 1300
   },
@@ -1397,7 +1502,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Imaru_Dragon_Shield.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 5,
     "BaseDurability": 1300
   },
@@ -1450,7 +1555,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_Cadaverberries.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 4
   },
   {
@@ -1460,7 +1565,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_Dwellberries.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 3
   },
   {
@@ -1470,7 +1575,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_peach.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 3
   },
   {
@@ -1480,7 +1585,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dried_Redberries.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
   },
   {
@@ -1491,6 +1596,15 @@
     "VitalShield": 0,
     "IconFile": "T_Icon_Bandosian_Amulet_2.png",
     "Category": "Amulets"
+  },
+  {
+    "SourceString": "Dubious Meat Pie",
+    "PersistenceID": "PNna20ypp8utF-KAq0xgTA",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Dubious_meat_pie.png",
+    "Category": "Food"
   },
   {
     "SourceString": "Dust-covered Sketchbook",
@@ -1513,8 +1627,8 @@
   },
   {
     "SourceString": "Dwellberry Crunchies",
-    "PersistenceID": "08JlYEx5Tw0YVv-VhX8dmw",
-    "Weight": 1.0,
+    "PersistenceID": "TitYzk-CcDdnIrGzbUT7hg",
+    "Weight": 0.6,
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dwellberry_Crunchies.png",
@@ -1522,8 +1636,8 @@
   },
   {
     "SourceString": "Dwellberry Crunchies",
-    "PersistenceID": "TitYzk-CcDdnIrGzbUT7hg",
-    "Weight": 0.6,
+    "PersistenceID": "08JlYEx5Tw0YVv-VhX8dmw",
+    "Weight": 1.0,
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dwellberry_Crunchies.png",
@@ -1557,13 +1671,22 @@
     "Category": "Potions"
   },
   {
+    "SourceString": "Dwellberry Infusion",
+    "PersistenceID": "x0HE4knFLcQj2sGI_4fYAA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Dwellberry_Infusion.png",
+    "Category": "Potions"
+  },
+  {
     "SourceString": "Dwellberry seeds",
     "PersistenceID": "9TCHHEYRZOvy0KWszdfntA",
     "Weight": 0.2,
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Dwellberry_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Earth Rune",
@@ -1641,6 +1764,15 @@
     "IconFile": "T_Icon_Steel_Enchanted_Bolt.png",
     "Category": "Arrows",
     "PowerLevel": 5
+  },
+  {
+    "SourceString": "Evasive Infusion",
+    "PersistenceID": "cZ6va0BSo6_5Dg2Pi23lUQ",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Wild_Reflex_Infusion.png",
+    "Category": "Potions"
   },
   {
     "SourceString": "Fallen Hoplite's Aspis",
@@ -1735,6 +1867,24 @@
     "Category": "Capes"
   },
   {
+    "SourceString": "Ferocious Infusion",
+    "PersistenceID": "igveHUWYg2AeXe69EwW1PA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Predators_Infusion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Ferocious Infusion",
+    "PersistenceID": "F92_I0JuQtcVUGeHNkKn_g",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Predators_Infusion.png",
+    "Category": "Potions"
+  },
+  {
     "SourceString": "Fillet",
     "PersistenceID": "TBfPmUBQqV_F0pCG34_XkQ",
     "Weight": 1.0,
@@ -1781,6 +1931,16 @@
     "Category": "Runes"
   },
   {
+    "SourceString": "Flank Steak",
+    "PersistenceID": "NeMd5ktRmFW1ZWqnCwsxKA",
+    "Weight": 1.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Flank_Steak.png",
+    "Category": "Basic Item",
+    "PowerLevel": 3
+  },
+  {
     "SourceString": "Flax",
     "PersistenceID": "J3Ord4Mjnk-zz-Of_0oL8w",
     "Weight": 0.4,
@@ -1796,7 +1956,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Flax_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Fleece",
@@ -1806,6 +1966,42 @@
     "VitalShield": 0,
     "IconFile": "T_Icon_Fleece.png",
     "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Fleet-Footed Infusion",
+    "PersistenceID": "PZdR5E2sYqyUe-2JgBsCfA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Fleet_Footed_Infusion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Fortifying Crunchies",
+    "PersistenceID": "KC5DW0XcQiikzPymCSlVZQ",
+    "Weight": 0.6,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Fortifying_Crunchies.png",
+    "Category": "Food"
+  },
+  {
+    "SourceString": "Fortifying Soup",
+    "PersistenceID": "O9t9Kknjb4lXvNKsNl7Vrg",
+    "Weight": 0.8,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Fortifying_Soup.png",
+    "Category": "Food"
+  },
+  {
+    "SourceString": "Fortifying Stew",
+    "PersistenceID": "Xq3aqE2osbcagCKBy8A_kg",
+    "Weight": 1.4,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Fortifying_Stew.png",
+    "Category": "Food"
   },
   {
     "SourceString": "Fractured Cape",
@@ -1823,7 +2019,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Fried_Cabbage.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 2
   },
   {
@@ -1833,8 +2029,18 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Fried_egg.png",
-    "Category": "Basic Item",
+    "Category": "Food",
     "PowerLevel": 1
+  },
+  {
+    "SourceString": "Fried Onions",
+    "PersistenceID": "yEEiukHPM7htB4WeWEXeWg",
+    "Weight": 0.4,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Fried_Onions.png",
+    "Category": "Food",
+    "PowerLevel": 3
   },
   {
     "SourceString": "Fruit Pie",
@@ -1968,6 +2174,15 @@
     "BaseDurability": 1050
   },
   {
+    "SourceString": "Granite Maul Blueprints",
+    "PersistenceID": "FzZcg0K5osblXSuuSNACQA",
+    "Weight": 4.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Scroll.png",
+    "Category": "Melee Weapons"
+  },
+  {
     "SourceString": "Green Adventurer's Cape",
     "PersistenceID": "CRrbdEE2rAkyseGLyfPykw",
     "Weight": 0.0,
@@ -2037,6 +2252,16 @@
     "Category": "Staves",
     "PowerLevel": 3,
     "BaseDurability": 1050
+  },
+  {
+    "SourceString": "Grilled Mushrooms",
+    "PersistenceID": "ftNa7ksUxtKfXxixt-o_8w",
+    "Weight": 0.4,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Grilled_Mushrooms.png",
+    "Category": "Food",
+    "PowerLevel": 2
   },
   {
     "SourceString": "Grilled Tomatoes",
@@ -2122,7 +2347,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_M_MED_HEAD_HardLeather_01.png",
-    "Category": "Basic Item",
+    "Category": "Helms",
     "PowerLevel": 3,
     "BaseDurability": 1250
   },
@@ -2151,7 +2376,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Harralander_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Haunch",
@@ -2170,6 +2395,15 @@
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Hearty_Crunchies.png",
+    "Category": "Food"
+  },
+  {
+    "SourceString": "Hearty Fortifying Soup",
+    "PersistenceID": "j36nJ0b9Xat20KicKMGzHw",
+    "Weight": 0.8,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Fortifying_Hearty_Soup.png",
     "Category": "Food"
   },
   {
@@ -2217,7 +2451,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Hollow_Bark.png",
-    "Category": "Woodcutting"
+    "Category": "Bars"
   },
   {
     "SourceString": "Hunter Stagbow",
@@ -2363,7 +2597,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Irit_seed.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Iron Arrow",
@@ -2383,6 +2617,16 @@
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Bar_Iron.png",
     "Category": "Bars"
+  },
+  {
+    "SourceString": "Iron Barbed Arrow",
+    "PersistenceID": "Xde3IkVxOOQUi3KnyJlf4Q",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Iron_.png",
+    "Category": "Arrows",
+    "PowerLevel": 4
   },
   {
     "SourceString": "Iron Bolt",
@@ -2426,13 +2670,23 @@
     "BaseDurability": 1300
   },
   {
+    "SourceString": "Iron Fire Arrow",
+    "PersistenceID": "WuWEGkTx52fygdqsgCtQlg",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Iron_.png",
+    "Category": "Arrows",
+    "PowerLevel": 4
+  },
+  {
     "SourceString": "Iron Greataxe",
     "PersistenceID": "d-s3s5ciWkSi_Q4p-XaMoA",
     "Weight": 25.0,
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Greataxe_Iron_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 4,
     "BaseDurability": 1300
   },
@@ -2465,7 +2719,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_LoggingAxe_Iron_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 4,
     "BaseDurability": 2400
   },
@@ -2496,7 +2750,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Iron_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 4,
     "BaseDurability": 2100
   },
@@ -2538,7 +2792,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Kite_Iron_1H_01.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 4,
     "BaseDurability": 1300
   },
@@ -2589,7 +2843,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Kuarm_seed.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Large Wardstone",
@@ -2647,7 +2901,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_M_MED_HEAD_MED_DeerLather_01.png",
-    "Category": "Basic Item",
+    "Category": "Helms",
     "PowerLevel": 2,
     "BaseDurability": 1000
   },
@@ -2658,7 +2912,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Kite_Leather_1H_01.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 2,
     "BaseDurability": 900
   },
@@ -2672,6 +2926,114 @@
     "Category": "Basic Item",
     "PowerLevel": 1,
     "BaseDurability": 500
+  },
+  {
+    "SourceString": "Lesser Attack Potion",
+    "PersistenceID": "u9KamEevDhDoqA-Ypsobrw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Blue_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Focused Artisan Potion",
+    "PersistenceID": "7NPyZ03E4wudmtm9dqvgWw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Clay_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Focused Attack Potion",
+    "PersistenceID": "Oza9k0LVE1OmNtyDc5w_8w",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Yellow_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Focused Construction Potion",
+    "PersistenceID": "WQaIa0s7EnIKmw65TZ5RbA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Blue_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Focused Cooking Potion",
+    "PersistenceID": "LrmZqkx8wzDkUYuVAfv2OA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Orange_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Focused Mining Potion",
+    "PersistenceID": "CaDZQEFq2q9uXb-T17sxWA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Orange_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Focused Runecrafting Potion",
+    "PersistenceID": "CuP7oEL4UtnZaFWnPzenQg",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Purple_Potion.png",
+    "Category": "Runes"
+  },
+  {
+    "SourceString": "Lesser Focused Woodcutting Potion",
+    "PersistenceID": "6sTczU43FmxKI8aJ3SSWSA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Green_Potion.png",
+    "Category": "Woodcutting"
+  },
+  {
+    "SourceString": "Lesser Healing Potion",
+    "PersistenceID": "-9Zin0B1C7GQgVKwKSR0hQ",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Red_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Lumberjack Potion",
+    "PersistenceID": "PTH4UEM3VLs9biqjMeB0hg",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Green_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Magic Potion",
+    "PersistenceID": "qLXWx0NDd_CRXlmojVy3xg",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Pink_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Lesser Quarrymaster Potion",
+    "PersistenceID": "x2HUXkgtMUWqJ3i_oD1AcA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Lesser_Black_Potion.png",
+    "Category": "Potions"
   },
   {
     "SourceString": "Magical Focus",
@@ -2689,7 +3051,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Marrentil_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Marrentill",
@@ -2698,6 +3060,15 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Marrentil.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Meat Pizza",
+    "PersistenceID": "QfPOk0c4rF6PIUqOxt0ytg",
+    "Weight": 0.7,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Iconic_Pizza_Meat.png",
     "Category": "Basic Item"
   },
   {
@@ -2744,7 +3115,16 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Skillcapes"
+  },
+  {
+    "SourceString": "Mixed Grill",
+    "PersistenceID": "_1F2mkEqVqGFC06z4Uw0Jw",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Mixed_Grill.png",
+    "Category": "Basic Item"
   },
   {
     "SourceString": "Mixed Platter",
@@ -2792,6 +3172,15 @@
     "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
     "Category": "Rings",
     "BaseDurability": 1000
+  },
+  {
+    "SourceString": "Mushroom Kebab",
+    "PersistenceID": "5AYjnUqlwTP9f12w5x2rlQ",
+    "Weight": 0.7,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Iconic_Kebab.png",
+    "Category": "Food"
   },
   {
     "SourceString": "Mysterious Orb [Charged]",
@@ -2940,7 +3329,7 @@
     "MaxStackSize": 10,
     "VitalShield": 0,
     "IconFile": "T_Icon_Oal_Tree_Seed.png",
-    "Category": "Basic Item",
+    "Category": "Farming",
     "PowerLevel": 1
   },
   {
@@ -2960,7 +3349,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Onion_seeds.png",
-    "Category": "Food"
+    "Category": "Farming"
   },
   {
     "SourceString": "Opal",
@@ -3076,7 +3465,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pioneer_Scarf.png",
-    "Category": "Capes",
+    "Category": "Helms",
     "BaseDurability": 1000
   },
   {
@@ -3098,6 +3487,46 @@
     "Category": "Basic Item"
   },
   {
+    "SourceString": "Poisoned Bronze Arrow",
+    "PersistenceID": "Fypi50GPQu-8haahRVUasQ",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Bronze.png",
+    "Category": "Arrows",
+    "PowerLevel": 3
+  },
+  {
+    "SourceString": "Poisoned Fang Arrow",
+    "PersistenceID": "NN7EB08_YDtZEeiIzRl1GQ",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Arrows_Bone.png",
+    "Category": "Arrows",
+    "PowerLevel": 2
+  },
+  {
+    "SourceString": "Poisoned Iron Arrow",
+    "PersistenceID": "cNekSUokIAxgCmaxWWEiHw",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrows_Iron_.png",
+    "Category": "Arrows",
+    "PowerLevel": 4
+  },
+  {
+    "SourceString": "Poisoned Steel Arrow",
+    "PersistenceID": "weTVSE6xbZDSgvqupBR0UQ",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrow_Steel.png",
+    "Category": "Arrows",
+    "PowerLevel": 5
+  },
+  {
     "SourceString": "Potato",
     "PersistenceID": "HwM2_HvXZUyt8FmT4F2iYQ",
     "Weight": 0.2,
@@ -3114,7 +3543,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Potato_seeds.png",
-    "Category": "Food"
+    "Category": "Farming"
   },
   {
     "SourceString": "Primordial Heart",
@@ -3142,6 +3571,33 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pumpkin_seeds.png",
+    "Category": "Farming"
+  },
+  {
+    "SourceString": "Pumpkin Soup",
+    "PersistenceID": "ziJyKkjO9ax3UsWGTvPMtw",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Pumpkin_soup.png",
+    "Category": "Food"
+  },
+  {
+    "SourceString": "Pumpkin Spice Infusion",
+    "PersistenceID": "kZor20jQ-GKLW52SdVDwAw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Pumpkin_spice_infusion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Pungent Omelette",
+    "PersistenceID": "pU_QfU6ScaLWNcu2Chk9-g",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Pungent_omelette.png",
     "Category": "Basic Item"
   },
   {
@@ -3294,8 +3750,8 @@
   },
   {
     "SourceString": "Redberry Crunchies",
-    "PersistenceID": "GBmnz07RWPG4dnKvJqcLPw",
-    "Weight": 1.0,
+    "PersistenceID": "ipb2Z0dRiFIUUhqLsIqIxA",
+    "Weight": 0.6,
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Redberry_Crunchies.png",
@@ -3303,8 +3759,8 @@
   },
   {
     "SourceString": "Redberry Crunchies",
-    "PersistenceID": "ipb2Z0dRiFIUUhqLsIqIxA",
-    "Weight": 0.6,
+    "PersistenceID": "GBmnz07RWPG4dnKvJqcLPw",
+    "Weight": 1.0,
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Redberry_Crunchies.png",
@@ -3329,6 +3785,15 @@
     "Category": "Food"
   },
   {
+    "SourceString": "Redberry Infusion",
+    "PersistenceID": "BHyv-U4eeKvSxeqdh5UswQ",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Redberry_Infusion.png",
+    "Category": "Potions"
+  },
+  {
     "SourceString": "Redberry Roast Rat",
     "PersistenceID": "AwUFeEoCOtrQnjq0M1wo8A",
     "Weight": 1.2,
@@ -3344,7 +3809,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Redberry_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Reinforced Body",
@@ -3380,6 +3845,15 @@
     "BaseDurability": 1000
   },
   {
+    "SourceString": "Relentless Infusion",
+    "PersistenceID": "SRKw_UuOlGyEv4uAhkQh1A",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Relentless_infusion.png",
+    "Category": "Potions"
+  },
+  {
     "SourceString": "Restless Ghosts Reward Pack",
     "PersistenceID": "R9IjjUjvqfnoc3ml3yyurg",
     "Weight": 1.0,
@@ -3400,16 +3874,6 @@
   },
   {
     "SourceString": "Ring of Pursuit",
-    "PersistenceID": "mETsn0hsQKyU-h-s1LRQ6g",
-    "Weight": 2.0,
-    "MaxStackSize": 1,
-    "VitalShield": 0,
-    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
-    "Category": "Rings",
-    "BaseDurability": 1000
-  },
-  {
-    "SourceString": "Ring of Pursuit",
     "PersistenceID": "3NlCk0PLvMeVQ06pQp2V8g",
     "Weight": 1.0,
     "MaxStackSize": 1,
@@ -3417,6 +3881,16 @@
     "IconFile": "T_Icon_Ring_of_Pursuit.png",
     "Category": "Rings",
     "BaseDurability": 18000
+  },
+  {
+    "SourceString": "Ring of Pursuit",
+    "PersistenceID": "mETsn0hsQKyU-h-s1LRQ6g",
+    "Weight": 2.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_icon_Resource_Ring_Of_Pursuit.png",
+    "Category": "Rings",
+    "BaseDurability": 1000
   },
   {
     "SourceString": "Ring of Recoil",
@@ -3427,6 +3901,25 @@
     "IconFile": "T_Icon_Ring_of_Recoil.png",
     "Category": "Rings",
     "BaseDurability": 2500
+  },
+  {
+    "SourceString": "Roast Dinner",
+    "PersistenceID": "osDyaUIyzTvf1iaY4WQrKg",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Roast_dinner.png",
+    "Category": "Food"
+  },
+  {
+    "SourceString": "Roast Pumpkin",
+    "PersistenceID": "u1SkBEnMIdkuQ0-028XVmw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Roasted_Pumkin.png",
+    "Category": "Food",
+    "PowerLevel": 1
   },
   {
     "SourceString": "Rough Cloth",
@@ -3453,7 +3946,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Runes"
   },
   {
     "SourceString": "Sacred Oil",
@@ -3622,7 +4115,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Snapdragon_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Soda Ash",
@@ -3723,6 +4216,15 @@
     "BaseDurability": 1300
   },
   {
+    "SourceString": "Squeaking Sausage",
+    "PersistenceID": "iFw4Z0VzNkp7Dy6VdzfGiw",
+    "Weight": 2.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Resource_Beastly_Sausage.png",
+    "Category": "Basic Item"
+  },
+  {
     "SourceString": "Staff of Light",
     "PersistenceID": "Hcq0C0UjvN3n8q-X2uqa7w",
     "Weight": 15.0,
@@ -3772,6 +4274,16 @@
     "Category": "Bars"
   },
   {
+    "SourceString": "Steel Barbed Arrow",
+    "PersistenceID": "0tQXR0oHEGdg44m6RHe5BA",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrow_Steel.png",
+    "Category": "Arrows",
+    "PowerLevel": 5
+  },
+  {
     "SourceString": "Steel Bolt",
     "PersistenceID": "_1UJR0bdUz0CNMyyUwbTig",
     "Weight": 0.0,
@@ -3813,6 +4325,16 @@
     "BaseDurability": 1300
   },
   {
+    "SourceString": "Steel Fire Arrow",
+    "PersistenceID": "l_dStU-tZdJ-0SWqCljYMA",
+    "Weight": 0.0,
+    "MaxStackSize": 999,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Arrow_Steel.png",
+    "Category": "Arrows",
+    "PowerLevel": 5
+  },
+  {
     "SourceString": "Steel Full Helm",
     "PersistenceID": "vD5BTU75YhilvnGtFX3L0Q",
     "Weight": 8.0,
@@ -3830,7 +4352,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Greataxe.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 5,
     "BaseDurability": 1300
   },
@@ -3852,7 +4374,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Logging_Axe.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 5,
     "BaseDurability": 2400
   },
@@ -3874,7 +4396,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Pickaxe.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 5,
     "BaseDurability": 2100
   },
@@ -3918,7 +4440,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Shield.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 5,
     "BaseDurability": 1300
   },
@@ -3999,7 +4521,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Club_Stone_1H_01.png",
-    "Category": "Basic Item",
+    "Category": "Melee Weapons",
     "PowerLevel": 1,
     "BaseDurability": 700
   },
@@ -4021,7 +4543,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_LoggingAxe_Crude_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 1,
     "BaseDurability": 1200
   },
@@ -4032,7 +4554,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Stone_2H_01.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 1,
     "BaseDurability": 1200
   },
@@ -4074,7 +4596,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_M_MED_HEAD_StuddedLeather_01.png",
-    "Category": "Basic Item",
+    "Category": "Helms",
     "PowerLevel": 4,
     "BaseDurability": 1500
   },
@@ -4122,6 +4644,15 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_SwampWeed_seeds.png",
+    "Category": "Farming"
+  },
+  {
+    "SourceString": "Sweet Veg Ball",
+    "PersistenceID": "8qJOoUX9S5-1ogG8C5AcFA",
+    "Weight": 0.4,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Sweet_veg_ball.png",
     "Category": "Basic Item"
   },
   {
@@ -4196,7 +4727,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Toadflax_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Tomato",
@@ -4215,7 +4746,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Tomato_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Tome of Attack - Vol 1",
@@ -4395,7 +4926,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Skill_Tome_Woodcutting.png",
-    "Category": "Tombs"
+    "Category": "Woodcutting"
   },
   {
     "SourceString": "Tome of Woodcutting - Vol 2",
@@ -4404,7 +4935,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Skill_Tome_Woodcutting.png",
-    "Category": "Tombs"
+    "Category": "Woodcutting"
   },
   {
     "SourceString": "Torch",
@@ -4566,7 +5097,106 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Watermelon_seeds.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
+  },
+  {
+    "SourceString": "Weak Antipoison Potion",
+    "PersistenceID": "ukjoSEXQTWbO6zSJvP5Z4Q",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Green_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Focused Artisan Potion",
+    "PersistenceID": "CPT7I01jfIBmhyCQLJH31A",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Clay_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Focused Attack Potion",
+    "PersistenceID": "Gl810k3TcUSB866zC50I2g",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Yellow_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Focused Construction Potion",
+    "PersistenceID": "m4bFA0UwQOecAhah3hNtSA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Blue_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Focused Cooking Potion",
+    "PersistenceID": "K7le0EXS_TjIx-Wb9d9PZg",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Orange_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Focused Mining Potion",
+    "PersistenceID": "8gh6wkTHrHGgAMSeSMHNTw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Orange_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Focused Runecraft Potion",
+    "PersistenceID": "0PXPSUTx8SdrxW6J26Ljfw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Purple_Potion.png",
+    "Category": "Runes"
+  },
+  {
+    "SourceString": "Weak Focused Woodcutting Potion",
+    "PersistenceID": "U3WBak2LNdsGzrajcaLGpw",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Green_Potion.png",
+    "Category": "Woodcutting"
+  },
+  {
+    "SourceString": "Weak Healing Potion",
+    "PersistenceID": "qRA1TEfZJkMoanWXc_l-Sg",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Red_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Lumberjack Potion",
+    "PersistenceID": "ni4XGUQ7iWkplmuumD7kkA",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Green_Potion.png",
+    "Category": "Potions"
+  },
+  {
+    "SourceString": "Weak Quarrymaster Potion",
+    "PersistenceID": "2aa7lkBxEmc_Zuy6bPQ-Ag",
+    "Weight": 1.0,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Weak_Black_Potion.png",
+    "Category": "Potions"
   },
   {
     "SourceString": "Weapon Barbs",
@@ -4612,7 +5242,7 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Wheat_Seed.png",
-    "Category": "Basic Item"
+    "Category": "Farming"
   },
   {
     "SourceString": "Whetstone",
@@ -4630,7 +5260,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_Whispering.png",
-    "Category": "Capes"
+    "Category": "Rings"
   },
   {
     "SourceString": "White Adventurer's Cape",
@@ -4684,6 +5314,48 @@
     "Category": "Basic Item"
   },
   {
+    "SourceString": "Wild Archer Body",
+    "PersistenceID": "fr5LJkUvJRZ-DbqVbKaB4w",
+    "Weight": 12.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Wild_Archer_s_Chest.png",
+    "Category": "Chestplates",
+    "PowerLevel": 4,
+    "BaseDurability": 1400
+  },
+  {
+    "SourceString": "Wild Archer Chaps",
+    "PersistenceID": "l6qWl0-xTPdrhweMah3eTg",
+    "Weight": 9.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Wild_Archer_s_Chaps.png",
+    "Category": "Leggings",
+    "PowerLevel": 4,
+    "BaseDurability": 1400
+  },
+  {
+    "SourceString": "Wild Archer Cowl",
+    "PersistenceID": "gIoZIUIT52OUDkGFuzSBlw",
+    "Weight": 6.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Wild_Archer_s_Coif.png",
+    "Category": "Helms",
+    "PowerLevel": 4,
+    "BaseDurability": 1400
+  },
+  {
+    "SourceString": "Wild Pie",
+    "PersistenceID": "Ub1yCE7dcEADMJKZcOHMMQ",
+    "Weight": 0.7,
+    "MaxStackSize": 50,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Iconic_Pie_Wild.png",
+    "Category": "Food"
+  },
+  {
     "SourceString": "Wild Scout's Shortbow",
     "PersistenceID": "NqTlRkd7Zw4BE9GM_mDbtw",
     "Weight": 10.0,
@@ -4732,7 +5404,7 @@
     "MaxStackSize": 10,
     "VitalShield": 0,
     "IconFile": "T_Icon_Willow_Seed.png",
-    "Category": "Basic Item",
+    "Category": "Farming",
     "PowerLevel": 1
   },
   {
@@ -4813,7 +5485,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
-    "Category": "Capes"
+    "Category": "Woodcutting"
   },
   {
     "SourceString": "Wooden Arrow",
@@ -4831,7 +5503,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Club_Wood_1H_01.png",
-    "Category": "Basic Item",
+    "Category": "Melee Weapons",
     "PowerLevel": 1,
     "BaseDurability": 275
   },
@@ -4842,7 +5514,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Kite_Wood_1H_01.png",
-    "Category": "Basic Item",
+    "Category": "Shields",
     "PowerLevel": 1,
     "BaseDurability": 500
   },
@@ -4853,7 +5525,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Wooden_Shovel.png",
-    "Category": "Basic Item",
+    "Category": "Woodcutting",
     "PowerLevel": 1,
     "BaseDurability": 300
   },
@@ -4930,7 +5602,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Undead_Axe.png",
-    "Category": "Melee Weapons",
+    "Category": "Tools",
     "PowerLevel": 5,
     "BaseDurability": 1300
   },
