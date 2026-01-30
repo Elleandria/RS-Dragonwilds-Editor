@@ -14,7 +14,7 @@ jobs:
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          content: "<@&YOUR_ROLE_ID_HERE>"   # ← your role mention here
+          content: "<@&1466578302566138035>"   # ← your role mention here
           title: "New Push to ${{ github.repository }} [${{ github.ref_name }}]"
           description: |
             **Commit Message:** ${{ github.event.head_commit.message }}
