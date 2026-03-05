@@ -50,6 +50,7 @@ venv/
 env/
 ENV/
 .vscode/
+.claude/
 
 # -------------------------------------------------------
 # IDE project files (machine-specific, not useful to repo consumers)
@@ -58,6 +59,7 @@ ENV/
 *.suo
 *.user
 .vs/
+*.htm
 
 # -------------------------------------------------------
 # Keep these always tracked (explicit includes)

@@ -114,8 +114,7 @@ namespace DragonwildsUpdater
             Console.WriteLine("\n[4/4] Deprecating unused icons...");
             DeprecateUnusedIcons(referencedIcons);
 
-            Console.WriteLine("\nDone! Press any key to exit.");
-            Console.ReadKey();
+            Console.WriteLine("\nDone!");
         }
 
         private List<ItemEntry> ExtractItems(DefaultFileProvider provider)

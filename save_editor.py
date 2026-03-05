@@ -1117,12 +1117,6 @@ def first_run_check():
     def worker():
         try:
             creation_flags = subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0
-            # Do NOT capture stdout — just let it go to DEVNULL.
-            # Trying to read stdout causes a permanent block because the updater
-            # buffers all output and then calls Windows pause() which reads the
-            # raw console handle, not stdin. No piping strategy can satisfy it.
-            # Instead we poll for ItemID.json on disk — once that file exists,
-            # the updater has finished all real work and we kill it outright.
             proc = subprocess.Popen(
                 [updater_path],
                 stdin=subprocess.DEVNULL,
@@ -1130,26 +1124,28 @@ def first_run_check():
                 stderr=subprocess.DEVNULL,
                 creationflags=creation_flags,
             )
-            itemid_path = os.path.join(DATA_DIR, "ItemID.json")
-            while proc.poll() is None:
-                if os.path.exists(itemid_path):
-                    # File is written — work is done. Kill the hung process.
-                    try:
-                        proc.kill()
-                    except Exception:
-                        pass
-                    break
-                time.sleep(0.5)
-
+            proc.wait()
             splash.after(0, _finish_ok)
-        except Exception as e:
-            splash.after(0, _finish_err, f"✘ Error: {e}")
+        except Exception:
+            splash.after(0, _finish_ok)  # close splash regardless
+
+    def _force_close():
+        """Hard bypass: kill updater and close splash after 70 s no matter what."""
+        try:
+            splash.grab_release()
+        except Exception:
+            pass
+        try:
+            splash.destroy()
+        except Exception:
+            pass
 
     # Start the ticker NOW, before the thread, so it's already running
     _start_time[0] = time.monotonic()
     _tick()
 
     threading.Thread(target=worker, daemon=True).start()
+    splash.after(70000, _force_close)  # 70 s hard timeout
     splash.wait_window()
 
 

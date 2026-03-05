@@ -1,10 +1,12 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Runtime.Versioning;
 using Microsoft.Win32;
 
 namespace DragonwildsUpdater
 {
+    [SupportedOSPlatform("windows")]
     internal class Program
     {
         // Expected Steam install path
