@@ -1,5 +1,15 @@
 [
   {
+    "SourceString": "Abraxus Ring",
+    "PersistenceID": "TuG7zUS90qgd7BOHhOxd8Q",
+    "Weight": 1.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Runic_Ring.png",
+    "Category": "Rings",
+    "BaseDurability": 100
+  },
+  {
     "SourceString": "Abyssal Ashes",
     "PersistenceID": "Mw42KUu2HuXm3baIbHa_8g",
     "Weight": 1.0,
@@ -69,6 +79,15 @@
     "Category": "Chestplates",
     "PowerLevel": 1,
     "BaseDurability": 500
+  },
+  {
+    "SourceString": "Aetheric Fundamentals, a Primordial Primer",
+    "PersistenceID": "3qvw7EnZoZI0IDyB7ZUCQg",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Abraxus_Necromancer_Book.png",
+    "Category": "Basic Item"
   },
   {
     "SourceString": "Air Rune",
@@ -335,6 +354,15 @@
     "Category": "Amulets"
   },
   {
+    "SourceString": "Bedraggled Spellbook",
+    "PersistenceID": "SIm7DUR1h7EDCcGACB8JDA",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Abraxus_Necromancer_Book.png",
+    "Category": "Basic Item"
+  },
+  {
     "SourceString": "Beef & Tomato Stew",
     "PersistenceID": "Lg6skUqRUr6NjjyUWJio7A",
     "Weight": 2.0,
@@ -545,7 +573,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Bone_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 2,
     "BaseDurability": 1350
   },
@@ -677,7 +705,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_LoggingAxe_Refined_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 3,
     "BaseDurability": 1800
   },
@@ -699,7 +727,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Bronze_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 3,
     "BaseDurability": 1800
   },
@@ -1180,6 +1208,15 @@
     "MaxStackSize": 50,
     "VitalShield": 0,
     "IconFile": "T_Icon_Resource_Thread.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Coclear Malificarum",
+    "PersistenceID": "NUzVKEXAML0DLYSjTIBmNA",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Scroll.png",
     "Category": "Basic Item"
   },
   {
@@ -1773,6 +1810,15 @@
     "VitalShield": 0,
     "IconFile": "T_Icon_Wild_Reflex_Infusion.png",
     "Category": "Potions"
+  },
+  {
+    "SourceString": "Eventide - A New Spawn",
+    "PersistenceID": "xyVlYUoDcHIK3m6-pTk6Zg",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Scroll.png",
+    "Category": "Basic Item"
   },
   {
     "SourceString": "Fallen Hoplite's Aspis",
@@ -2474,6 +2520,17 @@
     "Category": "Basic Item"
   },
   {
+    "SourceString": "Imaru's Talon",
+    "PersistenceID": "2txCYEr6sNYw7X6bMshJRg",
+    "Weight": 15.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Imaru_Scimitarr.png",
+    "Category": "Basic Item",
+    "PowerLevel": 5,
+    "BaseDurability": 1300
+  },
+  {
     "SourceString": "Imbued Granite Maul Head",
     "PersistenceID": "TRQBZ0gufJDy-HWCsXysNw",
     "Weight": 0.0,
@@ -2686,7 +2743,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Greataxe_Iron_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 4,
     "BaseDurability": 1300
   },
@@ -2719,7 +2776,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_LoggingAxe_Iron_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 4,
     "BaseDurability": 2400
   },
@@ -2750,7 +2807,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Iron_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 4,
     "BaseDurability": 2100
   },
@@ -2928,6 +2985,15 @@
     "BaseDurability": 500
   },
   {
+    "SourceString": "Leonard The Bound",
+    "PersistenceID": "0SFGhElEGrRq5ieWLSjREA",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Abraxus_Necromancer_Book.png",
+    "Category": "Basic Item"
+  },
+  {
     "SourceString": "Lesser Attack Potion",
     "PersistenceID": "u9KamEevDhDoqA-Ypsobrw",
     "Weight": 1.0,
@@ -3036,6 +3102,105 @@
     "Category": "Potions"
   },
   {
+    "SourceString": "Letter",
+    "PersistenceID": "XOC2A06c5qYUarW6_XzFvg",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "Zo2PkUiV8Im58oWLYPyhZQ",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "L8a_IkpD4aR_LHC7SD85xA",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "Cs7b4U5s6SuaYi-wzmKYPg",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "SF3UEEViXZZmN-C3FVDhPg",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "6k3tRk6VcDFr6D6eulRV_g",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "xSrYCktOQvdk2ae01DSUxw",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "kcc_Jk87s3ioZUyeJI_edQ",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "PkzzMUGalquRRCyhTwQ_Uw",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "YVydsUwpZA6WfKWIbecQ5g",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Letter",
+    "PersistenceID": "5gtt00N-XHLfD9-bYjzpTw",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
     "SourceString": "Magical Focus",
     "PersistenceID": "gzOyDURSCsyX8-6Q2MSm3A",
     "Weight": 5.0,
@@ -3116,6 +3281,33 @@
     "VitalShield": 0,
     "IconFile": "T_Icon_Cape_RoyalThaneCloak.png",
     "Category": "Skillcapes"
+  },
+  {
+    "SourceString": "Missing Letter",
+    "PersistenceID": "R49qY0KT-YjRmT6a0YB04g",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Missing Letter",
+    "PersistenceID": "D_xL3kw1nvzcQxCqPSLymw",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Missing Letter",
+    "PersistenceID": "3PChfUy1T0FfXUKg0Uqcgg",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Envelope.png",
+    "Category": "Basic Item"
   },
   {
     "SourceString": "Mixed Grill",
@@ -4044,6 +4236,17 @@
     "Category": "Basic Item"
   },
   {
+    "SourceString": "Shroud of Noggin",
+    "PersistenceID": "xuoyTUAlufgRGmy9Kr2hDw",
+    "Weight": 2.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Spectral_Noggin.png",
+    "Category": "Basic Item",
+    "PowerLevel": 1,
+    "BaseDurability": 500
+  },
+  {
     "SourceString": "Silver Bar",
     "PersistenceID": "gunABauXjk6khTFVIKifoA",
     "Weight": 4.8,
@@ -4169,6 +4372,15 @@
     "MaxStackSize": 99,
     "VitalShield": 0,
     "IconFile": "T_Icon_Spectral_Chinchompa_Skull.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "Spectral Silver Thread",
+    "PersistenceID": "tNBdikFL0zvyBmaARPJORA",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Silver_Ash_Thread.png",
     "Category": "Basic Item"
   },
   {
@@ -4352,7 +4564,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Greataxe.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 5,
     "BaseDurability": 1300
   },
@@ -4374,7 +4586,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Logging_Axe.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 5,
     "BaseDurability": 2400
   },
@@ -4396,7 +4608,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_icon_Steel_Pickaxe.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 5,
     "BaseDurability": 2100
   },
@@ -4543,7 +4755,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_LoggingAxe_Crude_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 1,
     "BaseDurability": 1200
   },
@@ -4554,7 +4766,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Pickaxe_Stone_2H_01.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 1,
     "BaseDurability": 1200
   },
@@ -4638,7 +4850,7 @@
     "Category": "Basic Item"
   },
   {
-    "SourceString": "Swamp weed seeds",
+    "SourceString": "Swamp Weed Seeds",
     "PersistenceID": "VbutMUHbEUrnNpGleFj_vw",
     "Weight": 0.2,
     "MaxStackSize": 99,
@@ -4692,6 +4904,42 @@
     "Category": "Basic Item",
     "PowerLevel": 4,
     "BaseDurability": 1300
+  },
+  {
+    "SourceString": "The Binding of Ib",
+    "PersistenceID": "3GRiakVrfak9eBKzKYJqeQ",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Scroll.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "The Importance of Chaos",
+    "PersistenceID": "GQ7na09L7n8GPkmXLLw01Q",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Abraxus_Necromancer_Book.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "The Pride of the Avernic",
+    "PersistenceID": "mt-zJkY9TORHawyjpD2CRw",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Abraxus_Necromancer_Book.png",
+    "Category": "Basic Item"
+  },
+  {
+    "SourceString": "The Wrath of Baba Potterington",
+    "PersistenceID": "I7Cpnk8nMRCVenu9yIrRsA",
+    "Weight": 0.0,
+    "MaxStackSize": 99,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Abraxus_Necromancer_Book.png",
+    "Category": "Rings"
   },
   {
     "SourceString": "Tin Bar",
@@ -4947,6 +5195,17 @@
     "Category": "Basic Item",
     "PowerLevel": 1,
     "BaseDurability": 1800
+  },
+  {
+    "SourceString": "Ulv's Longbow",
+    "PersistenceID": "5Y972kmdvcs4vSqWaXZltw",
+    "Weight": 15.0,
+    "MaxStackSize": 1,
+    "VitalShield": 0,
+    "IconFile": "T_Icon_Ulvs_Bow.png",
+    "Category": "Bows",
+    "PowerLevel": 5,
+    "BaseDurability": 1300
   },
   {
     "SourceString": "Undead Bone",
@@ -5602,7 +5861,7 @@
     "MaxStackSize": 1,
     "VitalShield": 0,
     "IconFile": "T_Icon_Undead_Axe.png",
-    "Category": "Tools",
+    "Category": "Melee Weapons",
     "PowerLevel": 5,
     "BaseDurability": 1300
   },

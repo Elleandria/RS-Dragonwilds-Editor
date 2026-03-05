@@ -27,6 +27,7 @@ desktop.ini
 RS-Dragonwilds Editor.zip
 RS-Dragonwilds Editor/save_editor.exe
 *.bak
+CONTEXT.md
 
 # Keep these in the repo (do NOT ignore)
 # !data/ItemID.json

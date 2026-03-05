@@ -171,7 +171,7 @@ def reset_inventory_tab(inv_frame: tk.Frame) -> None:
         if idx < 8:
             lbl.grid(row=0, column=idx, padx=4, pady=4)
         else:
-            tab_start = {"main": 8, "rune": 32, "quest": 56}
+            tab_start = {"main": 8, "rune": 32, "arrow": 56, "quest": 80}
             for tab, start in tab_start.items():
                 if start <= idx < start + 24:
                     row = (idx - start) // 8
@@ -229,7 +229,7 @@ def refresh_inventory_icons(file_path: str, inv_frame: tk.Frame) -> None:
         if idx < 8:
             lbl.grid(row=0, column=idx, padx=4, pady=4)
         else:
-            tab_start = {"main": 8, "rune": 32, "quest": 56}
+            tab_start = {"main": 8, "rune": 32, "arrow": 56, "quest": 80}
             for tab, start in tab_start.items():
                 if start <= idx < start + 24:
                     row = (idx - start) // 8

@@ -61,7 +61,6 @@ def get_category(name, default="Basic Item"):
         "Dart": "Arrows",
         "Pickaxe": "Tools",
         "Hatchet": "Tools",
-        "Axe": "Tools",
         "Ore": "Ores",
         "Bar": "Bars",
         "Logs": "Woodcutting",
