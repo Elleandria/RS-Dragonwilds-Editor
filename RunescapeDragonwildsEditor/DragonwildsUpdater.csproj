@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssemblyName>DragonwildsUpdater</AssemblyName>
+    <RootNamespace>DragonwildsUpdater</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <!-- Self-contained: ships as a single .exe, no .NET required on user machine -->
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
+    <Version>0.10.2.2</Version>
+    <AssemblyVersion>0.10.2.2</AssemblyVersion>
+    <FileVersion>0.10.2.2</FileVersion>
+    <Company>Elleandria</Company>
+    <Product>Dragonwilds Updater</Product>
+    <Description>Auto-updater for the RS Dragonwilds Save Editor</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- CUE4Parse: reads UE5 IO Store containers, handles Oodle, exports assets -->
+    <PackageReference Include="CUE4Parse" Version="*" />
+    <PackageReference Include="CUE4Parse-Conversion" Version="*" />
+
+    <!-- SkiaSharp: converts DXT-compressed textures to PNG -->
+    <PackageReference Include="SkiaSharp" Version="*" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="*" />
+  </ItemGroup>
+
+</Project>

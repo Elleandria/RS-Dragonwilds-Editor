@@ -5,6 +5,8 @@ import json
 import uuid
 import os
 import sys
+import subprocess
+import threading
 import webbrowser
 from collections import OrderedDict
 from PIL import Image, ImageTk
@@ -36,12 +38,22 @@ class ToolTip:
             self.tipwindow = None
 
 def resource_path(relative_path):
+    """Bundled read-only assets (packed inside the exe by PyInstaller)."""
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
-ASSETS_DIR = resource_path("assets")
-UI_DIR = os.path.join(ASSETS_DIR, "UI")
-DATA_DIR = resource_path("data")
+def runtime_path(relative_path):
+    """Runtime read-write paths — always next to the exe on disk.
+    Used for data/ItemID.json and assets/UI/ which the updater writes."""
+    if getattr(sys, 'frozen', False):
+        base_path = os.path.dirname(sys.executable)
+    else:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_path, relative_path)
+
+ASSETS_DIR = resource_path("assets")   # bundled tab/chrome icons (read-only)
+UI_DIR = runtime_path(os.path.join("assets", "UI"))   # updater writes icons here
+DATA_DIR = runtime_path("data")                        # updater writes ItemID.json here
 SLOT_ICON_SIZE = 58
 ICON_MAP, POWER_MAP = {}, {}
 POWER_BADGES = {}
@@ -365,12 +377,12 @@ def load_item_list():
         messagebox.showerror(
             "Missing Item Data",
             f"ItemID.json not found in:\n{DATA_DIR}\n\n"
-            "Run UpdateItems.bat first to generate fresh item data from your latest FModel extract."
+            "Run 'Update Game Data' from the Tools menu to generate fresh item data."
         )
         return items, display_map, lookup, categorized_items
 
     try:
-        with open(json_path, "r", encoding="utf-8") as f:
+        with open(json_path, "r", encoding="utf-8-sig") as f:
             data = json.load(f)
     except Exception as e:
         messagebox.showerror("Parse Error", f"Cannot read ItemID.json:\n{e}")
@@ -939,6 +951,210 @@ root = tk.Tk()
 root.title("RuneScape Save Editor")
 root.geometry("800x600")
 root.configure(bg="#1c1b18")
+root.withdraw()   # hide until first-run splash (if any) is done
+
+# ---------------------------------------------------------------------------
+# First-run check: if ItemID.json or icons are missing, run updater before
+# the editor loads. Shows a blocking splash window with a live log.
+# ---------------------------------------------------------------------------
+
+def first_run_check():
+    json_missing = not os.path.exists(os.path.join(DATA_DIR, "ItemID.json"))
+    if os.path.exists(UI_DIR):
+        try:
+            icons_missing = not any(f.endswith(".png") for f in os.listdir(UI_DIR))
+        except Exception:
+            icons_missing = True
+    else:
+        icons_missing = True
+
+    if not (json_missing or icons_missing):
+        return  # All good
+
+    base = os.path.dirname(sys.executable) if getattr(sys, "frozen", False) else os.path.dirname(os.path.abspath(__file__))
+    updater_path = os.path.join(base, "DragonwildsUpdater.exe")
+
+    if not os.path.exists(updater_path):
+        messagebox.showwarning(
+            "First Run Setup Required",
+            "This appears to be your first time running the editor.\n\n"
+            "Item data and icons are missing, but DragonwildsUpdater.exe "
+            "was not found next to the editor.\n\n"
+            "Please ensure DragonwildsUpdater.exe is in the same folder, "
+            "then use Tools \u2192 Update Game Data."
+        )
+        return
+
+    # ---------------------------------------------------------------------------
+    # Splash window
+    # ---------------------------------------------------------------------------
+    splash = tk.Toplevel(root)
+    splash.title("First Run Setup")
+    splash.geometry("560x340")
+    splash.configure(bg="#1c1b18")
+    splash.resizable(False, False)
+    splash.grab_set()
+    splash.attributes("-topmost", True)
+    splash.focus_force()
+
+    tk.Label(splash, text="Aligning the Arcane Runes\u2026",
+             bg="#1c1b18", fg="gold", font=("Georgia", 14, "bold")).pack(pady=(18, 2))
+    tk.Label(splash,
+             text="Extracting item data and icons from your game files.\n"
+                  "The tome shall open when the ritual is complete.",
+             bg="#1c1b18", fg="#c8c8b0", font=("Georgia", 9),
+             wraplength=500, justify="center").pack(pady=(0, 10))
+
+    # Progress bar
+    progress_var = tk.DoubleVar(value=0.0)
+    bar_frame = tk.Frame(splash, bg="#1c1b18")
+    bar_frame.pack(fill="x", padx=24, pady=(0, 4))
+
+    style_name = "Rune.Horizontal.TProgressbar"
+    bar_style = ttk.Style()
+    bar_style.theme_use("clam")
+    bar_style.configure(style_name,
+                        troughcolor="#0e0e0c",
+                        background="gold",
+                        bordercolor="#1c1b18",
+                        lightcolor="gold",
+                        darkcolor="#b8860b",
+                        thickness=18)
+    progress_bar = ttk.Progressbar(bar_frame, variable=progress_var,
+                                   maximum=100, length=512,
+                                   style=style_name)
+    progress_bar.pack(fill="x")
+
+    # Phase label (below bar)
+    phase_var = tk.StringVar(value="Preparing\u2026")
+    phase_label = tk.Label(splash, textvariable=phase_var,
+                           bg="#1c1b18", fg="#c8c8b0", font=("Consolas", 9))
+    phase_label.pack(pady=(2, 0))
+
+    # Log text (scrolling, compact)
+    log_text = tk.Text(splash, bg="#0e0e0c", fg="#7a7a60", font=("Consolas", 8),
+                       relief="flat", bd=0, state="disabled", wrap="word", height=6)
+    log_text.pack(expand=True, fill="both", padx=24, pady=(6, 0))
+
+    # FINISHED label — hidden until success
+    finished_var = tk.StringVar(value="")
+    finished_label = tk.Label(splash, textvariable=finished_var,
+                              bg="#1c1b18", fg="#00e676", font=("Georgia", 11, "bold"))
+    finished_label.pack(pady=(4, 0))
+
+    # Error close button — hidden until failure
+    close_btn = tk.Button(splash, text="Continue Anyway", state="disabled",
+                          bg="#2c2b27", fg="#c8c8b0", font=("Georgia", 9),
+                          relief="flat",
+                          command=lambda: [splash.grab_release(), splash.destroy()])
+    close_btn.pack(pady=(4, 8))
+    close_btn.pack_forget()  # hidden unless we hit an error
+
+    # --- Progress bar: pure time-based, no keywords, no Tcl calls ---
+    # The updater buffers all output so we can't stream it.
+    # We start a repeating after() loop BEFORE launching the process.
+    # It reads time.monotonic() directly. No threads touch it.
+
+    _start_time = [None]   # list so closure can mutate it
+    _ticker_id  = [None]
+    _done       = [False]
+
+    PHASE_TIMES  = [13.0, 35.0, 52.0, 62.0]
+    PHASE_LABELS = [
+        "1 / 4  —  Opening & mounting game files…",
+        "2 / 4  —  Extracting 800+ item assets…",
+        "3 / 4  —  Copying 1,157 icons…",
+        "4 / 4  —  Writing ItemID.json & finalising…",
+    ]
+
+    def _tick():
+        if _done[0]:
+            return
+        if _start_time[0] is None:
+            _ticker_id[0] = splash.after(150, _tick)
+            return
+        elapsed = time.monotonic() - _start_time[0]
+        # find current phase
+        phase = 0
+        for i, t in enumerate(PHASE_TIMES):
+            if elapsed >= t:
+                phase = i + 1
+        phase = min(phase, len(PHASE_TIMES) - 1)
+        # interpolate within phase band (each = 25%)
+        t_lo = PHASE_TIMES[phase - 1] if phase > 0 else 0.0
+        t_hi = PHASE_TIMES[phase]
+        span = t_hi - t_lo
+        alpha = max(0.0, min(1.0, (elapsed - t_lo) / span)) if span > 0 else 0.0
+        pct = phase * 25.0 + alpha * 24.5   # max 24.5 per band, never hits 100 early
+        progress_var.set(pct)
+        phase_var.set(PHASE_LABELS[phase])
+        _ticker_id[0] = splash.after(150, _tick)
+
+    def _finish_ok():
+        _done[0] = True
+        if _ticker_id[0]:
+            splash.after_cancel(_ticker_id[0])
+        progress_var.set(100.0)
+        phase_var.set("Complete.")
+        finished_var.set("✔  FINISHED!  The runes are aligned.")
+        # Auto-close after 1.5 s — no button needed on success
+        splash.after(1500, lambda: [splash.grab_release(), splash.destroy()])
+
+    def _finish_err(msg):
+        _done[0] = True
+        if _ticker_id[0]:
+            splash.after_cancel(_ticker_id[0])
+        phase_var.set(msg)
+        close_btn.configure(text="Continue Anyway", state="normal")
+        close_btn.pack(pady=(4, 10))
+
+    def append(line):
+        log_text.configure(state="normal")
+        log_text.insert("end", line)
+        log_text.see("end")
+        log_text.configure(state="disabled")
+
+    def worker():
+        try:
+            creation_flags = subprocess.CREATE_NO_WINDOW if sys.platform == "win32" else 0
+            # Do NOT capture stdout — just let it go to DEVNULL.
+            # Trying to read stdout causes a permanent block because the updater
+            # buffers all output and then calls Windows pause() which reads the
+            # raw console handle, not stdin. No piping strategy can satisfy it.
+            # Instead we poll for ItemID.json on disk — once that file exists,
+            # the updater has finished all real work and we kill it outright.
+            proc = subprocess.Popen(
+                [updater_path],
+                stdin=subprocess.DEVNULL,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                creationflags=creation_flags,
+            )
+            itemid_path = os.path.join(DATA_DIR, "ItemID.json")
+            while proc.poll() is None:
+                if os.path.exists(itemid_path):
+                    # File is written — work is done. Kill the hung process.
+                    try:
+                        proc.kill()
+                    except Exception:
+                        pass
+                    break
+                time.sleep(0.5)
+
+            splash.after(0, _finish_ok)
+        except Exception as e:
+            splash.after(0, _finish_err, f"✘ Error: {e}")
+
+    # Start the ticker NOW, before the thread, so it's already running
+    _start_time[0] = time.monotonic()
+    _tick()
+
+    threading.Thread(target=worker, daemon=True).start()
+    splash.wait_window()
+
+
+first_run_check()
+root.deiconify()  # show the main window now that splash is done (or skipped)
 
 placeholder_path = os.path.join(UI_DIR, "ICON PLACEHOLDER.png")
 try:
@@ -1099,5 +1315,109 @@ bind_scroll_increment(entry_count)
 bind_scroll_increment(entry_durability)
 bind_scroll_increment(entry_start)
 bind_scroll_increment(entry_end)
+
+# ---------------------------------------------------------------------------
+# Tools menu — Update Game Data
+# ---------------------------------------------------------------------------
+
+def run_updater():
+    """
+    Locates DragonwildsUpdater.exe next to the editor, runs it in a subprocess,
+    and streams its output into a live log window. Reloads item data when done.
+    """
+    # Resolve updater path: same folder as the editor exe / script
+    base = os.path.dirname(sys.executable) if getattr(sys, "frozen", False) else os.path.dirname(os.path.abspath(__file__))
+    updater_path = os.path.join(base, "DragonwildsUpdater.exe")
+
+    if not os.path.exists(updater_path):
+        messagebox.showerror(
+            "Updater Not Found",
+            f"DragonwildsUpdater.exe not found at:\n{updater_path}\n\n"
+            "Make sure DragonwildsUpdater.exe is in the same folder as the editor."
+        )
+        return
+
+    # Build the log window
+    log_win = tk.Toplevel(root)
+    log_win.title("Updating Game Data...")
+    log_win.geometry("600x400")
+    log_win.configure(bg="#1c1b18")
+    log_win.resizable(False, False)
+
+    tk.Label(log_win, text="Update Game Data", bg="#1c1b18", fg="gold",
+             font=("Georgia", 12, "bold")).pack(pady=(12, 4))
+
+    log_text = tk.Text(log_win, bg="#0e0e0c", fg="#c8c8b0", font=("Consolas", 9),
+                       relief="flat", bd=0, state="disabled", wrap="word")
+    log_text.pack(expand=True, fill="both", padx=12, pady=(4, 0))
+
+    close_btn = tk.Button(log_win, text="Close", state="disabled",
+                          bg="#2c2b27", fg="gold", font=("Georgia", 10, "bold"),
+                          relief="flat", command=log_win.destroy)
+    close_btn.pack(pady=10)
+
+    def append(line):
+        log_text.configure(state="normal")
+        log_text.insert("end", line)
+        log_text.see("end")
+        log_text.configure(state="disabled")
+
+    def worker():
+        try:
+            proc = subprocess.Popen(
+                [updater_path],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                encoding="utf-8",
+                errors="replace"
+            )
+            for line in proc.stdout:
+                log_win.after(0, append, line)
+            proc.wait()
+
+            if proc.returncode == 0:
+                log_win.after(0, append, "\n✔ Update complete. Reloading item data...\n")
+                log_win.after(0, reload_item_data)
+                log_win.after(0, lambda: log_win.title("Update Complete"))
+            else:
+                log_win.after(0, append, f"\n✘ Updater exited with code {proc.returncode}.\n")
+                log_win.after(0, lambda: log_win.title("Update Failed"))
+
+        except Exception as e:
+            log_win.after(0, append, f"\n✘ Error running updater:\n{e}\n")
+            log_win.after(0, lambda: log_win.title("Update Failed"))
+        finally:
+            log_win.after(0, lambda: close_btn.configure(state="normal"))
+
+    threading.Thread(target=worker, daemon=True).start()
+
+
+def reload_item_data():
+    """Hot-reload ItemID.json and refresh the item box without restarting."""
+    global item_list, display_lookup, item_lookup, categorized_items
+    item_list, display_lookup, item_lookup, categorized_items = load_item_list()
+    update_box_func()
+
+
+# Menu bar
+menubar = tk.Menu(root, bg="#2c2b27", fg="gold", activebackground="#444",
+                  activeforeground="white", bd=0)
+
+tools_menu = tk.Menu(menubar, tearoff=0, bg="#2c2b27", fg="gold",
+                     activebackground="#444", activeforeground="white")
+tools_menu.add_command(label="Update Game Data", command=run_updater)
+tools_menu.add_separator()
+tools_menu.add_command(
+    label="View on Nexusmods",
+    command=lambda: webbrowser.open("https://www.nexusmods.com/runescapedragonwilds/mods/87")
+)
+tools_menu.add_command(
+    label="View on GitHub",
+    command=lambda: webbrowser.open("https://github.com/NYPD6/RS-Dragonwilds-Editor")
+)
+
+menubar.add_cascade(label="Tools", menu=tools_menu)
+root.configure(menu=menubar)
 
 root.mainloop()
