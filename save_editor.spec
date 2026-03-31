@@ -3,9 +3,7 @@
 a = Analysis(
     ['save_editor.py'],
     pathex=[],
-    binaries=[
-        ('DragonwildsUpdater.exe', '.'),
-    ],
+    binaries=[],
     datas=[
         ('data\\ItemID.json',                    'data'),
         ('assets\\UI',                           'assets\\UI'),

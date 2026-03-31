@@ -3,7 +3,7 @@
 
 RSD-Save Editor is a simple python script that injects items into your save file (.json) so when you log back in they are in the slots you place them in. This is only currently setup for items right now, just a fast and easy way to inject them with custom GUIDs so there isn't any issue with disappearing items later.
 
-Currently updated for Patch 0.10.2.2 (March 2nd, 2026)
+Currently updated for Patch 0.11 (March 31st, 2026)
 **REPORT ALL ISSUES IN THE DISCORD**
 
 https://github.com/Elleandria/RS-Dragonwilds-Editor (Will have WIP/unstable builds)

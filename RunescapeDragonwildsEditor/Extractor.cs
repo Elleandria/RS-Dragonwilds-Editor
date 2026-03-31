@@ -60,6 +60,7 @@ namespace DragonwildsUpdater
         private readonly string _outputItemJson;
         private readonly string _outputIconsDir;
         private readonly string _outputIconsOldDir;
+        private readonly string _outputDiscoveryLog;
 
         private static readonly string[] BuildingKeywords =
         {
@@ -68,13 +69,27 @@ namespace DragonwildsUpdater
             "_fence_", "_gate_", "_pillar_", "_beam_", "_base_building_"
         };
 
+        // Paths that contain ITEM_ files but are not actual inventory items.
+        // Add to this list if a new patch introduces false-positive folders.
+        private static readonly string[] ExcludedPathSegments =
+        {
+            "/Art/",
+            "/VFX/",
+            "/FX/",
+            "/Meshes/",
+            "/Animations/",
+            "/Blueprints/NPC",
+            "/AI/",
+        };
+
         public Extractor(string paksDir, string usmapPath, string outputDir)
         {
-            _paksDir           = paksDir;
-            _usmapPath         = usmapPath;
-            _outputItemJson    = Path.Combine(outputDir, "data", "ItemID.json");
-            _outputIconsDir    = Path.Combine(outputDir, "assets", "UI");
-            _outputIconsOldDir = Path.Combine(outputDir, "assets", "UI", "old");
+            _paksDir            = paksDir;
+            _usmapPath          = usmapPath;
+            _outputItemJson     = Path.Combine(outputDir, "data", "ItemID.json");
+            _outputIconsDir     = Path.Combine(outputDir, "assets", "UI");
+            _outputIconsOldDir  = Path.Combine(outputDir, "assets", "UI", "old");
+            _outputDiscoveryLog = Path.Combine(outputDir, "ItemFolderDiscovery.txt");
         }
 
         public void Run()
@@ -94,11 +109,13 @@ namespace DragonwildsUpdater
             );
             #pragma warning restore CS0618
 
-            // FileUsmapTypeMappingsProvider is the concrete file-based implementation
             provider.MappingsContainer = new FileUsmapTypeMappingsProvider(_usmapPath);
             provider.Initialize();
             provider.Mount();
             Console.WriteLine($"      Mounted {provider.Files.Count} files.");
+
+            // --- Discovery: find and log all folders that contain ITEM_ assets ---
+            WriteDiscoveryLog(provider);
 
             Console.WriteLine("\n[2/4] Extracting item data...");
             var items = ExtractItems(provider);
@@ -117,6 +134,49 @@ namespace DragonwildsUpdater
             Console.WriteLine("\nDone!");
         }
 
+        // -------------------------------------------------------------------------
+        // Discovery: writes ItemFolderDiscovery.txt listing every unique folder
+        // that contains at least one ITEM_*.uasset, sorted alphabetically.
+        // Use this after a patch to spot new areas where Jagex added items.
+        // -------------------------------------------------------------------------
+        private void WriteDiscoveryLog(DefaultFileProvider provider)
+        {
+            var folders = provider.Files.Keys
+                .Where(p =>
+                    Path.GetFileName(p).StartsWith("ITEM_", StringComparison.OrdinalIgnoreCase) &&
+                    p.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase))
+                .Select(p =>
+                {
+                    // Normalise to forward slashes and strip the filename
+                    var norm = p.Replace('\\', '/');
+                    var lastSlash = norm.LastIndexOf('/');
+                    return lastSlash >= 0 ? norm[..lastSlash] : norm;
+                })
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .OrderBy(f => f, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+
+            Directory.CreateDirectory(Path.GetDirectoryName(_outputDiscoveryLog)!);
+
+            var lines = new List<string>
+            {
+                $"# ItemFolderDiscovery — generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC",
+                $"# {folders.Count} unique folders contain ITEM_*.uasset files.",
+                $"# Use this to spot new folders added in game patches.",
+                ""
+            };
+            lines.AddRange(folders);
+
+            File.WriteAllLines(_outputDiscoveryLog, lines, Encoding.UTF8);
+            Console.WriteLine($"      Discovery log: {folders.Count} ITEM_ folders → ItemFolderDiscovery.txt");
+        }
+
+        // -------------------------------------------------------------------------
+        // Item extraction: searches the ENTIRE pak for ITEM_*.uasset, not just
+        // /Content/Gameplay/. This catches shop items, economy items, or any new
+        // area Jagex adds in a patch. Non-inventory paths are filtered out by
+        // ExcludedPathSegments above.
+        // -------------------------------------------------------------------------
         private List<ItemEntry> ExtractItems(DefaultFileProvider provider)
         {
             var items = new List<ItemEntry>();
@@ -124,19 +184,20 @@ namespace DragonwildsUpdater
 
             var itemPaths = provider.Files.Keys
                 .Where(p =>
-                    p.Contains("/Content/Gameplay/", StringComparison.OrdinalIgnoreCase) &&
                     Path.GetFileName(p).StartsWith("ITEM_", StringComparison.OrdinalIgnoreCase) &&
-                    p.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase))
+                    p.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase) &&
+                    !ExcludedPathSegments.Any(seg =>
+                        p.Contains(seg, StringComparison.OrdinalIgnoreCase)) &&
+                    !BuildingKeywords.Any(kw =>                                    // ← ADD THIS
+                        Path.GetFileName(p).Contains(kw, StringComparison.OrdinalIgnoreCase)))
                 .ToList();
 
-            Console.WriteLine($"      Found {itemPaths.Count} ITEM_ assets.");
+            Console.WriteLine($"      Found {itemPaths.Count} ITEM_ assets (all pak paths).");
 
             foreach (var path in itemPaths)
             {
                 try
                 {
-                    // Correct CUE4Parse API: LoadPackage returns the package,
-                    // ExportsLazy gives access to all exported objects
                     var package = provider.LoadPackage(path);
                     if (package == null) continue;
 
@@ -158,6 +219,16 @@ namespace DragonwildsUpdater
                     Console.WriteLine($"      Skip {Path.GetFileName(path)}: {ex.Message}");
                 }
             }
+
+            // --- Vestige items (DA_Consumable_Vestige_*.uasset) ---
+            var vestigePaths = provider.Files.Keys
+                .Where(p =>
+                    p.Contains("/Consumables/Vestiges/", StringComparison.OrdinalIgnoreCase) &&
+                    Path.GetFileName(p).StartsWith("DA_Consumable_Vestige_", StringComparison.OrdinalIgnoreCase) &&
+                    p.EndsWith(".uasset", StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            Console.WriteLine($"      Found {vestigePaths.Count} Vestige DA_ assets.");
 
             items.Sort((a, b) =>
                 string.Compare(a.SourceString, b.SourceString, StringComparison.OrdinalIgnoreCase));
@@ -234,9 +305,6 @@ namespace DragonwildsUpdater
                 BaseDurability = baseDurability
             };
         }
-
-        // prop.Tag is CUE4Parse.UE4.Assets.Objects.Properties.FPropertyTagType
-        // GenericValue is object? — contains the actual value for the property type
 
         private static string? ReadFText(FPropertyTagType? tag)
         {
