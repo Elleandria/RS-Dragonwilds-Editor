@@ -1,1 +1,16 @@
-No missing icons found.
+T_Arrows_Bone.png
+T_Dagger_Bone.png
+T_Dagger_Iron.png
+T_Dagger_Stone.png
+T_Food_Cabbage.png
+T_Food_Cake.png
+T_Food_Carrot.png
+T_Icon_F_MED_BODY_IronArmour_01.png
+T_Icon_F_MED_HEAD_IronArmour_01.png
+T_Icon_F_MED_LEGS_IronArmour_01.png
+T_icon_Resource_Ring_Of_Pursuit.png
+T_Icon_Resources_Vine.png
+T_Icon_Unusual_Trout.png
+T_Icons_Resource_Antlers.png
+T_Masterworks_Horn_Mouthpiece.png
+T_Resources_Egg.png

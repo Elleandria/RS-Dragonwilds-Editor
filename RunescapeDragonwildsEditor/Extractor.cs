@@ -90,7 +90,7 @@ namespace DragonwildsUpdater
                 _paksDir,
                 SearchOption.TopDirectoryOnly,
                 true,
-                new VersionContainer(EGame.GAME_UE5_4)
+                new VersionContainer(EGame.GAME_UE5_6)
             );
             #pragma warning restore CS0618
 
@@ -422,9 +422,8 @@ namespace DragonwildsUpdater
                     var bitmap = texture.Decode();
                     if (bitmap == null) { skipped++; continue; }
 
-                    using var img  = bitmap;
-                    using var data = img.Encode(SKEncodedImageFormat.Png, 100);
-                    File.WriteAllBytes(outPath, data.ToArray());
+                    var pngBytes = bitmap.Encode(ETextureFormat.Png, false, out _);
+                    File.WriteAllBytes(outPath, pngBytes);
                     copied++;
                 }
                 catch (Exception ex)

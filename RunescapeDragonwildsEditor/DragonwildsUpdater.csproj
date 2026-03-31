@@ -16,18 +16,19 @@
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
 
-    <Version>0.10.2.2</Version>
-    <AssemblyVersion>0.10.2.2</AssemblyVersion>
-    <FileVersion>0.10.2.2</FileVersion>
+    <Version>0.10.3.0</Version>
+    <AssemblyVersion>0.10.3.0</AssemblyVersion>
+    <FileVersion>0.10.3.0</FileVersion>
     <Company>Elleandria</Company>
     <Product>Dragonwilds Updater</Product>
     <Description>Auto-updater for the RS Dragonwilds Save Editor</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- CUE4Parse: reads UE5 IO Store containers, handles Oodle, exports assets -->
-    <PackageReference Include="CUE4Parse" Version="*" />
-    <PackageReference Include="CUE4Parse-Conversion" Version="*" />
+    <!-- CUE4Parse: built from source submodule for latest UE version support.
+         To update: git submodule update - -remote CUE4Parse  then rebuild. -->
+    <ProjectReference Include="..\CUE4Parse\CUE4Parse\CUE4Parse.csproj" />
+    <ProjectReference Include="..\CUE4Parse\CUE4Parse-Conversion\CUE4Parse-Conversion.csproj" />
 
     <!-- SkiaSharp: converts DXT-compressed textures to PNG -->
     <PackageReference Include="SkiaSharp" Version="*" />

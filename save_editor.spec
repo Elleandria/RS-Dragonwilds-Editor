@@ -3,8 +3,13 @@
 a = Analysis(
     ['save_editor.py'],
     pathex=[],
-    binaries=[],
+    binaries=[
+        ('DragonwildsUpdater.exe', '.'),
+    ],
     datas=[
+        ('data\\ItemID.json',                    'data'),
+        ('assets\\UI',                           'assets\\UI'),
+        ('assets\\T_Inventory_PanelBackground.png','assets'),
         ('assets\\T_Icon_Items_Normal.png',      'assets'),
         ('assets\\T_Icon_Items_Highlight.png',   'assets'),
         ('assets\\T_Icon_Runes_Normal.png',      'assets'),
